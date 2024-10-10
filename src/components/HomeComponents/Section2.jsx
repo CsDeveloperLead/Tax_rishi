@@ -6,7 +6,7 @@ import ser3 from "../../assets/ser3.png";
 import ser4 from "../../assets/ser4.png";
 const Section2 = () => {
   return (
-    <div className="w-full flex flex-col gap-10 md:flex-row items-center justify-center md:items-start font-montserrat mt-20 mb-10 md:mt-40 md:mb-20 px-20">
+    <div className="w-full flex flex-col gap-10 md:flex-row items-center justify-center md:items-start font-montserrat mt-20 mb-10 md:mt-40 md:mb-20 p-2 md:px-20">
       <div className="w-[90%] md:w-[50%] flex flex-col  gap-8">
         <div className="w-full md:w-1/3 flex justify-center items-center font-bold bg-[#cdd4f1] text-main rounded-[49px] px-4 py-2">
           Here Our Services
@@ -91,8 +91,8 @@ const Section2 = () => {
         </div>
       </div>
 
-      <div className="w-full md:w-[45%] h-full flex justify-center items-center ">
-        <div className="relative flex justify-center items-center">
+      <div className="w-full md:w-[45%] md:h-[700px] flex justify-center items-center ">
+        <div className="relative flex justify-center items-center ">
           <img
             src={rect}
             alt="Image"
