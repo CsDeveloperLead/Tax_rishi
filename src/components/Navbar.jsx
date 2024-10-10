@@ -44,8 +44,8 @@ const Navbar = () => {
         to="/"
         className={({ isActive }) =>
           isActive
-            ? "text-[#3E703E] flex flex-col items-center"
-            : "text-[#000] hover:text-[#3E703E] flex flex-col items-center"
+            ? "text-main flex flex-col items-center"
+            : "text-[#000] hover:text-main flex flex-col items-center"
         }
       >
         Home
@@ -57,8 +57,8 @@ const Navbar = () => {
         to="/services"
         className={({ isActive }) =>
           isActive
-            ? "text-[#3E703E] flex flex-col items-center"
-            : "text-[#000] hover:text-[#3E703E] flex flex-col items-center"
+            ? "text-main flex flex-col items-center"
+            : "text-[#000] hover:text-main flex flex-col items-center"
         }
       >
         Services
@@ -70,8 +70,8 @@ const Navbar = () => {
         to="/about"
         className={({ isActive }) =>
           isActive
-            ? "text-[#3E703E] flex flex-col items-center"
-            : "text-[#000] hover:text-[#3E703E] flex flex-col items-center"
+            ? "text-main flex flex-col items-center"
+            : "text-[#000] hover:text-main flex flex-col items-center"
         }
       >
         About
@@ -83,8 +83,8 @@ const Navbar = () => {
         to="/contact"
         className={({ isActive }) =>
           isActive
-            ? "text-[#3E703E] flex flex-col items-center"
-            : "text-[#000] hover:text-[#3E703E] flex flex-col items-center"
+            ? "text-main flex flex-col items-center"
+            : "text-[#000] hover:text-main flex flex-col items-center"
         }
       >
         Contact
@@ -94,7 +94,7 @@ const Navbar = () => {
       {/* Get In Touch Button */}
       <a
         href="#getintouch"
-        className="px-4 py-2 bg-[#3E703E] text-white rounded-lg hover:bg-green-700"
+        className="px-4 py-2 bg-main text-white rounded-lg hover:bg-blue-700"
       >
         Get In Touch
       </a>
@@ -118,7 +118,7 @@ const Navbar = () => {
           </NavLink>
           <a
             href="#getintouch"
-            className="flex justify-center items-center px-4 w-[90%] py-2 bg-[#3E703E] text-white hover:bg-green-700 text-center rounded-lg"
+            className="flex justify-center items-center px-4 w-[90%] py-2 bg-main text-white hover:bg-green-700 text-center rounded-lg"
           >
             Get In Touch
           </a>

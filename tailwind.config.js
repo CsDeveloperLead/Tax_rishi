@@ -20,6 +20,9 @@ export default {
         montserrat800: 800,
         montserrat900: 900,
       },
+      colors: {
+        main: '#0062f2', // Custom color defined here
+      },
     },
   },
   plugins: [],
