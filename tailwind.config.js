@@ -23,6 +23,15 @@ export default {
       colors: {
         main: '#0062f2', // Custom color defined here
       },
+      boxShadow: {
+        'custom-combined': `
+          1.32px 2.38px 3.71px 0px #00000005,
+          5.89px 10.64px 8.58px 0px #00000008,
+          14.66px 26.45px 19.58px 0px #0000000A,
+          28.54px 51.5px 41.73px 0px #0000000D,
+          48.46px 87.47px 80px 0px #00000012
+        `,
+      },
     },
   },
   plugins: [],
