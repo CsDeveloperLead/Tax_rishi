@@ -104,21 +104,21 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden flex flex-col items-center py-6">
-          <NavLink to="/" className="block px-4 mb-2 text-[#000] hover:bg-gray-100">
+          <NavLink to="/" className="block px-4 mb-2 text-[#000] font-bold hover:text-main">
             Home
           </NavLink>
-          <NavLink to="/services" className="block px-4 py-2 text-[#000] hover:bg-gray-100">
+          <NavLink to="/services" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
             Services
           </NavLink>
-          <NavLink to="/about" className="block px-4 py-2 text-[#000] hover:bg-gray-100">
+          <NavLink to="/about" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
             About
           </NavLink>
-          <NavLink to="/contact" className="block px-4 py-2 text-[#000] hover:bg-gray-100">
+          <NavLink to="/contact" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
             Contact
           </NavLink>
           <a
             href="#getintouch"
-            className="flex justify-center items-center px-4 w-[90%] py-2 bg-main text-white hover:bg-green-700 text-center rounded-lg"
+            className="flex justify-center items-center px-4 w-[90%] py-2 bg-main text-white hover:bg-blue-700 text-center rounded-lg"
           >
             Get In Touch
           </a>
