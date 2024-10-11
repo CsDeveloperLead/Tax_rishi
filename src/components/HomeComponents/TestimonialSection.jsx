@@ -31,7 +31,7 @@ const TestimonialSection = () => {
             />
             Your browser does not support the video tag.
           </video>
-          <div className=" w-full flex flex-col items-center md:items-start md:flex-row gap-8 md:absolute md:left-[400px] mt-10 md:mt-0">
+          <div className="flex flex-col items-center md:items-start md:flex-row gap-8 md:absolute md:left-[400px] mt-10 md:mt-0">
             <div className="w-[350px] md:w-[400px] h-[220px] flex flex-col gap-4 p-6 rounded-2xl bg-white shadow-custom-combined">
               <span>⭐⭐⭐⭐⭐</span>
               <p className="h-[150px]">
