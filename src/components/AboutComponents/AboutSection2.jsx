@@ -12,7 +12,7 @@ const data = [
 
 const AboutSection2 = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6 mt-40 mb-20 px-20">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6 md:mt-40 mb-20 px-20">
       {data.map((item) => (
         <div key={item.id} className="bg-white rounded-lg shadow-lg p-6 text-center flex flex-col items-center gap-2">
           <div className="w-12 h-12 bg-[#cdd4f1] rounded-lg flex justify-center items-center">
