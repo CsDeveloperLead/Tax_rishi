@@ -10,7 +10,7 @@ const Hero = () => {
         <h1 className="text-2xl md:text-6xl font-bold">Maximize Your Returns with</h1>
         <h1 className="text-2xl md:text-6xl font-bold">
           Expert
-          <span className="bg-main fot-bold text-white px-3 md:px-8 rounded-md md:rounded-lg mx-2 md:mx-6 leading-0">
+          <span className="bg-main fot-bold text-white md:px-8 rounded-md md:rounded-lg mx-2 md:mx-6 leading-0">
             Tax
           </span>
           Consulting
