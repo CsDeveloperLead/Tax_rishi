@@ -6,7 +6,7 @@ import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Startup from './pages/Startup';
-import Msme from './pages/MSME';
+import Msme from './pages/Msme';
 import FinancialQuizModal from './components/FinancialQuizModal';
 import CalculatorGrid from './pages/Calculator';
 import Sip from './pages/Sip';
