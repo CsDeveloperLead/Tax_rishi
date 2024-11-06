@@ -103,7 +103,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
-    <div className="px-4 md:px-20 mb-10">
+    <div className="px-4 md:px-20 py-10 mb-10">
       <div className="px-20 bg-[#c4c4c4] rounded-3xl  w-full h-[250px]"></div>
     </div>
     </>

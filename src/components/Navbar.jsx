@@ -54,14 +54,14 @@ const Navbar = () => {
 
       {/* Services Link */}
       <NavLink
-        to="/services"
+        to="/calculator"
         className={({ isActive }) =>
           isActive
             ? "text-main flex flex-col items-center"
             : "text-[#000] hover:text-main flex flex-col items-center"
         }
       >
-        Services
+        Calculators
         {({ isActive }) => isActive && <span className="mt-1">.</span>}
       </NavLink>
 
@@ -79,6 +79,29 @@ const Navbar = () => {
       </NavLink>
 
       {/* Contact Link */}
+      
+      <NavLink
+        to="/startup"
+        className={({ isActive }) =>
+          isActive
+            ? "text-main flex flex-col items-center"
+            : "text-[#000] hover:text-main flex flex-col items-center"
+        }
+      >
+        Startup Rishi
+        {({ isActive }) => isActive && <span className="mt-1">.</span>}
+      </NavLink>
+      <NavLink
+        to="/msme"
+        className={({ isActive }) =>
+          isActive
+            ? "text-main flex flex-col items-center"
+            : "text-[#000] hover:text-main flex flex-col items-center"
+        }
+      >
+        Msme Rishi
+        {({ isActive }) => isActive && <span className="mt-1">.</span>}
+      </NavLink>
       <NavLink
         to="/contact"
         className={({ isActive }) =>
@@ -107,11 +130,18 @@ const Navbar = () => {
           <NavLink to="/" className="block px-4 mb-2 text-[#000] font-bold hover:text-main">
             Home
           </NavLink>
-          <NavLink to="/services" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
-            Services
+          <NavLink to="/calculator" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
+            Calculators
           </NavLink>
           <NavLink to="/about" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
             About
+          </NavLink>
+          
+          <NavLink to="/startup" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
+            Startup Rishi
+          </NavLink>
+          <NavLink to="/msme" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
+            Msme Rishi
           </NavLink>
           <NavLink to="/contact" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
             Contact
