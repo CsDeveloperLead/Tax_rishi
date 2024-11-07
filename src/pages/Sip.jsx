@@ -34,7 +34,7 @@ function SIPCalculator() {
     datasets: [
       {
         data: [totalInvested, estimatedReturns],
-        backgroundColor: ["#e0e7ff", "#6366f1"],
+        backgroundColor: ["#e0e7ff", "#0062f2"],
       },
     ],
   };

@@ -45,7 +45,7 @@ function Compound() {
     datasets: [
       {
         data: [principal, totalInterest],
-        backgroundColor: ["#E0E7FF", "#6366F1"],
+        backgroundColor: ["#E0E7FF", "#0062f2"],
       },
     ],
   };

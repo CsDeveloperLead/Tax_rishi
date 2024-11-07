@@ -1,10 +1,4 @@
-import img1 from "../assets/msme1.jpg";
-import img2 from "../assets/msme2.png";
-import img3 from "../assets/msme3.png";
-import img4 from "../assets/msme4.png";
-import img5 from "../assets/msme5.png";
-import img6 from "../assets/msme6.png";
-import img7 from "../assets/msme7.png";
+
 import { Link } from "react-router-dom";
 const StartupFunding = () => {
   return (
