@@ -24,6 +24,14 @@ import Simple from './pages/Simple';
 import Compound from './pages/Compound';
 import Retirement from './pages/Retirement';
 import Gst from './pages/Gst';
+import MsmeRegistration from './pages/MsmeRegistration';
+import StartupBenefits from './pages/StartupBenefits';
+import MsmeDocument from './pages/MsmeDocument';
+import MsmeScheme from './pages/MsmeScheme';
+import MsmeGst from './pages/MsmeGst';
+import StartupRegistration from './pages/StartupRegistration';
+import StartupFunding from './pages/StartupFunding';
+import StartupTax from './pages/StartupTax';
 
 const App = () => {
   return (
@@ -57,6 +65,15 @@ const App = () => {
           <Route path="/compound-interest" element={<Compound />} />
           <Route path="/retirement" element={<Retirement />} />
           <Route path="/gst" element={<Gst />} />
+          <Route path="/msme/registration" element={<MsmeRegistration />} />
+          <Route path="/msme/document" element={<MsmeDocument />} />
+          <Route path="/msme/scheme" element={<MsmeScheme />} />
+          <Route path="/msme/gst" element={<MsmeGst />} />
+
+          <Route path="startup/benefits" element={<StartupBenefits />} />
+          <Route path="startup/tax" element={<StartupTax/>} />
+          <Route path="startup/registration" element={<StartupRegistration />} />
+          <Route path="startup/funding" element={<StartupFunding />} />
 
 
         </Routes>

@@ -1,9 +1,37 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from "react";
 import { Link,NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null); // Keeps track of the active dropdown
+  const startupRef = useRef(null);
+  const msmeRef = useRef(null);
 
+  const toggleDropdown = (dropdown) => {
+    // Toggle the dropdown or close if clicked again
+    setActiveDropdown((prevDropdown) => (prevDropdown === dropdown ? null : dropdown));
+  };
+
+  const handleClickOutside = (event) => {
+    // Check if the click was outside both dropdown menus
+    if (
+      startupRef.current &&
+      !startupRef.current.contains(event.target) &&
+      msmeRef.current &&
+      !msmeRef.current.contains(event.target)
+    ) {
+      setActiveDropdown(null); // Close both dropdowns
+    }
+  };
+
+  useEffect(() => {
+    // Add event listener for outside click
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // Cleanup listener on component unmount
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
   return (
     <nav className="bg-white shadow-md font-montserrat">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -80,28 +108,52 @@ const Navbar = () => {
 
       {/* Contact Link */}
       
-      <NavLink
-        to="/startup"
-        className={({ isActive }) =>
-          isActive
-            ? "text-main flex flex-col items-center"
-            : "text-[#000] hover:text-main flex flex-col items-center"
-        }
-      >
-        Startup Rishi
-        {({ isActive }) => isActive && <span className="mt-1">.</span>}
-      </NavLink>
-      <NavLink
-        to="/msme"
-        className={({ isActive }) =>
-          isActive
-            ? "text-main flex flex-col items-center"
-            : "text-[#000] hover:text-main flex flex-col items-center"
-        }
-      >
-        Msme Rishi
-        {({ isActive }) => isActive && <span className="mt-1">.</span>}
-      </NavLink>
+      <div className="relative" ref={startupRef}>
+        <NavLink
+          to="#"
+          className={({ isActive }) =>
+            isActive
+              ? " flex flex-col items-center cursor-pointer"
+              : "text-[#000] hover:text-main flex flex-col items-center cursor-pointer"
+          }
+          onClick={() => toggleDropdown("startup")}
+        >
+          Startup Rishi
+          {({ isActive }) => isActive && <span className="mt-1">.</span>}
+        </NavLink>
+        {activeDropdown === "startup" && (
+          <div className="absolute top-full mt-4 -left-16 bg-white border rounded shadow-lg z-50 w-[250px]">
+            <NavLink to="/startup/registration" className="block px-4 py-2 hover:bg-gray-100">Registration Process</NavLink>
+            <NavLink to="/startup/benefits" className="block px-4 py-2 hover:bg-gray-100">Benefits</NavLink>
+            <NavLink to="/startup/funding" className="block px-4 py-2 hover:bg-gray-100">Startup Funding</NavLink>
+            <NavLink to="/startup/tax" className="block px-4 py-2 hover:bg-gray-100">Tax Exemption Eligibility</NavLink>
+          </div>
+        )}
+      </div>
+
+      {/* Msme Dropdown */}
+      <div className="relative" ref={msmeRef}>
+        <NavLink
+          to="#"
+          className={({ isActive }) =>
+            isActive
+              ? "flex flex-col items-center cursor-pointer"
+              : "text-[#000] hover:text-main flex flex-col items-center cursor-pointer"
+          }
+          onClick={() => toggleDropdown("msme")}
+        >
+          Msme Rishi
+          {({ isActive }) => isActive && <span className="mt-1">.</span>}
+        </NavLink>
+        {activeDropdown === "msme" && (
+          <div className="absolute top-full mt-4 -left-16 bg-white border rounded shadow-lg z-50 w-[250px]">
+            <NavLink to="/msme/registration" className="block px-4 py-2 hover:bg-gray-100">Registration Process</NavLink>
+            <NavLink to="/msme/document" className="block px-4 py-2 hover:bg-gray-100">Document Required</NavLink>
+            <NavLink to="/msme/scheme" className="block px-4 py-2 hover:bg-gray-100">MSME Scheme</NavLink>
+            <NavLink to="/msme/gst" className="block px-4 py-2 hover:bg-gray-100">New GST Exemption</NavLink>
+          </div>
+        )}
+      </div>
       <NavLink
         to="/contact"
         className={({ isActive }) =>
