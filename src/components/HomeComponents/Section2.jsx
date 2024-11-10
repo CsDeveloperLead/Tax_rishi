@@ -4,9 +4,13 @@ import ser1 from "../../assets/ser1.png";
 import ser2 from "../../assets/ser2.png";
 import ser3 from "../../assets/ser3.png";
 import ser4 from "../../assets/ser4.png";
+// import Image from '../../assets/image3.png'
+import Image from '../../assets/image5.png'
+
+
 const Section2 = () => {
   return (
-    <div className="w-full flex flex-col gap-10 md:flex-row items-center justify-center md:items-start font-montserrat mt-20 mb-10 md:mt-40 md:mb-20 p-2 md:px-20">
+    <div id="section3" className="w-full flex flex-col gap-10 md:flex-row items-center justify-center md:items-start font-montserrat mt-20 mb-10 md:mt-40 md:mb-20 p-2 md:px-20">
       <div className="w-[90%] md:w-[50%] flex flex-col  gap-8">
         <div className="w-full md:w-1/3 flex justify-center items-center font-bold bg-[#cdd4f1] text-main rounded-[49px] px-4 py-2">
           Here Our Services
@@ -94,12 +98,14 @@ const Section2 = () => {
       <div className="w-full md:w-[45%] md:h-[700px] flex justify-center items-center ">
         <div className="relative flex justify-center items-center ">
           <img
-            src={rect}
+            src={Image}
             alt="Image"
-            className="object-contain w-[300px] h-[300px] md:w-[500px] md:h-[500px] "
+            className="object-cover rounded-l-3xl rounded-b-none w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-md md:rounded-xl"
           />
-          <div className="bg-main w-[44px] h-[42px] md:w-[80px] md:h-[80px] rounded-md md:rounded-xl absolute top-1 left-1 md:top-0 md:left-1 flex justify-center items-center text-white ">
-            <GoArrowDownRight size={30} />
+          <div className="w-[52px] h-[50px] md:w-[88px] md:h-[88px] absolute top-1 md:top-0 md:left-0 flex rounded-b-md rounded-l-none md:rounded-b-xl md:rounded-l-none bg-white">
+            <div className="bg-main w-[44px] h-[42px] md:w-[80px] md:h-[80px] rounded-md md:rounded-xl absolute top-1 left-1 md:top-0 md:left-0 flex justify-center items-center text-white ">
+              <GoArrowDownRight size={30} />
+            </div>
           </div>
         </div>
       </div>

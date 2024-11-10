@@ -27,10 +27,10 @@ function CalculatorGrid() {
     <div className="grid grid-cols-2 gap-6 md:gap-10 p-2 md:p-4 sm:grid-cols-3 lg:grid-cols-4">
       {data.map((item, index) => (
         
-        <div key={index} className="bg-white border h-44 md:h-40 border-gray-200 rounded-lg p-4 md:p-6 shadow-md flex ">
+        <div key={index} className="group bg-white border h-44 md:h-40 border-gray-200 rounded-lg p-4 md:p-6 shadow-md flex hover:bg-main hover:scale-105 transition-transform transform ">
             <Link to={item.link} >
-          <h3 className="text-base md:text-xl font-bold mb-2">{item.title}</h3>
-          <p className="text-gray-600 text-[12px] ">{item.description}</p>
+          <h3 className="text-base md:text-xl font-bold mb-2 group-hover:text-white">{item.title}</h3>
+          <p className="text-gray-600 text-[12px] group-hover:text-white ">{item.description}</p>
           </Link>
         </div>
         

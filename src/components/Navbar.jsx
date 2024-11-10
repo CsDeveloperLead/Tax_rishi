@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import { Link,NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import Logo from '../assets/Logo.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,10 +37,11 @@ const Navbar = () => {
     <nav className="bg-white shadow-md font-montserrat">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Brand Logo */}
           <div className="flex items-center">
             <Link to='/'
-             className="text-xl font-montserrat700">Tax rishi
+              className="text-xl font-montserrat700">
+              <img src={Logo} alt="Logo" className="w-20 h-20" />
+
             </Link>
           </div>
           {/* Hamburger Icon (Mobile) */}
@@ -67,113 +69,114 @@ const Navbar = () => {
           </div>
           {/* Desktop Menu */}
           <div className="hidden md:flex md:items-center space-x-10 font-bold">
-      {/* Home Link */}
-      <NavLink
-        to="/"
-        className={({ isActive }) =>
-          isActive
-            ? "text-main flex flex-col items-center"
-            : "text-[#000] hover:text-main flex flex-col items-center"
-        }
-      >
-        Home
-        {({ isActive }) => isActive && <span className="mt-1">.</span>}
-      </NavLink>
+            {/* Home Link */}
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-main flex flex-col items-center"
+                  : "text-[#000] hover:text-main flex flex-col items-center"
+              }
+            >
+              Home
+              {({ isActive }) => isActive && <span className="mt-1">.</span>}
+            </NavLink>
 
-      {/* Services Link */}
-      <NavLink
-        to="/calculator"
-        className={({ isActive }) =>
-          isActive
-            ? "text-main flex flex-col items-center"
-            : "text-[#000] hover:text-main flex flex-col items-center"
-        }
-      >
-        Calculators
-        {({ isActive }) => isActive && <span className="mt-1">.</span>}
-      </NavLink>
+            <div className="relative" ref={startupRef}>
+              <NavLink
+                to="#"
+                className={({ isActive }) =>
+                  isActive
+                    ? " flex flex-col items-center cursor-pointer"
+                    : "text-[#000] hover:text-main flex flex-col items-center cursor-pointer"
+                }
+                onClick={() => toggleDropdown("startup")}
+              >
+                Startup Rishi
+                {({ isActive }) => isActive && <span className="mt-1">.</span>}
+              </NavLink>
+              {activeDropdown === "startup" && (
+                <div className="absolute top-full mt-4 -left-16 bg-white border rounded shadow-lg z-50 w-[250px]">
+                  <NavLink to="/startup/registration" className="block px-4 py-2 hover:bg-gray-100">Registration Process</NavLink>
+                  <NavLink to="/startup/benefits" className="block px-4 py-2 hover:bg-gray-100">Benefits</NavLink>
+                  <NavLink to="/startup/funding" className="block px-4 py-2 hover:bg-gray-100">Startup Funding</NavLink>
+                  <NavLink to="/startup/tax" className="block px-4 py-2 hover:bg-gray-100">Tax Exemption Eligibility</NavLink>
+                </div>
+              )}
+            </div>
 
-      {/* About Link */}
-      <NavLink
-        to="/about"
-        className={({ isActive }) =>
-          isActive
-            ? "text-main flex flex-col items-center"
-            : "text-[#000] hover:text-main flex flex-col items-center"
-        }
-      >
-        About
-        {({ isActive }) => isActive && <span className="mt-1">.</span>}
-      </NavLink>
+            {/* Msme Dropdown */}
+            <div className="relative" ref={msmeRef}>
+              <NavLink
+                to="#"
+                className={({ isActive }) =>
+                  isActive
+                    ? "flex flex-col items-center cursor-pointer"
+                    : "text-[#000] hover:text-main flex flex-col items-center cursor-pointer"
+                }
+                onClick={() => toggleDropdown("msme")}
+              >
+                Msme Rishi
+                {({ isActive }) => isActive && <span className="mt-1">.</span>}
+              </NavLink>
+              {activeDropdown === "msme" && (
+                <div className="absolute top-full mt-4 -left-16 bg-white border rounded shadow-lg z-50 w-[250px]">
+                  <NavLink to="/msme/registration" className="block px-4 py-2 hover:bg-gray-100">Registration Process</NavLink>
+                  <NavLink to="/msme/document" className="block px-4 py-2 hover:bg-gray-100">Document Required</NavLink>
+                  <NavLink to="/msme/scheme" className="block px-4 py-2 hover:bg-gray-100">MSME Scheme</NavLink>
+                  <NavLink to="/msme/gst" className="block px-4 py-2 hover:bg-gray-100">New GST Exemption</NavLink>
+                </div>
+              )}
+            </div>
 
-      {/* Contact Link */}
-      
-      <div className="relative" ref={startupRef}>
-        <NavLink
-          to="#"
-          className={({ isActive }) =>
-            isActive
-              ? " flex flex-col items-center cursor-pointer"
-              : "text-[#000] hover:text-main flex flex-col items-center cursor-pointer"
-          }
-          onClick={() => toggleDropdown("startup")}
-        >
-          Startup Rishi
-          {({ isActive }) => isActive && <span className="mt-1">.</span>}
-        </NavLink>
-        {activeDropdown === "startup" && (
-          <div className="absolute top-full mt-4 -left-16 bg-white border rounded shadow-lg z-50 w-[250px]">
-            <NavLink to="/startup/registration" className="block px-4 py-2 hover:bg-gray-100">Registration Process</NavLink>
-            <NavLink to="/startup/benefits" className="block px-4 py-2 hover:bg-gray-100">Benefits</NavLink>
-            <NavLink to="/startup/funding" className="block px-4 py-2 hover:bg-gray-100">Startup Funding</NavLink>
-            <NavLink to="/startup/tax" className="block px-4 py-2 hover:bg-gray-100">Tax Exemption Eligibility</NavLink>
+            {/* Services Link */}
+            <NavLink
+              to="/calculator"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-main flex flex-col items-center"
+                  : "text-[#000] hover:text-main flex flex-col items-center"
+              }
+            >
+              Calculators
+              {({ isActive }) => isActive && <span className="mt-1">.</span>}
+            </NavLink>
+
+            {/* About Link */}
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-main flex flex-col items-center"
+                  : "text-[#000] hover:text-main flex flex-col items-center"
+              }
+            >
+              About Us
+              {({ isActive }) => isActive && <span className="mt-1">.</span>}
+            </NavLink>
+
+            {/* Contact Link */}
+
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-main flex flex-col items-center"
+                  : "text-[#000] hover:text-main flex flex-col items-center"
+              }
+            >
+              Contact Us
+              {({ isActive }) => isActive && <span className="mt-1">.</span>}
+            </NavLink>
+
+            {/* Get In Touch Button */}
+            <Link
+              to='https://wa.link/ponzo9'
+              className="px-4 py-2 bg-main text-white rounded-lg hover:bg-blue-700"
+            >
+              Get In Touch
+            </Link>
           </div>
-        )}
-      </div>
-
-      {/* Msme Dropdown */}
-      <div className="relative" ref={msmeRef}>
-        <NavLink
-          to="#"
-          className={({ isActive }) =>
-            isActive
-              ? "flex flex-col items-center cursor-pointer"
-              : "text-[#000] hover:text-main flex flex-col items-center cursor-pointer"
-          }
-          onClick={() => toggleDropdown("msme")}
-        >
-          Msme Rishi
-          {({ isActive }) => isActive && <span className="mt-1">.</span>}
-        </NavLink>
-        {activeDropdown === "msme" && (
-          <div className="absolute top-full mt-4 -left-16 bg-white border rounded shadow-lg z-50 w-[250px]">
-            <NavLink to="/msme/registration" className="block px-4 py-2 hover:bg-gray-100">Registration Process</NavLink>
-            <NavLink to="/msme/document" className="block px-4 py-2 hover:bg-gray-100">Document Required</NavLink>
-            <NavLink to="/msme/scheme" className="block px-4 py-2 hover:bg-gray-100">MSME Scheme</NavLink>
-            <NavLink to="/msme/gst" className="block px-4 py-2 hover:bg-gray-100">New GST Exemption</NavLink>
-          </div>
-        )}
-      </div>
-      <NavLink
-        to="/contact"
-        className={({ isActive }) =>
-          isActive
-            ? "text-main flex flex-col items-center"
-            : "text-[#000] hover:text-main flex flex-col items-center"
-        }
-      >
-        Contact
-        {({ isActive }) => isActive && <span className="mt-1">.</span>}
-      </NavLink>
-
-      {/* Get In Touch Button */}
-      <a
-        href="#getintouch"
-        className="px-4 py-2 bg-main text-white rounded-lg hover:bg-blue-700"
-      >
-        Get In Touch
-      </a>
-    </div>
         </div>
       </div>
       {/* Mobile Menu */}
@@ -188,7 +191,7 @@ const Navbar = () => {
           <NavLink to="/about" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
             About
           </NavLink>
-          
+
           <NavLink to="/startup" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
             Startup Rishi
           </NavLink>

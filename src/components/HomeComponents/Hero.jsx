@@ -1,4 +1,7 @@
 import dotImage from "../../assets/dot.png";
+import LeftImage from '../../assets/left.png'
+import RightImage from '../../assets/right.png'
+
 const Hero = () => {
   return (
     <div className="w-full flex flex-col gap-4 md:gap-6 justify-center items-center min-h-screen font-montserrat relative pb-40 md:pb-0">
@@ -26,53 +29,41 @@ const Hero = () => {
         </p>
       </div>
       <div className="flex gap-8 mt-10 font-montserrat600 mb-28">
-        <button className="bg-main px-4 md:px-8 py-2 md:py-4 text-white rounded-xl">
+        <a href="#section3" className="bg-main px-4 md:px-8 py-2 md:py-4 text-white rounded-xl">
           Get Started
-        </button>
-        <button className="bg-white px-4 md:px-8 py-2 md:py-4 text-black rounded-xl border-2 border-main">
+        </a>
+        <a href="#section4" className="bg-white px-4 md:px-8 py-2 md:py-4 text-black rounded-xl border-2 border-main">
           Learn More
-        </button>
+        </a>
       </div>
 
-       {/* left image */}
+      {/* left image */}
 
       <div className="absolute left-20 mt-14 hidden md:block">
         <div className="absolute -inset-8 bg-gradient-to-b from-[#bbd5fb] to-transparent blur-xl rounded-lg opacity-80"></div>
-        <div className="w-[210px] h-[210px] relative flex justify-center items-center border-dashed rounded-lg  border-2 border-main">
+        <div className="w-[210px] h-[210px] relative flex justify-center items-center rounded-lg">
           <img
-            src="https://via.placeholder.com/200x200"
+            src={LeftImage}
             alt="Placeholder Image"
-            className="object-contain w-[200px] h-[200px] rounded-lg"
+            className="object-contain w-[200px] h-[200px] rounded-lg xl:w-[300px] xl:h-[300px]"
           />
           <div className="absolute -left-16 -bottom-24 z-20">
-        <img src={dotImage} alt="image" className="w-[150px] h-[120px]" />
-      </div>
-        </div>
-        
-      </div>
-
-        {/* right image */}
-
-      <div className="absolute md:right-14 md:bottom-28 bottom-10">
-        {/* Custom Dashed Corner Borders */}
-        <div
-          className="absolute inset-0 border-0 rounded-xl"
-          style={{
-            borderStyle: "dashed",
-            borderWidth: "0 0 0 0",
-            borderColor: "#3E703E",
-          }}
-        >
-          <div className="absolute top-[-5px] left-[-5px] w-[80px] h-[80px] border-t-2 border-l-2 border-green-700 border-dashed rounded-tl-lg"></div>
-          <div className="absolute -bottom-[6px] -right-[6px] md:bottom-[45px] md:right-[25px] w-[80px] h-[80px] border-b-2 border-r-2 border-green-700 border-dashed rounded-br-lg"></div>
+            <img src={dotImage} alt="image" className="w-[150px] h-[120px]" />
+          </div>
         </div>
 
+      </div>
+
+      {/* right image */}
+
+      <div className="absolute md:right-14 md:bottom-28 bottom-10 flex flex-col xl:bottom-40">
         <div className="relative w-[200px] h-[250px] md:w-[250px] md:h-[350px] ">
           {/* Main Content */}
+          <div className="absolute -inset-8 bg-gradient-to-b from-[#bbd5fb] to-transparent blur-xl rounded-lg opacity-80"></div>
           <img
-            src="https://via.placeholder.com/220x300"
+            src={RightImage}
             alt="image"
-            className="w-[200px] h-[250px] md:w-[220px] md:h-[300px] rounded-lg shadow-[0_0_50px_15px_#c1d8fc]"
+            className="w-[200px] h-[250px] md:w-[220px] md:h-[300px] rounded-lg relative z-30 xl:w-[260px] xl:h-[350px]"
           />
 
           {/* Overlay Content */}

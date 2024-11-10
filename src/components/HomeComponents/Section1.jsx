@@ -1,3 +1,7 @@
+import Image1 from '../../assets/image.png'
+import Image2 from '../../assets/image2.png'
+
+
 
 const Section1 = () => {
   return (
@@ -6,9 +10,9 @@ const Section1 = () => {
         <div className=" flex flex-col gap-2 ">
         <div className="w-[35px] h-[35px] bg-main rounded-md flex justify-start"></div>
 
-        <img src="https://via.placeholder.com/400x400" alt="placeholder" className="w-[250px] md:w-[400px] h-[250px] md:h-[400px] object-cover rounded-[20px]" />
+        <img src={Image1} alt="placeholder" className="w-[250px] md:w-[400px] h-[250px] md:h-[400px] object-cover rounded-[20px]" />
         </div>
-        <img src="https://via.placeholder.com/250x250" alt="placeholder" className="w-[150px] md:w-[200px] h-[150px] md:h-[200px] object-cover rounded-[20px] absolute md:-bottom-4 -bottom-14 left-8 md:left-10" />
+        <img src={Image2} alt="placeholder" className="w-[150px] md:w-[200px] h-[150px] md:h-[200px] object-cover rounded-[20px] absolute md:-bottom-4 -bottom-14 left-8 md:left-10" />
         
       </div>
       <div className="w-full md:w-[50%] flex flex-col items-center md:items-start gap-8">
@@ -16,7 +20,7 @@ const Section1 = () => {
         <h1 className="w-[90%] md:w-full text-center md:text-start text-2xl md:text-5xl font-bold md:leading-[60px] ">Discover Story Excellence in Tax Consulting</h1>
         <p className="w-[90%] md:w-full text-center md:text-start text-sm md:text-base font-montserrat500 md:leading-10">Tax Rishi is a leading tax consulting firm dedicated to helping individuals and businesses achieve their financial objectives. With a client-first approach and a commitment to excellence, our expert team ensures that you get the most out of your tax filings while staying compliant with all regulations</p>
         <p className="w-[90%] md:w-full text-center md:text-start text-sm md:text-base font-montserrat500 md:leading-10">Our team of experienced and highly qualified tax professionals brings a wealth of knowledge and expertise across various industries</p>
-        <button className="bg-main text-white font-bold w-1/3 py-2 md:py-4 rounded-lg md:rounded-2xl">Learn More</button>
+        <a href='#section4' className="bg-main text-white flex justify-center items-center font-bold w-1/3 py-2 md:py-4 rounded-lg md:rounded-2xl">Learn More</a>
       </div>
     </div>
   )

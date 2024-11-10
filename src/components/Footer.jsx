@@ -38,37 +38,47 @@ const Footer = () => {
         <div className="flex w-full  justify-around md:hidden">
           <div className="">
             <div className="flex flex-col mb-8 md:mb-0 gap-4">
+              <h1 className="text-white font-bold text-lg">Pages</h1>
+              <a href="/" className="text-white text-[12px]">Home</a>
+              <a href="/about" className="text-white text-[12px]">About Us</a>
+              <a href="/#section3" className="text-white text-[12px]">Services</a>
+              <a href="/#testimonial" className="text-white text-[12px]">Testimonial</a>
+            </div>
+            <div className="flex flex-col mb-8 md:mb-0 gap-4">
               <h1 className="text-white font-bold text-lg">Services</h1>
               <p className="text-white text-[12px]">Tax Consulting</p>
               <p className="text-white text-[12px]">Tax Services</p>
               <p className="text-white text-[12px]">Tax Resolution</p>
               <p className="text-white text-[12px]">Trust Planning</p>
             </div>
-            <div className="flex flex-col gap-4">
+            {/* <div className="flex flex-col gap-4">
               <h1 className="text-white font-bold text-lg">About</h1>
               <p className="text-white text-[12px]">Our Mission</p>
               <p className="text-white text-[12px]">Our Values</p>
               <p className="text-white text-[12px]">Our Story</p>
               <p className="text-white text-[12px]">Why Choose Us</p>
-            </div>
+            </div> */}
           </div>
           <div>
-            <div className="flex flex-col mb-8 md:mb-0 gap-4">
-              <h1 className="text-white font-bold text-lg">Pages</h1>
-              <p className="text-white text-[12px]">Home</p>
-              <p className="text-white text-[12px]">About Us</p>
-              <p className="text-white text-[12px]">Services</p>
-              <p className="text-white text-[12px]">Testimonial</p>
-            </div>
-            <div className="flex flex-col gap-4">
-              <h1 className="text-white font-bold text-lg">Contact</h1>
-              <p className="text-white text-[12px]">Facebook</p>
-              <p className="text-white text-[12px]">Instagram</p>
-              <p className="text-white text-[12px]">Twitter</p>
+            <div className="flex flex-col">
+              <h1 className="text-white font-bold text-lg mb-4">Contact</h1>
+              <p className="text-white text-[12px]">+91-120-4137900/ 4560009</p>
+              <p className="text-white text-[12px] my-4">+91-9810038818 / 9654640119</p>
+              <p className="text-white text-[12px] mb-4">support@taxrishi.in</p>
+              <p className="text-white text-[12px]">Office No. 102, Shree Mahaveer Arcade,</p>
+              <p className="text-white text-[12px]"> First Floor, C-19, Sector-15, Adjoing SBI Bank,</p>
+              <p className="text-white text-[12px]"> Near Atal Chowk, Vasundhara, Ghaziabad - 201012 (U.P.)</p>
             </div>
           </div>
         </div>
         <div className="w-full  justify-around hidden md:flex">
+          <div className="flex flex-col mb-8 md:mb-0 gap-4">
+            <h1 className="text-white font-bold text-lg">Pages</h1>
+            <a href="/" className="text-white text-[12px]">Home</a>
+            <a href="/about" className="text-white text-[12px]">About Us</a>
+            <a href="/#section3" className="text-white text-[12px]">Services</a>
+            <a href="/#testimonial" className="text-white text-[12px]">Testimonial</a>
+          </div>
           <div className="flex flex-col mb-8 md:mb-0 gap-4">
             <h1 className="text-white font-bold text-lg">Services</h1>
             <p className="text-white text-[12px]">Tax Consulting</p>
@@ -76,30 +86,25 @@ const Footer = () => {
             <p className="text-white text-[12px]">Tax Resolution</p>
             <p className="text-white text-[12px]">Trust Planning</p>
           </div>
-            <div className="flex flex-col gap-4">
+          {/* <div className="flex flex-col gap-4">
               <h1 className="text-white font-bold text-lg">About</h1>
               <p className="text-white text-[12px]">Our Mission</p>
               <p className="text-white text-[12px]">Our Values</p>
               <p className="text-white text-[12px]">Our Story</p>
               <p className="text-white text-[12px]">Why Choose Us</p>
-            </div>
-        
-          <div className="flex flex-col mb-8 md:mb-0 gap-4">
-            <h1 className="text-white font-bold text-lg">Pages</h1>
-            <p className="text-white text-[12px]">Home</p>
-            <p className="text-white text-[12px]">About Us</p>
-            <p className="text-white text-[12px]">Services</p>
-            <p className="text-white text-[12px]">Testimonial</p>
-          </div>
-          <div className="flex flex-col gap-4">
-            <h1 className="text-white font-bold text-lg">Contact</h1>
-            <p className="text-white text-[12px]">Facebook</p>
-            <p className="text-white text-[12px]">Instagram</p>
-            <p className="text-white text-[12px]">Twitter</p>
+            </div> */}
+          <div className="flex flex-col">
+            <h1 className="text-white font-bold text-lg mb-4">Contact</h1>
+            <p className="text-white text-[12px]">+91-120-4137900/ 4560009</p>
+            <p className="text-white text-[12px] my-4">+91-9810038818 / 9654640119</p>
+            <p className="text-white text-[12px] mb-4">support@taxrishi.in</p>
+            <p className="text-white text-[12px]">Office No. 102, Shree Mahaveer Arcade,</p>
+            <p className="text-white text-[12px]"> First Floor, C-19, Sector-15, Adjoing SBI Bank,</p>
+            <p className="text-white text-[12px]"> Near Atal Chowk, Vasundhara, Ghaziabad - 201012 (U.P.)</p>
           </div>
         </div>
         <div className="flex justify-center text-[12px] text-white">
-          © 2093 Tax Rishi Tax Consulting. All rights reserved.
+          ©️2024 Tax rishi, made with 💖 by Campaigning Source, all rights reserved
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Modal from "react-modal";
+import { useLocation } from "react-router-dom";
 
 // Set up the Modal's root element for accessibility
 Modal.setAppElement("#root");
@@ -33,11 +34,13 @@ const questions = [
 ];
 
 const FinancialQuizModal = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState(Array(questions.length).fill(null));
   const [score, setScore] = useState(null);
   const [quizStarted, setQuizStarted] = useState(false);
+
+  const location = useLocation()
 
   const handleAnswerClick = (index) => {
     const updatedAnswers = [...selectedAnswers];
@@ -63,6 +66,14 @@ const FinancialQuizModal = () => {
       calculateScore();
     }
   };
+
+  useEffect(() => {
+    if (location.pathname === '/') {
+      setIsOpen(true)
+    } else {
+      setIsOpen(false)
+    }
+  }, [])
 
   const closeModal = () => {
     setIsOpen(false);
@@ -105,11 +116,10 @@ const FinancialQuizModal = () => {
                     <button
                       key={index}
                       onClick={() => handleAnswerClick(index)}
-                      className={`px-4 py-2 w-2/3 border rounded-md ${
-                        selectedAnswers[currentStep] === index ? "bg-blue-500 text-white" : "bg-gray-200 hover:bg-blue-300"
-                      }`}
+                      className={`px-4 py-2 w-2/3 border rounded-md ${selectedAnswers[currentStep] === index ? "bg-blue-500 text-white" : "bg-gray-200 hover:bg-blue-300"
+                        }`}
                     >
-                    
+
                       {option}
                     </button>
                   ))}

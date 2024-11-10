@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import bgimg from '../../assets/sec4bg.png';
 import { TfiEmail } from "react-icons/tfi";
 
@@ -56,7 +57,7 @@ const Section4 = () => {
           <p className='font-bold text-[10px]'>Investment Growth Year Over Year</p>
          </div>
          <div className='flex gap-4 md:gap-6 items-center justify-center md:justify-start '><span className='text-base md:text-xl font-bold'>10k+</span><p className='font-bold text-[10px]'>New Investors Joining Everyday</p></div>
-         <div className='w-full flex justify-center md:justify-start'>         <button className='bg-main text-white font-bold text-sm flex justify-center items-center py-3 w-[250px] rounded-lg'>Discover Calculator</button>
+         <div className='w-full flex justify-center md:justify-start'><Link to='/calculator' className='bg-main text-white font-bold text-sm flex justify-center items-center py-3 w-[250px] rounded-lg'>Discover Calculator</Link>
          </div>
       </div>
     </div>

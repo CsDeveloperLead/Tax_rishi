@@ -58,7 +58,7 @@ const Contact = () => {
               cols="30"
               rows="5"
               placeholder="Your Message"
-              className="border p-4 rounded-[20px]"
+              className="border p-4 rounded-[20px] resize-none"
             ></textarea>
             </div>
             <button
@@ -73,14 +73,14 @@ const Contact = () => {
       <div className="w-full md:w-[50%] flex flex-col items-center md:items-start gap-8">
         <div className="bg-[#cdd4f1] text-main font-bold flex justify-center items-center py-2 w-[250px] rounded-3xl">Stay tuned with us</div>
         <h1 className="text-2xl md:text-5xl text-center md:text-start font-bold md:leading-[50px]">Keep Connected & Lets Get In Touch With Our Team</h1>
-        <p className="text-gray-400 text-center md:text-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p className="text-gray-400 text-center md:text-start">Maximize Your Tax Savings with Expert Guidance from TaxRishi – Your Trusted Partner in Tax Solutions.</p>
         <div className="flex flex-col items-center md:items-start md:flex-row gap-6">
             <span>
                 <img src={con1} alt="" className="w-8 h-8 object-contain"/>
             </span>
             <span className="flex flex-col items-center md:items-start gap-2 font-semibold">
                 <p className="text-base md:text-xl ">Our Head Office</p>
-                <p className="text-gray-400 text-base text-center md:text-start ">Gresik a</p>
+                <p className="text-gray-400 text-base text-center md:text-start "> Office No. 102, Shree Mahaveer Arcade, First Floor, C-19, Sector-15, Adjoing SBI Bank, Near Atal Chowk, Vasundhara, Ghaziabad - 201012 (U.P.)</p>
             </span>
         </div>
         <div className="flex flex-col items-center md:items-start md:flex-row gap-6">
@@ -89,7 +89,7 @@ const Contact = () => {
             </span>
             <span className="flex flex-col items-center md:items-start gap-2 font-semibold">
                 <p className="text-base md:text-xl ">Email Address</p>
-                <p className="text-gray-400 text-base text-center md:text-start ">Hello@Email.com</p>
+                <p className="text-gray-400 text-base text-center md:text-start ">support@taxrishi.in</p>
             </span>
         </div>
         <div className="flex flex-col items-center md:items-start md:flex-row gap-6">
@@ -98,7 +98,7 @@ const Contact = () => {
             </span>
             <span className="flex flex-col items-center md:items-start gap-2 font-semibold">
                 <p className="text-base md:text-xl ">Telephone</p>
-                <p className="text-gray-400 text-base text-center md:text-start ">( +62 ) 123 456 789</p>
+                <p className="text-gray-400 text-base text-center md:text-start ">(+91) 9654640119</p>
             </span>
         </div>
       </div>

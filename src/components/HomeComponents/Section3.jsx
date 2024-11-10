@@ -49,7 +49,7 @@ const Section3 = () => {
   ];
 
   return (
-    <div className="w-full flex flex-col items-center justify-center font-montserrat mt-20 mb-20 gap-6 md:gap-10">
+    <div id="section4" className="w-full flex flex-col items-center justify-center font-montserrat mt-20 mb-20 gap-6 md:gap-10">
       <div className="bg-[#cdd4f1] text-main font-bold px-4 py-2 flex justify-center items-center rounded-[48px] w-[300px]">
         Why Choose Tax Rishi?
       </div>
