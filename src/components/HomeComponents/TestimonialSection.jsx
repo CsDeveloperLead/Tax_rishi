@@ -8,7 +8,7 @@ const TestimonialSection = () => {
   const location = useLocation()
 
   function handlePlay() {
-    videoRef.current.autoplay = true
+    videoRef.current.play();
   }
 
   useEffect(() => {
