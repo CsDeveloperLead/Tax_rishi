@@ -24,7 +24,7 @@ export default {
         main: '#0062f2',
         'custom-blue-start': '#0062F2',
         'custom-blue-end': '#B4C8E6',
-         // Custom color defined here
+        // Custom color defined here
       },
       boxShadow: {
         'custom-combined': `
@@ -35,6 +35,28 @@ export default {
           48.46px 87.47px 80px 0px #00000012
         `,
       },
+      animation: {
+        customBounce: 'customBounce 2s ease-out infinite',
+      },
+      keyframes: {
+        customBounce: {
+          '0%': {
+            transform: 'translateY(0)',
+          },
+          '30%': {
+            transform: 'translateY(-4px)',
+          },
+          '50%': {
+            transform: 'translateY(0)',
+          },
+          '70%': {
+            transform: 'translateY(-2px)',
+          },
+          '100%': {
+            transform: 'translateY(0)',
+          },
+        },
+      }
     },
   },
   plugins: [],

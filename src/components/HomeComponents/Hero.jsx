@@ -45,7 +45,7 @@ const Hero = () => {
           <img
             src={LeftImage}
             alt="Placeholder Image"
-            className="object-contain w-[200px] h-[200px] rounded-lg xl:w-[300px] xl:h-[300px]"
+            className="object-contain w-[200px] h-[200px] rounded-lg xl:w-[300px] xl:h-[300px] animate-customBounce"
           />
           <div className="absolute -left-16 -bottom-24 z-20">
             <img src={dotImage} alt="image" className="w-[150px] h-[120px]" />
@@ -63,7 +63,7 @@ const Hero = () => {
           <img
             src={RightImage}
             alt="image"
-            className="w-[200px] h-[250px] md:w-[220px] md:h-[300px] rounded-lg relative z-30 xl:w-[260px] xl:h-[350px]"
+            className="w-[200px] h-[250px] md:w-[220px] md:h-[300px] rounded-lg relative z-30 xl:w-[260px] xl:h-[350px] animate-customBounce"
           />
 
           {/* Overlay Content */}
