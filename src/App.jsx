@@ -32,6 +32,7 @@ import MsmeGst from './pages/MsmeGst';
 import StartupRegistration from './pages/StartupRegistration';
 import StartupFunding from './pages/StartupFunding';
 import StartupTax from './pages/StartupTax';
+import IrrCalculator from './pages/Irr';
 
 const App = () => {
   return (
@@ -65,6 +66,7 @@ const App = () => {
           <Route path="/compound-interest" element={<Compound />} />
           <Route path="/retirement" element={<Retirement />} />
           <Route path="/gst" element={<Gst />} />
+          <Route path="/irr" element={<IrrCalculator />} />
           <Route path="/msme/registration" element={<MsmeRegistration />} />
           <Route path="/msme/document" element={<MsmeDocument />} />
           <Route path="/msme/scheme" element={<MsmeScheme />} />

@@ -1,5 +1,5 @@
-import about1 from "../../assets/about1.png";
-import about2 from "../../assets/about2.png";
+import about1 from "../../assets/img4.png";
+import about2 from "../../assets/img3.png";
 import { GoArrowRight } from "react-icons/go";
 import AboutImage1 from '../../assets/aboutImage1.png'
 import AboutImage2 from '../../assets/aboutImage2.png'
@@ -14,22 +14,22 @@ const AboutSection1 = () => {
             <img
               src={AboutImage1}
               alt="placeholder"
-              className="rounded-3xl hidden md:block w-[400px] h-[500px]"
+              className="rounded-3xl hidden md:block w-[400px] h-[500px]  object-cover"
             />
             <img
               src={AboutImage1}
               alt="placeholder"
-              className="rounded-3xl md:hidden"
+              className="rounded-3xl md:hidden  w-[250px] h-[400px] object-cover"
             />
             <img
               src={AboutImage2}
               alt="placeholder"
-              className="rounded-3xl absolute top-1/4 left-1/4 hidden md:block w-[400px] h-[500px]"
+              className="rounded-3xl absolute top-1/4 left-1/4 hidden md:block w-[400px] h-[500px]  object-cover"
             />
             <img
               src={AboutImage2}
               alt="placeholder"
-              className="rounded-3xl absolute top-1/4 left-1/4 md:hidden"
+              className="rounded-3xl absolute w-[250px] h-[400px] top-1/4 left-1/4 md:hidden  object-cover"
             />
             <div className="bg-main py-2 md:py-3 rounded-xl text-white flex flex-col px-4 md:px-8 justify-center items-center absolute left-10 md:left-20 -bottom-8">
               <h1 className="font-bold text-xl md:text-2xl">120+</h1>
@@ -45,7 +45,7 @@ const AboutSection1 = () => {
         <h1 className="text-2xl md:text-5xl text-center md:text-start font-bold md:leading-[50px]">We Are in This business Since 15 Years</h1>
         <p className="text-sm text-center md:text-start md:leading-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <div className="flex flex-col items-center md:items-start md:flex-row gap-6">
-          <span>
+          <span className="border border-main rounded-full w-14 h-14 flex justify-center items-center">
             <img src={about1} alt="" className="w-8 h-8 object-contain" />
           </span>
           <span className="flex flex-col items-center md:items-start gap-2 font-semibold">
@@ -54,7 +54,7 @@ const AboutSection1 = () => {
           </span>
         </div>
         <div className="flex flex-col items-center md:items-start md:flex-row gap-6">
-          <span>
+          <span className="border border-main rounded-full w-14 h-14 flex justify-center items-center">
             <img src={about2} alt="" className="w-8 h-8 object-contain" />
           </span>
           <span className="flex flex-col items-center md:items-start gap-2 font-semibold">

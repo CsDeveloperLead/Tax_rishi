@@ -1,5 +1,5 @@
 import Image1 from '../../assets/image.png'
-import Image2 from '../../assets/image2.png'
+import Image2 from '../../assets/hero2.png'
 
 
 
@@ -7,10 +7,21 @@ const Section1 = () => {
   return (
     <div className='flex flex-col md:flex-row md:gap-10 font-montserrat my-10 md:mb-20 md:mx-20'>
       <div className="pl-8 w-full  md:w-[45%] flex flex-col items-center relative">
-        <div className=" flex flex-col gap-2 ">
+        {/* <div className=" flex flex-col gap-2 ">
         <div className="w-[35px] h-[35px] bg-main rounded-md flex justify-start"></div>
 
-        <img src={Image1} alt="placeholder" className="w-[250px] md:w-[400px] h-[250px] md:h-[400px] object-cover rounded-[20px]" />
+        <img src={Image1} alt="placeholder" className="w-[250px] md:w-[400px] h-[250px] md:h-[400px] object-cover rounded-[50px]" />
+        </div>
+        <img src={Image2} alt="placeholder" className="w-[150px] md:w-[200px] h-[150px] md:h-[200px] object-cover rounded-[40px] absolute md:-bottom-4 -bottom-14 left-8 md:left-10 z-50" /> */}
+
+
+        
+     <div className=" flex flex-col gap-2 ">
+        <div className="w-[35px] h-[35px] bg-main rounded-md flex justify-start"></div>
+        <div className='w-[260px] md:w-[460px] h-[260px] md:h-[410px] '>
+        <img src={Image1} alt="placeholder" className="w-full h-full object-cover rounded-[20px]  " />
+
+        </div>
         </div>
         <img src={Image2} alt="placeholder" className="w-[150px] md:w-[200px] h-[150px] md:h-[200px] object-cover rounded-[20px] absolute md:-bottom-4 -bottom-14 left-8 md:left-10" />
         

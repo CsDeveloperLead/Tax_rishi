@@ -15,6 +15,8 @@ const data = [
     { title: 'Compound Interest ', description: 'Calculate compound interest and growth on your investment', link: '/compound-interest' },
     { title: 'Retirement ', description: 'Estimate how much you need to save for retirement', link: '/retirement' },
     { title: 'GST ', description: 'Calculate Goods and Services Tax (GST) on your transactions', link: '/gst' },
+    { title: 'IRR ', description: 'Calculate Internal Rate of return (IRR) on the cash flow', link: '/irr' },
+
   ];
   
 

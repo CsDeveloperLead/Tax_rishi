@@ -1,4 +1,4 @@
-import rect from "../../assets/rect.png";
+// import rect from "../../assets/rect.png";
 import { GoArrowDownRight } from "react-icons/go";
 import ser1 from "../../assets/ser1.png";
 import ser2 from "../../assets/ser2.png";
@@ -97,12 +97,14 @@ const Section2 = () => {
 
       <div className="w-full md:w-[45%] md:h-[700px] flex justify-center items-center ">
         <div className="relative flex justify-center items-center ">
+          <div className="w-[300px] h-[300px] md:w-[500px] md:h-[500px] ">
           <img
             src={Image}
             alt="Image"
-            className="object-cover rounded-l-3xl rounded-b-none w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-md md:rounded-xl"
+            className="w-full h-full object-cover rounded-[20px] "
           />
-          <div className="w-[52px] h-[50px] md:w-[88px] md:h-[88px] absolute top-1 md:top-0 md:left-0 flex rounded-b-md rounded-l-none md:rounded-b-xl md:rounded-l-none bg-white">
+          </div>
+          <div className="w-[52px] h-[50px] md:w-[88px] md:h-[88px] absolute top-0 md:top-0 left-0 md:left-0 flex rounded-b-md rounded-l-none md:rounded-b-xl md:rounded-l-none bg-white">
             <div className="bg-main w-[44px] h-[42px] md:w-[80px] md:h-[80px] rounded-md md:rounded-xl absolute top-1 left-1 md:top-0 md:left-0 flex justify-center items-center text-white ">
               <GoArrowDownRight size={30} />
             </div>
