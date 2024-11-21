@@ -18,8 +18,8 @@
   }
   
   .modal-content {
-    background: #cdd4f1;
-    padding: 2rem;
+    background: #fff;
+    /* padding: 1rem; */
     max-width: 800px;
     height: 500px;
     max-height: 600px;

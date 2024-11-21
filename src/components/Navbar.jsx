@@ -7,6 +7,17 @@ const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null); // Keeps track of the active dropdown
   const startupRef = useRef(null);
   const msmeRef = useRef(null);
+ 
+    const [isExpanded, setIsExpanded] = useState(false);
+    const [isExpanded2, setIsExpanded2] = useState(false);
+  
+    const toggleAccordion = () => {
+      setIsExpanded((prev) => !prev);
+    };
+  
+    const toggleAccordion2 = () => {
+      setIsExpanded2((prev) => !prev);
+    };
 
   const toggleDropdown = (dropdown) => {
     // Toggle the dropdown or close if clicked again
@@ -192,12 +203,86 @@ const Navbar = () => {
             About
           </NavLink>
 
-          <NavLink to="/startup" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
-            Startup Rishi
+          <div className="w-full flex flex-col items-center">
+      {/* Accordion Header */}
+      <div
+        onClick={toggleAccordion}
+        className="cursor-pointer py-2 text-[#000] font-bold hover:text-main flex flex-col items-center"
+      >
+        <span>Startup Rishi</span>
+        <span>{isExpanded ? "" : ""}</span> {/* Icon toggles between up and down */}
+      </div>
+
+      {/* Accordion Content */}
+      {isExpanded && (
+        <div className="flex flex-col items-center ">
+          <NavLink
+            to="/startup/registration"
+            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+          >
+            Startup Registration
           </NavLink>
-          <NavLink to="/msme" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
-            Msme Rishi
+          <NavLink
+            to="/startup/benefits"
+            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+          >
+            Startup Benefits
           </NavLink>
+          <NavLink
+            to="/startup/funding"
+            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+          >
+            Startup Funding
+          </NavLink>
+          <NavLink
+            to="/startup/tax"
+            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+          >
+            Startup Tax Exemption
+          </NavLink>
+        </div>
+      )}
+    </div>
+    <div className="w-full flex flex-col items-center">
+      {/* Accordion Header */}
+      <div
+        onClick={toggleAccordion2}
+        className="cursor-pointer py-2 text-[#000] font-bold hover:text-main flex flex-col items-center"
+      >
+        <span>Msme Rishi</span>
+        <span>{isExpanded ? "" : ""}</span> {/* Icon toggles between up and down */}
+      </div>
+
+      {/* Accordion Content */}
+      {isExpanded2 && (
+        <div className="flex flex-col items-center ">
+          <NavLink
+            to="/msme/registration"
+            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+          >
+            Msme Registration
+          </NavLink>
+          <NavLink
+            to="/msme/document"
+            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+          >
+            Msme Documents
+          </NavLink>
+          <NavLink
+            to="/msme/scheme"
+            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+          >
+            Msme Schemes
+          </NavLink>
+          <NavLink
+            to="/msme/gst"
+            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+          >
+            Msme Gst Exemption
+          </NavLink>
+        </div>
+      )}
+    </div>
           <NavLink to="/contact" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
             Contact
           </NavLink>

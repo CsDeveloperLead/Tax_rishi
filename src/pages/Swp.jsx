@@ -44,10 +44,10 @@ function SWPCalculator() {
   };
 
   return (
-    <div className="mx-10  my-10 md:my-20">
+    <div className="mx-4 md:mx-10  my-10 md:my-20">
       <div className="flex flex-col lg:flex-row ">
-        <div className="w-[75%] flex flex-col gap-10 ">
-          <div className="border h-[620px] flex bg-white p-6 gap-10  rounded-lg shadow-lg">
+        <div className="w-full md:w-[75%] flex flex-col gap-10 ">
+          <div className="border h-auto md:h-[620px] flex flex-col md:flex-row bg-white p-6 gap-10  rounded-lg shadow-lg">
             <div className="w-full md:w-[70%]">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-xl font-bold">SWP Calculator</h2>
@@ -197,11 +197,11 @@ function SWPCalculator() {
               />
             </div>
           </div>
-          <div className="mr-10">
+          <div className="mr-10 w-full">
             {/* <h1 className="text-3xl font-bold text-gray-900 mb-6">
               SIP Calculator – Systematic Investment Plan Calculator
             </h1> */}
-            <p className="text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
               SWP stands for systematic withdrawal plan. Under SWP, if you
               invest lump sum in a mutual fund, you can set an amount you’ll
               withdraw regularly and the frequency at which you’ll withdraw.
@@ -221,14 +221,14 @@ function SWPCalculator() {
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
               How can a SWP calculator assist you?
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
               As per the Systematic Withdrawal Plan, an individual needs to
               invest a particular amount and withdraw a certain amount of the
               corpus invested each month. After withdrawal, the amount will be
               deducted from the investment while it continues to accumulate
               interest.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
               It is difficult to accurately calculate the monthly withdrawals
               and total matured sum. Groww can help you with this complex
               calculations with the its SWP calculator. This Systematic
@@ -240,18 +240,18 @@ function SWPCalculator() {
             <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
               Example of Systematic Withdrawal Plan
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
               As mentioned before, the SWP allows investors to generate both
               monthly revenue as well as an accumulated sum at the end of the
               maturity period. Refer to this investment and withdrawal schedule
               for an in-depth idea.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
               Here, an individual has invested Rs. 50,000 for tenure of 1 year
               along with a systematic withdrawal of Rs. 1,000 per month.
               Interest rate stands at 10%.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
               As such, total return of investments after the end of the tenor
               stands at Rs. 4,565.
             </p>
@@ -260,16 +260,16 @@ function SWPCalculator() {
               <table className="min-w-full table-auto border-collapse">
                 <thead>
                   <tr className="">
-                    <th className="px-4 py-2 border border-gray-300 text-center w-32">
+                    <th className="px-1 md:px-4 py-2 border border-gray-300 text-center md:w-32">
                       Month
                     </th>
-                    <th className="px-4 py-2 border border-gray-300 text-center w-60">
+                    <th className="px-1 md:px-4 py-2 border border-gray-300 text-center md:w-60">
                       Balance at Begin
                     </th>
-                    <th className="px-4 py-2 border border-gray-300 text-center w-60">
+                    <th className="px-1 md:px-4 py-2 border border-gray-300 text-center md:w-60">
                       Withdrawal
                     </th>
-                    <th className="px-4 py-2 border border-gray-300 text-center w-60">
+                    <th className="px-1 md:px-4 py-2 border border-gray-300 text-center md:w-60">
                       Interest Earned
                     </th>
                   </tr>
@@ -451,14 +451,14 @@ function SWPCalculator() {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
               How to use SWP calculator?
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className=" text-sm md:text-base text-justify mb-4">
               The calculator is user-friendly and easy to use first time out.
               However, you need to ensure that all values are properly put in.
             </p>
-            <ul className="w-full list-disc list-inside">
+            <ul className="w-full list-disc text-sm md:text-base text-justify list-inside">
               <li>
                 You will find three columns namely tenure, expected return and
                 amount invested. Fill in the values as per your investment plan.
@@ -469,10 +469,10 @@ function SWPCalculator() {
               </li>
             </ul>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
               How can a SWP calculator benefit you?
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className=" text-sm md:text-base text-justify mb-4">
               Retirees and senior citizens are among the most common investors
               in this scheme. Such individuals obviously require a fixed monthly
               financial input. An SWP can provide the same over and above the
@@ -480,7 +480,7 @@ function SWPCalculator() {
               simple and intuitive systematic withdrawal plan calculator for
               numerous benefits.
             </p>
-            <ul className="w-full list-disc list-inside">
+            <ul className="w-full list-disc text-sm md:text-base text-justify list-inside">
               <li>
                 A Systematic Withdrawal Plan ensures monthly returns while
                 generating RoI on the total investment. This calculator can help
@@ -498,14 +498,14 @@ function SWPCalculator() {
               </li>
             </ul>
 
-            <p className="text-gray-700 my-4">
+            <p className=" text-sm md:text-base text-justify my-4">
               “Looking to invest? Open an account with Groww and start investing
               in direct Mutual Funds for free”
             </p>
           </div>
         </div>
 
-        <div className="w-[25%]">
+        <div className="w-full md:w-[25%]">
          <SideComponent/>
         </div>
       </div>

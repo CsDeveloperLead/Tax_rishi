@@ -9,12 +9,12 @@ import { Link } from "react-router-dom";
 const StartupRegistration = () => {
   return (
     <div className="w-full px-4 md:px-20 my-10 md:my-10 flex gap-10 flex-col md:flex-row font-montserrat">
-      <div className="w-[80%] flex flex-col gap-8">
+      <div className="w-full md:w-[80%] flex flex-col gap-8">
         <div className="flex flex-col gap-6">
-          <h1 className="text-4xl leading-[40px] font-bold">
+          <h1 className="text-2xl  md:text-4xl leading-[40px] font-bold">
             Startup Registration India – 7 Steps to Register your Startup
           </h1>
-          <p className="text-gray-600 text-base leading-8">
+          <p className="text-gray-600 text-sm md:text-base leading-8">
             Startups are booming in India. The government is also supporting
             young entrepreneurs to establish startups. Startups help to boost
             the country's economy. A startup is a business that offers
@@ -25,8 +25,8 @@ const StartupRegistration = () => {
         </div>
 
         <div className="flex flex-col gap-6">
-          <h1 className="text-4xl leading-[40px] font-bold">Startup India</h1>
-          <p className="text-gray-600 text-base leading-8">
+          <h1 className="text-2xl md:text-4xl leading-[40px] font-bold">Startup India</h1>
+          <p className="text-gray-600 text-sm md:text-base leading-8">
             The Government of India, under the leadership of PM Narendra Modi,
             has started and promoted the Startup India initiative to develop the
             Indian economy, recognise and promote startups and attract talented
@@ -35,7 +35,7 @@ const StartupRegistration = () => {
         </div>
 
         <div className="flex flex-col gap-4">
-          <h1 className="text-4xl leading-[40px] font-bold">
+          <h1 className="text-2xl md:text-4xl leading-[40px] font-bold">
             Steps to Register Your Startup With Startup India
           </h1>
           <div className="my-6">
@@ -44,7 +44,7 @@ const StartupRegistration = () => {
 
           <div>
             <p className="">
-              <span className="text-3xl font-bold mr-2">
+              <span className="text-2xl md:text-3xl font-bold mr-2">
                 Step 1: Incorporate your Business
               </span>
             </p>
@@ -69,7 +69,7 @@ const StartupRegistration = () => {
           </div>
           <div>
             <p className="">
-              <span className="text-3xl font-bold mr-2">
+              <span className="text-2xl md:text-3xl font-bold mr-2">
                 Step 2: Register with Startup India
               </span>
             </p>
@@ -91,7 +91,7 @@ const StartupRegistration = () => {
           </div>
           <div>
             <p className="">
-              <span className="text-3xl font-bold mr-2">Step 3: Get DPIIT Recognition</span>
+              <span className="text-2xl md:text-3xl font-bold mr-2">Step 3: Get DPIIT Recognition</span>
              
             </p>
             <p className="my-4">The next step after creating the profile on the Startup India Website is to avail the Department for Promotion of Industry and Internal Trade (DPIIT) Recognition. This recognition helps the startups to avail benefits like access to high-quality intellectual property services and resources, relaxation in public procurement norms, self-certification under labour and environment laws, easy winding of company, access to Fund of Funds, tax exemption for 3 consecutive years and tax exemption on investment above fair market value.</p>
@@ -106,7 +106,7 @@ const StartupRegistration = () => {
           </div>
           <div>
             <p className="">
-              <span className="text-3xl font-bold mr-2">Step 4: Recognition Application</span>
+              <span className="text-2xl md:text-3xl font-bold mr-2">Step 4: Recognition Application</span>
              
             </p>
             <p className="my-4">On the ‘Startup Recognition Form’, you need to fill the details such as the entity details, full address (office), authorised representative details, directors/partner details, information required, startup activities and self-certification. Click on the plus sign on the right-hand side of the form and enter each section of the form.
@@ -121,7 +121,7 @@ const StartupRegistration = () => {
           </div>
           <div>
             <p className="my-4">
-              <span className="text-3xl font-bold mr-2">Step 5: Documents for Registration</span>
+              <span className="text-2xl md:text-3xl font-bold mr-2">Step 5: Documents for Registration</span>
              
             </p>
             <ul className="space-y-4 list-disc ml-4">
@@ -147,7 +147,7 @@ const StartupRegistration = () => {
           </ul>
 
           <p className="my-6">
-              <span className="text-3xl font-bold mr-2">
+              <span className="text-2xl md:text-3xl font-bold mr-2">
               Step 7: Other Areas
               </span>
             </p>
@@ -187,7 +187,7 @@ const StartupRegistration = () => {
            
           </div>
         </div>
-        <h1 className="text-3xl font-bold">Startup India - Key Information</h1>
+        <h1 className="text-2xl md:text-3xl font-bold">Startup India - Key Information</h1>
 
       {/* Key Features of the Fund of Funds Section */}
       <div className="space-y-4">
