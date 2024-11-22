@@ -3,6 +3,9 @@ import Video from '../../assets/video1.mp4'
 import { useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 
+import test1 from '../../assets/test1.png'
+import test2 from '../../assets/test2.png'
+
 const TestimonialSection = () => {
   const videoRef = useRef(null)
   const location = useLocation()
@@ -68,34 +71,36 @@ const TestimonialSection = () => {
             Your browser does not support the video tag.
           </video>
           <div className="flex flex-col items-center md:items-start md:flex-row gap-8 md:absolute md:left-[400px] mt-10 md:mt-0">
-            <div className="w-[350px] md:w-[400px] h-[220px] flex flex-col gap-4 p-6 rounded-2xl bg-white shadow-custom-combined">
+            <div className="w-[350px] md:w-[400px] h-[250px] flex flex-col gap-4 p-6 rounded-2xl bg-white shadow-custom-combined">
               <span>⭐⭐⭐⭐⭐</span>
-              <p className="h-[150px]">
-                “ Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                eiusmod tempor “
+              <p className="">
+                “ My accounting has been never this simpler and tention free. They helped me with my startup funding. I am grateful for that. ☺️ “
               </p>
               <div className="flex  gap-4">
-                <span className="w-[50px] bg-gray-400 h-[50px] rounded-2xl"></span>
+                <span className="w-[50px] bg-gray-400 h-[50px] rounded-full">
+                  <img src={test1} alt="" className="w-full h-full object-cover"/>
+                </span>
                 <span className="flex flex-col justify-center gap-2">
-                  <p className="text-[12px]">Mrs. Shreya Khan</p>
+                  <p className="text-[12px]">5 months ago</p>
                   <p className="text-[10px] text-main font-bold uppercase">
-                    Mrs. Shreya Khan
+                    Pushyamitra Jha
                   </p>
                 </span>
               </div>
             </div>
-            <div className="w-[350px] md:w-[400px] h-[220px] flex flex-col gap-4 p-6 rounded-2xl bg-white shadow-custom-combined">
+            <div className="w-[350px] md:w-[400px] h-[250px] flex flex-col gap-4 p-6 rounded-2xl bg-white shadow-custom-combined">
               <span>⭐⭐⭐⭐⭐</span>
               <p className="h-[150px]">
-                “ Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
-                eiusmod tempor “
+                “ Highly recommended for startup funding and grants “
               </p>
               <div className="flex  gap-4">
-                <span className="w-[50px] bg-gray-400 h-[50px] rounded-2xl"></span>
+                <span className="w-[50px] bg-gray-400 h-[50px] rounded-full">
+                <img src={test2} alt="" className="w-full h-full object-cover"/>
+                </span>
                 <span className="flex flex-col justify-center gap-2">
-                  <p className="text-[12px]">Mrs. Shreya Khan</p>
+                  <p className="text-[12px]">6 months ago</p>
                   <p className="text-[10px] text-main font-bold uppercase">
-                    Mrs. Shreya Khan
+                   Satyam Tyagi
                   </p>
                 </span>
               </div>

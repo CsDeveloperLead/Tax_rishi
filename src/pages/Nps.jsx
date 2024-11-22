@@ -26,10 +26,10 @@ function NpsCalculator() {
   const minAnnuityInvestment = Math.round(maturityAmount * 0.4); // Assuming 40% of maturity goes to annuity
 
   return (
-    <div className="mx-10 my-10 md:my-20">
+    <div className="mx-4 md:mx-10 my-10 md:my-20">
       <div className="flex flex-col lg:flex-row">
-        <div className="w-[75%] flex flex-col gap-10">
-          <div className="border h-[520px] flex bg-white p-6 gap-10  rounded-lg shadow-lg">
+        <div className="w-full md:w-[75%] flex flex-col gap-10">
+          <div className="border h-auto md:h-[520px] flex flex-col md:flex-row bg-white p-6 gap-10  rounded-lg shadow-lg">
             <div className="w-full">
               <h2 className="text-2xl font-bold mb-4">NPS Calculator</h2>
 
@@ -105,7 +105,7 @@ function NpsCalculator() {
               </div>
             </div>
           </div>
-          <div className="mr-10">
+          <div className="w-full mr-10">
             {/* <h1 className="text-3xl font-bold text-gray-900 mb-6">
               SIP Calculator – Systematic Investment Plan Calculator
             </h1> */}
@@ -214,7 +214,7 @@ function NpsCalculator() {
 
           </div>
         </div>
-        <div className="w-[25%]">
+        <div className="w-full md:w-[25%]">
          <SideComponent/>
         </div>
       </div>

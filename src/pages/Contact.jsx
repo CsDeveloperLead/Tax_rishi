@@ -9,8 +9,7 @@ const Contact = () => {
       <div className="w-full md:w-[45%] flex flex-col gap-4 bg-[#f9f9f9] rounded-3xl p-4 md:p-10">
         <h1 className="text-2xl md:text-4xl font-bold">Leave a Message For Us</h1>
         <p className="text-[#6e6e6e] text-sm md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut
+        Navigating Taxes, Maximizing Savings – Your Trusted Taxation Partner. Simplify compliance, focus on growth with us!
         </p>
         <form>
           <div className="flex flex-col gap-4">
@@ -103,9 +102,9 @@ const Contact = () => {
         </div>
       </div>
     </div>
-    <div className="px-4 md:px-20 py-10 mb-10">
+    {/* <div className="px-4 md:px-20 py-10 mb-10">
       <div className="px-20 bg-[#c4c4c4] rounded-3xl  w-full h-[250px]"></div>
-    </div>
+    </div> */}
     </>
   );
 };

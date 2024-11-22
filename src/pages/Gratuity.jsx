@@ -23,10 +23,10 @@ function Gratuity() {
   }, [monthlySalary, yearsOfService]);
 
   return (
-    <div className="mx-10 my-10 md:my-20">
+    <div className="mx-4 md:mx-10 my-10 md:my-20">
       <div className="flex flex-col lg:flex-row">
-        <div className="w-[75%] flex flex-col gap-10">
-          <div className="border h-[500px] flex bg-white p-6 gap-10  rounded-lg shadow-lg">
+        <div className="w-full md:w-[75%] flex flex-col gap-10">
+          <div className="border h-auto md:h-[500px] flex flex-col md:flex-row bg-white p-6 gap-10  rounded-lg shadow-lg">
             <div className="w-full">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-xl font-bold">Gratuity Calculator</h2>
@@ -82,7 +82,7 @@ function Gratuity() {
               </div>
             </div>
           </div>
-          <div className="mr-10">
+          <div className="w-full mr-10">
             {/* <h1 className="text-3xl font-bold text-gray-900 mb-6">
               SIP Calculator – Systematic Investment Plan Calculator
             </h1> */}
@@ -195,7 +195,7 @@ function Gratuity() {
             </p>
           </div>
         </div>
-        <div className="w-[25%]">
+        <div className="w-full md:w-[25%]">
          <SideComponent/>
         </div>
       </div>

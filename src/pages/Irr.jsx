@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Pie } from "react-chartjs-2";
 import { Chart, ArcElement, Tooltip, Legend } from "chart.js";
 import SideComponent from "../components/SideComponent";
+import { Link } from "react-router-dom";
 
 // Register the required elements
 Chart.register(ArcElement, Tooltip, Legend);
@@ -66,10 +67,10 @@ function IrrCalculator() {
   };
 
   return (
-    <div className="mx-10 my-10 md:my-20">
+    <div className="mx-4 md:mx-10 my-10 md:my-20">
       <div className="flex flex-col lg:flex-row ">
-        <div className="w-[75%] flex flex-col gap-10 ">
-          <div className="border h-[600px] flex bg-white p-6 gap-10 rounded-lg shadow-lg">
+        <div className="w-full md:w-[75%] flex flex-col gap-10 ">
+          <div className="border h-auto md:h-[600px] flex flex-col md:flex-row bg-white p-6 gap-10 rounded-lg shadow-lg">
             <div className="w-full md:w-[70%] ">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-xl font-bold">IRR Calculator</h2>
@@ -182,10 +183,11 @@ function IrrCalculator() {
                   </span>
                 </p>
               </div>
-
+              <Link to="/contact">
               <button className="bg-main hover:bg-blue-800 text-white font-semibold mt-4 px-6 py-2 rounded-lg">
                 INVEST NOW
               </button>
+              </Link>
             </div>
 
             {/* Right Sidebar - Pie Chart */}
@@ -196,12 +198,12 @@ function IrrCalculator() {
               />
             </div>
           </div>
-          <div className="mr-10">
+          <div className="w-full mr-10">
            hello
           </div>
         </div>
 
-        <div className="w-[25%]">
+        <div className="w-full md:w-[25%]">
           <SideComponent/>
         </div>
       </div>

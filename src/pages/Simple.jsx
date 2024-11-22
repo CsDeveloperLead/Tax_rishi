@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Pie } from "react-chartjs-2";
 import { Chart, ArcElement, Tooltip, Legend } from "chart.js";
 import SideComponent from "../components/SideComponent";
+import { Link } from "react-router-dom";
 
 
 // Register the required elements
@@ -39,10 +40,10 @@ function Simple() {
   };
 
   return (
-    <div className="mx-10 my-10 md:my-20">
+    <div className="mx-4 md:mx-10 my-10 md:my-20">
       <div className="flex flex-col lg:flex-row">
-        <div className="w-[75%] flex flex-col gap-10">
-          <div className="border h-[620px] flex bg-white p-6 gap-10  rounded-lg shadow-lg">
+        <div className="w-full md:w-[75%] flex flex-col gap-10">
+          <div className="border h-auto md:h-[620px] flex flex-col md:flex-row bg-white p-6 gap-10  rounded-lg shadow-lg">
             <div className="w-full md:w-[65%]">
               <div className="flex items-center justify-between mb-4">
                 <h2 className="text-xl font-bold">Simple Interest Calculator</h2>
@@ -133,10 +134,11 @@ function Simple() {
                   </span>
                 </p>
               </div>
-
+              <Link to="/contact">
               <button className="bg-main hover:bg-blue-800 text-white font-semibold mt-4 px-6 py-2 rounded-lg">
                 INVEST NOW
               </button>
+              </Link>
             </div>
 
             {/* Right Sidebar - Pie Chart */}
@@ -147,7 +149,7 @@ function Simple() {
               />
             </div>
           </div>
-          <div className="mr-10">
+          <div className="w-full mr-10">
             {/* <h1 className="text-3xl font-bold text-gray-900 mb-6">
               SIP Calculator – Systematic Investment Plan Calculator
             </h1> */}
@@ -254,7 +256,7 @@ function Simple() {
             </ul>
           </div>
         </div>
-        <div className="w-[25%]">
+        <div className="w-full md:w-[25%]">
          <SideComponent/>
         </div>
       </div>

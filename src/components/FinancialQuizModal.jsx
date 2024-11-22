@@ -173,7 +173,7 @@ const FinancialQuizModal = () => {
                 <button onClick={startQuiz} className="px-10 py-1 bg-main text-white rounded-md">
                   Yes
                 </button>
-                <button onClick={closeModal} className="px-10 py-1 bg-red-500 text-white rounded-md">
+                <button onClick={closeModal} className="px-10 py-1 border-main border-2 text-black  rounded-md">
                   No
                 </button>
               </div>

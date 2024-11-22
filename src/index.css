@@ -45,5 +45,15 @@
     }
   }
 
+
+  input[type="range"] {
+    border: none; 
+    outline: #0062f2; 
+    /* -webkit-appearance: none;  */
+    /* appearance: none; */
+  }
+  
+  
+
   
   

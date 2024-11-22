@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Pie } from "react-chartjs-2";
 import { Chart, ArcElement, Tooltip, Legend } from "chart.js";
 import SideComponent from "../components/SideComponent";
+import { Link } from "react-router-dom";
 
 
 // Register the required elements
@@ -134,10 +135,11 @@ function Mutual() {
                   </span>
                 </p>
               </div>
-
+              <Link to="/contact">
               <button className="bg-main hover:bg-blue-800 text-white font-semibold mt-4 px-6 py-2 rounded-lg">
                 INVEST NOW
               </button>
+              </Link>
             </div>
 
             {/* Right Sidebar - Pie Chart */}
