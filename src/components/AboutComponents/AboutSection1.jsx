@@ -44,7 +44,7 @@ const AboutSection1 = () => {
         <div className="bg-[#cdd4f1] text-main flex justify-center items-center font-bold rounded-3xl py-3 w-full md:w-1/2">Wanna Know Our Story ?</div>
         <h1 className="text-2xl md:text-5xl text-center md:text-start font-bold md:leading-[50px]">We Are in This business Since 15 Years</h1>
         <p className="text-sm text-center md:text-start md:leading-6">Our is a professionally managed firm. The team consist of skilled and proficient Chartered Accountants, corporate financial advisors and tax consultants, who can handle all financial services</p>
-        <div className="flex flex-col  md:items-start md:flex-row gap-6">
+        <div className="flex flex-col items-center  md:items-start md:flex-row gap-6">
           <span className="border border-main rounded-full w-14 h-14 flex justify-center items-center">
             <img src={about1} alt="" className="w-8 h-8 object-contain" />
           </span>
