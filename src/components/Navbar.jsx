@@ -95,10 +95,10 @@ const Navbar = () => {
 
             <div className="relative" ref={startupRef}>
               <NavLink
-                to="#"
+                to="/startup/registration"
                 className={({ isActive }) =>
                   isActive
-                    ? " flex flex-col items-center cursor-pointer"
+                    ? " flex flex-col text-main hover:text-main items-center cursor-pointer"
                     : "text-[#000] hover:text-main flex flex-col items-center cursor-pointer"
                 }
                 onClick={() => toggleDropdown("startup")}
@@ -119,10 +119,10 @@ const Navbar = () => {
             {/* Msme Dropdown */}
             <div className="relative" ref={msmeRef}>
               <NavLink
-                to="#"
+                to="/msme/registration"
                 className={({ isActive }) =>
                   isActive
-                    ? "flex flex-col items-center cursor-pointer"
+                    ? "flex flex-col  text-main hover:text-main items-center cursor-pointer"
                     : "text-[#000] hover:text-main flex flex-col items-center cursor-pointer"
                 }
                 onClick={() => toggleDropdown("msme")}

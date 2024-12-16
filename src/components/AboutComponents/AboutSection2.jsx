@@ -7,7 +7,7 @@ import img4 from '../../assets/img4.png';
 
 const RollingNumber = ({ targetNumber, duration, stepTime }) => {
   const [currentNumber, setCurrentNumber] = useState(0);
-
+  
   useEffect(() => {
     const totalSteps = duration / stepTime;
     const stepValue = targetNumber / totalSteps;

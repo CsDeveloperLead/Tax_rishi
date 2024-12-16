@@ -65,7 +65,7 @@ const Section3 = () => {
         {cardData.map((card) => (
           <div
             key={card.id}
-            className="bg-[#f8f8f8] w-full md:w-[430px] p-6 shadow-md rounded-lg transition-transform transform group cursor-pointer hover:bg-main hover:scale-105"
+            className="bg-[#f8f8f8] w-full md:w-[430px] p-6 shadow-md rounded-lg  duration-500  group cursor-pointer hover:bg-main hover:scale-105"
           >
             {" "}
             <div className="w-12 h-12 bg-main rounded-full flex justify-center items-center">

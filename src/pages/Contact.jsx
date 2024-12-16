@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import con1 from "../assets/con1.png";
 import con2 from "../assets/con2.png";
 import con3 from "../assets/con3.png";
 
+
 const Contact = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
     <div className="px-4 md:px-20 flex flex-col md:flex-row items-center gap-20 my-10 md:my-10 font-montserrat">

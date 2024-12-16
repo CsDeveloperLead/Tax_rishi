@@ -87,11 +87,19 @@ function Fd() {
 
               {/* Total Investment Slider */}
               <div className="my-8">
-                <div className="flex justify-between">
-                  <label className="text-gray-700 font-medium">Total investment</label>
-                  <span className="text-main text-sm bg-[#CDD4F1] w-[100px] px-2 md:px-4 py-1 font-bold text-right">
-                    ₹ {formatToIndianCurrency(totalInvestment)}
-                  </span>
+                <div className="flex justify-between items-center">
+                  <label className="text-gray-700 font-medium">
+                    Total investment
+                  </label>
+                  <input
+                    type="text"
+                    value={totalInvestment}
+                    min="5000"
+                    max="10000000"
+                    step="5000"
+                    onChange={(e) => setTotalInvestment(Number(e.target.value))}
+                    className="text-main text-sm bg-[#CDD4F1] w-[100px] px-2 md:px-4 py-1 font-bold text-right"
+                  />
                 </div>
                 <input
                   type="range"
@@ -106,11 +114,19 @@ function Fd() {
 
               {/* Expected Return Rate Slider */}
               <div className="mb-6">
-                <div className="flex justify-between">
-                  <label className="text-gray-700 font-medium">Expected return rate (p.a)</label>
-                  <span className="text-main text-sm bg-[#CDD4F1] w-[100px] px-2 md:px-4 py-1 font-bold text-right">
-                    {returnRate} %
-                  </span>
+                <div className="flex justify-between items-center">
+                  <label className="text-gray-700 font-medium">
+                    Expected return rate (p.a)
+                  </label>
+                  <input
+                    type="text"
+                    value={returnRate}
+                    min="1"
+                    max="15"
+                    step="1"
+                    onChange={(e) => setReturnRate(Number(e.target.value))}
+                    className="text-main text-sm bg-[#CDD4F1] w-[100px] px-2 md:px-4 py-1 font-bold text-right"
+                  />
                 </div>
                 <input
                   type="range"
@@ -126,9 +142,10 @@ function Fd() {
               {/* Time Period Slider */}
               <div className="mb-6">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">Time period</label>
+                  <label className="text-gray-700 font-medium">
+                    Time period
+                  </label>
                   <div className="flex items-center">
-                    {/* Dropdown for selecting time unit */}
                     <select
                       value={timeUnit}
                       onChange={(e) => {
@@ -141,9 +158,15 @@ function Fd() {
                       <option value="Months">Months</option>
                       <option value="Days">Days</option>
                     </select>
-                    <span className="text-main text-sm bg-[#CDD4F1] w-[120px] px-2 md:px-4 py-1 font-bold text-right">
-                      {getTimePeriodLabel()}
-                    </span>
+                    <input
+                      type="text"
+                      value={timePeriod}
+                      min="1"
+                      max={getMaxValueForUnit()}
+                      step="1"
+                      onChange={(e) => setTimePeriod(Number(e.target.value))}
+                      className="text-main text-sm bg-[#CDD4F1] w-[120px] px-2 md:px-4 py-1 font-bold text-right"
+                    />
                   </div>
                 </div>
                 <input
@@ -179,9 +202,9 @@ function Fd() {
                 </p>
               </div>
               <Link to="/contact">
-              <button className="bg-main hover:bg-blue-800 text-white font-semibold mt-4 px-6 py-2 rounded-lg">
-                INVEST NOW
-              </button>
+                <button className="bg-main hover:bg-blue-800 text-white font-semibold mt-4 px-6 py-2 rounded-lg">
+                  INVEST NOW
+                </button>
               </Link>
             </div>
             {/* Right Sidebar - Pie Chart */}
@@ -197,22 +220,41 @@ function Fd() {
               SIP Calculator – Systematic Investment Plan Calculator
             </h1> */}
             <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
-              A fixed deposit is a type of term investment offered by several banks and NBFCs. These deposits typically offer a higher rate of interest, subject to certain terms and conditions. The amount you deposit in these deposits is locked for a predetermined period which can vary between 7 days and 10 years.
+              A fixed deposit is a type of term investment offered by several
+              banks and NBFCs. These deposits typically offer a higher rate of
+              interest, subject to certain terms and conditions. The amount you
+              deposit in these deposits is locked for a predetermined period
+              which can vary between 7 days and 10 years.
               <br />
               <br />
-              An FD calculator can be used to determine the interest and the amount that it will accrue at the time of maturity. It is a simple-to-use tool available on the Groww website.
+              An FD calculator can be used to determine the interest and the
+              amount that it will accrue at the time of maturity. It is a
+              simple-to-use tool available on the Groww website.
             </p>
 
             <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
               How can an FD calculator help you?
             </h2>
             <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
-              Calculating the maturity amount of an FD can be a complicated and time-consuming process. An online FD calculator enables one to figure it without breaking a sweat
+              Calculating the maturity amount of an FD can be a complicated and
+              time-consuming process. An online FD calculator enables one to
+              figure it without breaking a sweat
             </p>
             <ul className="w-full text-sm md:text-base text-justify list-disc list-inside">
-              <li>FD maturity calculations are complex involving multiple variables. A Fixed deposit calculator does all the hard work and gives you accurate figures just at the click of a button</li>
-              <li>It helps you save a lot of time on these complex calculations.</li>
-              <li>A fixed deposit return calculator enables you to compare the maturity amount and interest rates of FDs offered by different financial institutions. You can make an informed decision when you have all the figures at your disposal.</li>
+              <li>
+                FD maturity calculations are complex involving multiple
+                variables. A Fixed deposit calculator does all the hard work and
+                gives you accurate figures just at the click of a button
+              </li>
+              <li>
+                It helps you save a lot of time on these complex calculations.
+              </li>
+              <li>
+                A fixed deposit return calculator enables you to compare the
+                maturity amount and interest rates of FDs offered by different
+                financial institutions. You can make an informed decision when
+                you have all the figures at your disposal.
+              </li>
             </ul>
 
             {/* <ul className="w-full text-sm md:text-base text-justify list-disc list-inside">
@@ -225,13 +267,16 @@ function Fd() {
               The formula to determine FD maturity amount
             </h2>
             <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
-              There are two types of FD that you may avail of – simple interest FD and compound interest FD. Groww has calculators for both types of FD
+              There are two types of FD that you may avail of – simple interest
+              FD and compound interest FD. Groww has calculators for both types
+              of FD
             </p>
             <p className="text-sm md:text-base text-justify text-black mb-4">
-              The fixed deposit calculator for simple interest FD uses the following formula –
+              The fixed deposit calculator for simple interest FD uses the
+              following formula –
             </p>
             <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
-              {'M = P + (P x r x t/100)'}, where –
+              {"M = P + (P x r x t/100)"}, where –
             </p>
             <ul className="w-full text-sm md:text-base text-justify list-disc list-inside">
               <li>P is the principal amount that you deposit.</li>
@@ -239,7 +284,8 @@ function Fd() {
               <li>t is the tenure in years</li>
             </ul>
             <p className="text-sm md:text-base text-justify text-black mb-4">
-              For example, if you deposit a sum of Rs. 1,00,000 for 5 years at 10% interest, the equation reads –
+              For example, if you deposit a sum of Rs. 1,00,000 for 5 years at
+              10% interest, the equation reads –
             </p>
             <p className="text-sm md:text-base text-justify text-black mb-4">
               M= Rs. 1,00,000 + (1,00,000 x 10 x 5/100)
@@ -248,10 +294,11 @@ function Fd() {
               = Rs. 1,50,000
             </p>
             <p className="text-sm md:text-base text-justify text-black mb-4">
-              For compound interest FD, the FD return calculator uses the following formula –
+              For compound interest FD, the FD return calculator uses the
+              following formula –
             </p>
             <p className="text-sm md:text-base text-justify text-black mb-4">
-              {'M= P + P {(1 + i / 100) t – 1}'}, where –
+              {"M= P + P {(1 + i / 100) t – 1}"}, where –
             </p>
             <ul className="w-full text-sm md:text-base text-justify list-disc list-inside">
               <li>P is the principal amount</li>
@@ -259,10 +306,11 @@ function Fd() {
               <li>t is the tenure</li>
             </ul>
             <p className="text-sm md:text-base text-justify text-black mb-4">
-              For example, if you take the same variables, the compound interest FD will accrue,
+              For example, if you take the same variables, the compound interest
+              FD will accrue,
             </p>
             <p className="text-sm md:text-base text-justify text-black mb-4">
-              M= Rs. 1,00,000 {' {(1 + 10/100) 5-1} '}
+              M= Rs. 1,00,000 {" {(1 + 10/100) 5-1} "}
             </p>
             <p className="text-sm md:text-base text-justify text-black mb-4">
               Or, Rs. 1,61,051
@@ -271,46 +319,83 @@ function Fd() {
               How to use Groww’s FD calculator?
             </h2>
             <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
-              Know the exact amount you will receive at the time of FD maturity using the FD amount calculator.
+              Know the exact amount you will receive at the time of FD maturity
+              using the FD amount calculator.
             </p>
             <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
               There are several other advantages of using these calculators –
             </p>
             <ul className="w-full text-sm md:text-base text-justify list-disc list-inside">
-              <li>Get the exact amount you are eligible for at the end of your maturity period and plan your future accordingly.</li>
-              <li>Both of these calculators are free for unlimited use by registered users.</li>
-              <li>Compare the maturity amount of different financial institutions easily.</li>
+              <li>
+                Get the exact amount you are eligible for at the end of your
+                maturity period and plan your future accordingly.
+              </li>
+              <li>
+                Both of these calculators are free for unlimited use by
+                registered users.
+              </li>
+              <li>
+                Compare the maturity amount of different financial institutions
+                easily.
+              </li>
             </ul>
             <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
-              Besides the Fixed deposit calculator, you can easily plan your finances using the following calculators. All of our offerings are free to use and you can use them as frequently as you want.
+              Besides the Fixed deposit calculator, you can easily plan your
+              finances using the following calculators. All of our offerings are
+              free to use and you can use them as frequently as you want.
             </p>
             <div className="overflow-x-auto mb-4">
               <table className="min-w-full table-auto border-collapse text-main">
                 <thead>
                   <tr className="">
-                    <th className="px-2 md:px-4 py-2 border border-gray-300 md:w-10" colSpan={2}>Fixed Deposit</th>
+                    <th
+                      className="px-2 md:px-4 py-2 border border-gray-300 md:w-10"
+                      colSpan={2}
+                    >
+                      Fixed Deposit
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="px-2 md:px-4 py-2 border border-gray-300">Types of Fixed Deposit</td>
-                    <td className="px-2 md:px-4 py-2 border border-gray-300 ">Overdraft Against FD</td>
+                    <td className="px-2 md:px-4 py-2 border border-gray-300">
+                      Types of Fixed Deposit
+                    </td>
+                    <td className="px-2 md:px-4 py-2 border border-gray-300 ">
+                      Overdraft Against FD
+                    </td>
                   </tr>
                   <tr>
-                    <td className="px-2 md:px-4 py-2 border border-gray-300 ">Monthly Interest on 1 Lakh Fixed Deposit</td>
-                    <td className="px-2 md:px-4 py-2 border border-gray-300 ">Non Callable Fixed Deposits</td>
+                    <td className="px-2 md:px-4 py-2 border border-gray-300 ">
+                      Monthly Interest on 1 Lakh Fixed Deposit
+                    </td>
+                    <td className="px-2 md:px-4 py-2 border border-gray-300 ">
+                      Non Callable Fixed Deposits
+                    </td>
                   </tr>
                   <tr>
-                    <td className="px-2 md:px-4 py-2 border border-gray-300">Fixed Deposit(FD) Sweep-in</td>
-                    <td className="px-2 md:px-4 py-2 border border-gray-300 ">Auto Renewal of Fixed Deposit</td>
+                    <td className="px-2 md:px-4 py-2 border border-gray-300">
+                      Fixed Deposit(FD) Sweep-in
+                    </td>
+                    <td className="px-2 md:px-4 py-2 border border-gray-300 ">
+                      Auto Renewal of Fixed Deposit
+                    </td>
                   </tr>
                   <tr>
-                    <td className="px-2 md:px-4 py-2 border border-gray-300">Flexi Fixed Deposit</td>
-                    <td className="px-2 md:px-4 py-2 border border-gray-300 ">Senior Citizen FD Interest Rates</td>
+                    <td className="px-2 md:px-4 py-2 border border-gray-300">
+                      Flexi Fixed Deposit
+                    </td>
+                    <td className="px-2 md:px-4 py-2 border border-gray-300 ">
+                      Senior Citizen FD Interest Rates
+                    </td>
                   </tr>
                   <tr>
-                    <td className="px-2 md:px-4 py-2 border border-gray-300">Fixed Deposit Double Scheme</td>
-                    <td className="px-2 md:px-4 py-2 border border-gray-300 ">Monthly Interest Payout Fixed Deposit(FD)</td>
+                    <td className="px-2 md:px-4 py-2 border border-gray-300">
+                      Fixed Deposit Double Scheme
+                    </td>
+                    <td className="px-2 md:px-4 py-2 border border-gray-300 ">
+                      Monthly Interest Payout Fixed Deposit(FD)
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -318,7 +403,7 @@ function Fd() {
           </div>
         </div>
         <div className="w-full md:w-[25%]">
-         <SideComponent/>
+          <SideComponent />
         </div>
       </div>
     </div>

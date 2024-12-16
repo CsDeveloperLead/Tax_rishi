@@ -54,45 +54,56 @@ function Ppf() {
                 </button>
               </div>
 
-              {/* Total Investment Slider */}
-              <div className="my-8">
-                <div className="flex justify-between">
-                  <label className="text-gray-700 font-medium">
-                    Yearly investment
-                  </label>
-                  <span className="text-main text-sm bg-[#CDD4F1] w-[100px] px-1 md:px-4 py-1 font-bold text-right">
-                    ₹ {formatToIndianCurrency(totalInvestment)}
-                  </span>
-                </div>
-                <input
-                  type="range"
-                  min="500"
-                  max="150000"
-                  step="500"
-                  value={totalInvestment}
-                  onChange={(e) => setTotalInvestment(Number(e.target.value))}
-                  className="w-full h-2 bg-gray-200 rounded-lg cursor-pointer"
-                />
-              </div>
+             {/* Yearly Investment Slider */}
+<div className="my-8">
+  <div className="flex justify-between items-center">
+    <label className="text-gray-700 font-medium">Yearly investment</label>
+    <input
+      type="text"
+      value={totalInvestment}
+      min="500"
+      max="150000"
+      step="500"
+      onChange={(e) => setTotalInvestment(Number(e.target.value))}
+      className="text-main text-sm bg-[#CDD4F1] w-[100px] px-4 py-1 font-bold text-right"
+    />
+  </div>
+  <input
+    type="range"
+    min="500"
+    max="150000"
+    step="500"
+    value={totalInvestment}
+    onChange={(e) => setTotalInvestment(Number(e.target.value))}
+    className="w-full h-2 bg-gray-200 rounded-lg cursor-pointer mt-4"
+  />
+</div>
 
-              {/* Time Period Slider */}
-              <div className="mb-6">
-                <div className="flex justify-between">
-                  <label className="text-gray-700 font-medium">Time period</label>
-                  <span className="text-main text-sm bg-[#CDD4F1] w-[100px] px-1 md:px-4 py-1 font-bold text-right">
-                    {timePeriod} Yr
-                  </span>
-                </div>
-                <input
-                  type="range"
-                  min="15"
-                  max="50"
-                  step="1"
-                  value={timePeriod}
-                  onChange={(e) => setTimePeriod(Number(e.target.value))}
-                  className="w-full h-2 bg-gray-200 rounded-lg cursor-pointer"
-                />
-              </div>
+{/* Time Period Slider */}
+<div className="mb-6">
+  <div className="flex justify-between items-center">
+    <label className="text-gray-700 font-medium">Time period</label>
+    <input
+      type="text"
+      value={timePeriod}
+      min="15"
+      max="50"
+      step="1"
+      onChange={(e) => setTimePeriod(Number(e.target.value))}
+      className="text-main text-sm bg-[#CDD4F1] w-[100px] px-4 py-1 font-bold text-right"
+    />
+  </div>
+  <input
+    type="range"
+    min="15"
+    max="50"
+    step="1"
+    value={timePeriod}
+    onChange={(e) => setTimePeriod(Number(e.target.value))}
+    className="w-full h-2 bg-gray-200 rounded-lg cursor-pointer mt-4"
+  />
+</div>
+
 
               {/* Expected Return Rate Slider */}
               <div className="mb-6">
