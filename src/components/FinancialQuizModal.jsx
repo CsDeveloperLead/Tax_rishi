@@ -167,7 +167,7 @@ const FinancialQuizModal = () => {
               </div>
             )
           ) : (
-            <div className="my-10">
+            <div className="my-10 md:my-40">
               <p className="text-lg font-medium mb-4">Do you want to take the quiz?</p>
               <div className="flex justify-center space-x-4 ">
                 <button onClick={startQuiz} className="px-10 py-1 bg-main text-white rounded-md">
