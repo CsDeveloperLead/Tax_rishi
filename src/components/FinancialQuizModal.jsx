@@ -96,20 +96,20 @@ const FinancialQuizModal = () => {
       className="modal-content"
       overlayClassName="modal-overlay"
     >
-      <div className="flex h-full">
+      <div className="flex flex-col md:flex-row h-full">
         {/* Left Section */}
-        <div className="w-1/2 bg-[#caddff] rounded-l-[8px]  text-main flex items-center justify-center flex-col p-8">
+        <div className="w-full md:w-1/2 bg-[#caddff] rounded-l-[8px]  text-main flex items-center justify-center flex-col p-8">
           <h2 className="text-2xl font-bold mb-4">Financial Knowledge Quiz</h2>
           <p className="text-center">Test your financial knowledge and learn new insights!</p>
           <img
             src={pop1} // Replace with your illustration path
             alt="Quiz Illustration"
-            className="w-3/4 mt-6"
+            className="w-[40%] md:w-3/4 mt-6"
           />
         </div>
 
         {/* Right Section */}
-        <div className="w-1/2 h-full flex flex-col justify-center items-center  relative">
+        <div className="w-full md:w-1/2 h-full flex flex-col justify-center items-center  relative ">
           {/* Progress Bar */}
           {quizStarted && score === null && (
             <div className="w-full bg-gray-200  h-2 mb-4 absolute -top-0">
@@ -125,7 +125,7 @@ const FinancialQuizModal = () => {
             score === null ? (
               <>
                 <div>
-                  <p className="text-md font-medium mb-8">
+                  <p className="text-md font-medium my-8 md:mt-28">
                     Q{currentStep + 1}. {questions[currentStep].question}
                   </p>
                   <div className="flex flex-col items-center gap-4">
@@ -149,27 +149,27 @@ const FinancialQuizModal = () => {
                 <button
                   onClick={nextStep}
                   disabled={selectedAnswers[currentStep] === null}
-                  className="mt-6 w-[120px] text-base bg-blue-600 text-white py-2 rounded-md"
+                  className="mt-6 w-[120px] text-base bg-blue-600 text-white py-2 rounded-md mb-4"
                 >
                   {currentStep < questions.length - 1 ? "Next" : "See Results"}
                 </button>
               </>
             ) : (
-              <div className="text-center">
+              <div className="text-center md:mt-32">
                 <p className="text-lg font-medium">Your Financial Knowledge Score:</p>
                 <p className="text-2xl font-bold text-blue-600">{score}%</p>
                 <button
                   onClick={closeModal}
-                  className="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md"
+                  className="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md mb-4"
                 >
                   Close
                 </button>
               </div>
             )
           ) : (
-            <div>
+            <div className="my-10">
               <p className="text-lg font-medium mb-4">Do you want to take the quiz?</p>
-              <div className="flex justify-center space-x-4">
+              <div className="flex justify-center space-x-4 ">
                 <button onClick={startQuiz} className="px-10 py-1 bg-main text-white rounded-md">
                   Yes
                 </button>
