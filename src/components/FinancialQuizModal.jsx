@@ -44,6 +44,11 @@ const FinancialQuizModal = () => {
   );
   const [score, setScore] = useState(null);
   const [quizStarted, setQuizStarted] = useState(false);
+  const [user, setUser] = useState({
+    name: "",
+    age: "",
+    number: "",
+  })
 
   const location = useLocation();
 
@@ -56,11 +61,34 @@ const FinancialQuizModal = () => {
 
   const nextStep = () => {
     if (currentStep <= 4) {
+      // For steps 1-4, simply move to the next step
       setCurrentStep(currentStep + 1);
     } else if (currentStep === 5) {
-      setCurrentStep(currentStep + 1);
-      calculateScore();
+      // When reaching step 5, validate all fields
+      if (user.name === "" || user.age === "" || user.number === "") {
+        alert("Please fill all the fields.");
+      } else if (!validateAge(user.age)) {
+        alert("Please enter a valid age.");
+      } else if (!validatePhoneNumber(user.number)) {
+        alert("Please enter a valid phone number.");
+      } else {
+        // If everything is valid, proceed to the next step and calculate score
+        setCurrentStep(currentStep + 1);
+        calculateScore();
+      }
     }
+  };
+
+  // Helper function to validate age
+  const validateAge = (age) => {
+    const agePattern = /^[1-9][0-9]*$/; // Basic check for valid positive integers
+    return agePattern.test(age);
+  };
+
+  // Helper function to validate phone number
+  const validatePhoneNumber = (number) => {
+    const phonePattern = /^[0-9]{10}$/; // Assuming 10-digit phone number
+    return phonePattern.test(number);
   };
 
   const calculateScore = () => {
@@ -72,9 +100,8 @@ const FinancialQuizModal = () => {
     });
     const percentage = (correctAnswers / questions.length) * 100;
     setScore(percentage);
-    console.log(percentage);
-
     localStorage.setItem("score", JSON.stringify(percentage))
+    localStorage.setItem("user", JSON.stringify(user))
   };
 
   useEffect(() => {
@@ -83,7 +110,7 @@ const FinancialQuizModal = () => {
     } else {
       setIsOpen(false);
     }
-  }, [location.pathname]);
+  }, []);
 
   const closeModal = () => {
     setIsOpen(false);
@@ -112,18 +139,18 @@ const FinancialQuizModal = () => {
     >
       <div
         className={`w-full flex flex-col md:flex-row ${isReversed ? (window.innerWidth < 768 ? "reverse2" : "reverse") : ""
-          } h-1/2 md:h-full p-1 rounded-2xl mt-0 md:mt-0`}
+          } h-full md:h-full p-1 rounded-2xl mt-0 md:mt-0`}
       >
         {/* Left Section */}
         <div
-          className="w-full md:w-1/2 h-[400px] md:h-full transform rounded-l-[8px] text-main rounded-2xl box1 "
+          className="w-full md:w-1/2 h-1/2 md:h-full transform rounded-l-[8px] text-main rounded-2xl box1 "
           style={{ transition: "transform 1s ease" }}
         >
-          <div className="w-full h-1/2 md:h-full">
+          <div className="w-full h-full md:h-full">
             <img
               src={quiz}
               alt="quiz logo"
-              className="h-[370px] md:h-full w-full object-cover rounded-xl"
+              className="h-full md:h-full w-full md:object-cover rounded-xl"
             />
           </div>
         </div>
@@ -177,42 +204,64 @@ const FinancialQuizModal = () => {
                               </button>
                             ))}
                           </div>
-                          {/* <button
-                      onClick={nextStep}
-                      disabled={selectedAnswers[currentStep] === null}
-                      className="mt-6 w-[120px] text-base bg-blue-600 text-white py-1 md:py-2 rounded-md mb-1 md:mb-4"
-                    >
-                      {currentStep < questions.length - 1
-                        ? "Next"
-                        : "See Results"}
-                    </button> */}
                         </div>
                       </div>
                     </div>
-                    : <div className="w-full px-2 h-full flex flex-col mb-8 md:mt-20 md:mb-0 font-montserrat">
-                      <div className="w-full h-auto flex flex-col md:flex-row gap-3 ">
-                        <div className="w-full h-auto flex flex-col md:w-[45%] gap-2">
-                          <label htmlFor="name" className="font-semibold">Name</label>
-                          <input type="text" id="name" className="py-2 px-3 border-2 rounded-sm" placeholder="Enter Name" />
+                    : <div className="flex flex-col items-center justify-center w-full h-full font-montserrat px-4">
+                      <div className="w-full max-w-md bg-white shadow-md rounded-lg p-2 md:p-6">
+                        <h1 className="md:text-2xl font-bold text-center  md:mb-2">User Information</h1>
+                        <p className="text-sm text-center text-red-500">*Fill Information to get your result</p>
+
+                        <div className="w-full flex flex-col md:flex-row gap-2 md:gap-4 mt-2 md:mt-10">
+                          <div className="w-full flex flex-col md:w-[50%]">
+                            <label htmlFor="name" className="text-sm font-semibold mb-1">Name</label>
+                            <input
+                              type="text"
+                              id="name"
+                              value={user.name}
+                              onChange={(e) => setUser({ ...user, name: e.target.value })}
+                              className="py-1 md:py-2 px-3 border rounded-full focus:ring-2 focus:ring-main focus:outline-none"
+                              placeholder="Enter your name"
+                            />
+                          </div>
+                          <div className="w-full flex flex-col md:w-[50%]">
+                            <label htmlFor="age" className="text-sm font-semibold mb-1">Age</label>
+                            <input
+                              type="number"
+                              id="age"
+                              value={user.age}
+                              onChange={(e) => setUser({ ...user, age: e.target.value })}
+                              className="py-1 md:py-2 px-3 border rounded-full focus:ring-2 focus:ring-main focus:outline-none"
+                              placeholder="Enter your age"
+                            />
+                          </div>
                         </div>
-                        <div className="w-full h-auto flex flex-col md:w-[45%] gap-2">
-                          <label htmlFor="age" className="font-semibold">Age</label>
-                          <input type="number" id="age" className="py-2 px-3 border-2 rounded-sm" placeholder="Enter Your Age" />
+
+                        <div className="w-full flex flex-col gap-2 md:gap-4 mt-2 md:mt-4">
+                          <label htmlFor="number" className="text-sm font-semibold mb-1">Number</label>
+                          <input
+                            type="number"
+                            id="number"
+                            value={user.number}
+                            onChange={(e) => setUser({ ...user, number: e.target.value })}
+                            className="py-1 md:py-2 px-3 border rounded-full focus:ring-2 focus:ring-main focus:outline-none"
+                            placeholder="Enter your number"
+                          />
                         </div>
+
+                        <button
+                          onClick={nextStep}
+                          className="w-full mt-4 md:mt-6 py-1.5 md:py-2 bg-main text-white font-medium rounded-md hover:bg-blue-700"
+                        >
+                          Click to View Result
+                        </button>
                       </div>
-                      <div className="w-full h-auto flex flex-col gap-2 mt-3">
-                        <label htmlFor="number" className="font-semibold">Number</label>
-                        <input type="number" id="number" className="py-2 px-3 border-2 rounded-sm" placeholder="Enter Number" />
-                      </div>
-                      <button onClick={nextStep} className="w-[200px] mx-auto mt-6 text-base bg-blue-600 text-white py-1 md:py-2 rounded-md mb-1 md:mb-4 md:hover:bg-blue-700">
-                        Click to View Result
-                      </button>
                     </div>
                 }
 
               </>
             ) : (
-              <div className="w-full h-full flex flex-col justify-center items-center text-center mb-36 md:mb-0 md:mt-32 ">
+              <div className="w-full h-full flex flex-col justify-center items-center text-center mb-0 md:mb-0 ">
                 <p className="text-lg font-medium">
                   Your Financial Knowledge Score:
                 </p>

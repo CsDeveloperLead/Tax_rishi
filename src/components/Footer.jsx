@@ -28,7 +28,7 @@ const Footer = () => {
           <span>
             <img src={foot2} alt="image" className="w-6 h-6 object-contain" />
           </span>
-          <Link to="https://www.linkedin.com/company/taxrishi/" target="_blank">
+          <Link to="https://www.linkedin.com/company/taxrishi-taxes-simplified/" target="_blank">
             <span>
               <img src={foot3} alt="image" className="w-6 h-6 object-contain" />
             </span>
