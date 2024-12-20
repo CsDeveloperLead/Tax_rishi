@@ -56,12 +56,12 @@ const TestimonialSection = () => {
       </div>
 
       <div className="w-full flex items-center mb-20">
-        <div className="relative flex flex-col md:flex-row w-full items-center">
+        <div className="relative flex flex-col lg:flex-row w-full items-center">
           <video
             ref={videoRef}
             controls
             width="450"
-            className="rounded-2xl w-full md:w-[35%]"
+            className="rounded-2xl w-full lg:w-[35%]"
             poster="https://via.placeholder.com/300x200.png?text=Video+Thumbnail" // Add your thumbnail image here
           >
             <source
@@ -70,8 +70,8 @@ const TestimonialSection = () => {
             />
             Your browser does not support the video tag.
           </video>
-          <div className="flex flex-col items-center md:items-start md:flex-row gap-8 md:absolute md:left-[400px] mt-10 md:mt-0">
-            <div className="w-[350px] md:w-[400px] h-[250px] flex flex-col gap-4 p-6 rounded-2xl bg-white shadow-custom-combined">
+          <div className="w-full flex flex-col items-center md:justify-center lg:justify-start lg:items-start md:flex-row gap-8 lg:absolute lg:w-auto lg:left-[300px] xl:left-[360px] 2xl:left-[540px] mt-10 lg:mt-0">
+            <div className="w-[350px] lg:w-[300px] lg:h-[270px] xl:h-[250px] xl:w-[400px] h-[250px] flex flex-col gap-4 p-6 rounded-2xl bg-white shadow-custom-combined">
               <span>⭐⭐⭐⭐⭐</span>
               <p className="">
                 “ My accounting has been never this simpler and tention free. They helped me with my startup funding. I am grateful for that. ☺️ “
@@ -88,7 +88,7 @@ const TestimonialSection = () => {
                 </span>
               </div>
             </div>
-            <div className="w-[350px] md:w-[400px] h-[250px] flex flex-col gap-4 p-6 rounded-2xl bg-white shadow-custom-combined">
+            <div className="w-[350px] lg:w-[300px] lg:h-[270px] xl:h-[250px] xl:w-[400px] h-[250px] flex flex-col gap-4 p-6 rounded-2xl bg-white shadow-custom-combined">
               <span>⭐⭐⭐⭐⭐</span>
               <p className="h-[150px]">
                 “ Highly recommended for startup funding and grants “

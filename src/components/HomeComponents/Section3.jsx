@@ -61,11 +61,11 @@ const Section3 = () => {
       <p className="w-[95%] md:w-full text-[14px] md:text-base text-center">
         Trust us to make tax season stress-free and beneficial for you
       </p>
-      <div className="w-full px-4 md:px-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="w-full px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:place-items-center">
         {cardData.map((card) => (
           <div
             key={card.id}
-            className="bg-[#f8f8f8] w-full md:w-[430px] p-6 shadow-md rounded-lg  duration-500  group cursor-pointer hover:bg-main hover:scale-105"
+            className="bg-[#f8f8f8] w-full xl:w-[420px] p-6 shadow-md rounded-lg  duration-500  group cursor-pointer hover:bg-main hover:scale-105"
           >
             {" "}
             <div className="w-12 h-12 bg-main rounded-full flex justify-center items-center">

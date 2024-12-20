@@ -42,7 +42,7 @@ const AboutSection1 = () => {
           Wanna Know Our Story ?
         </div>
         <h1 className="text-2xl md:text-5xl text-center md:text-start font-bold md:leading-[50px]">
-          We Are in This business Since 15 Years
+          We Are in This business Since 1991
         </h1>
         <p className="text-sm text-center md:text-start md:leading-6">
           Our is a professionally managed firm. The team consist of skilled and
@@ -66,7 +66,7 @@ const AboutSection1 = () => {
             <img src={about2} alt="" className="w-8 h-8 object-contain" />
           </span>
           <span className="flex flex-col items-center md:items-start gap-2 font-semibold">
-            <p className="text-base md:text-xl ">15 Years Of Experience</p>
+            <p className="text-base md:text-xl ">34 Years Of Experience</p>
             <p className="text-gray-400 text-base text-center md:text-start ">
               Our vision is to be the most impactful & trustable
               consultant firm.

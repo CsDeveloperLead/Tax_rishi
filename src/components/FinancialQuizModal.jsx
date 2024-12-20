@@ -50,11 +50,12 @@ const FinancialQuizModal = () => {
   const handleAnswerClick = (index) => {
     const updatedAnswers = [...selectedAnswers];
     updatedAnswers[currentStep] = index;
-    setSelectedAnswers(updatedAnswers);
+    setSelectedAnswers(updatedAnswers)
+    nextStep();
   };
 
   const nextStep = () => {
-    if (currentStep < questions.length - 1) {
+    if (currentStep <= 5) {
       setCurrentStep(currentStep + 1);
     } else {
       calculateScore();
@@ -104,10 +105,9 @@ const FinancialQuizModal = () => {
       className="modal-content "
       overlayClassName="modal-overlay"
     >
-       <div
-        className={`w-full flex flex-col md:flex-row ${
-          isReversed ? (window.innerWidth < 768 ? "reverse2" : "reverse") : ""
-        } h-1/2 md:h-full p-1 rounded-2xl mt-0 md:mt-0`}
+      <div
+        className={`w-full flex flex-col md:flex-row ${isReversed ? (window.innerWidth < 768 ? "reverse2" : "reverse") : ""
+          } h-1/2 md:h-full p-1 rounded-2xl mt-0 md:mt-0`}
       >
         {/* Left Section */}
         <div
@@ -117,7 +117,7 @@ const FinancialQuizModal = () => {
           <div className="w-full h-1/2 md:h-full">
             <img
               src={quiz}
-              alt=""
+              alt="quiz logo"
               className="h-[370px] md:h-full w-full object-cover rounded-xl"
             />
           </div>
@@ -140,52 +140,74 @@ const FinancialQuizModal = () => {
 
           {/* Quiz Content */}
           {quizStarted ? (
-            score === null ? (
+            currentStep <= 5 ? (
               <>
-                <div className="w-full px-2 h-full flex flex-col mb-6 md:mb-0">
-                  <div className="w-full flex justify-between items-center">
-                    <img src={logo} alt="logo" className="w-20 h-20" />
-                    <div>
-                      <p className="text-base  bg-main text-white font-semibold rounded-full px-10 py-2">
-                        {currentStep + 1}/{questions.length}
-                      </p>
-                    </div>
-                  </div>
-                  <div className="w-full h-full flex flex-col items-center justify-center ">
-                    <p className="text-md font-medium text-center mb-8 ">
-                      Q{currentStep + 1}. {questions[currentStep].question}
-                    </p>
-                    <div className="flex flex-col items-center gap-2 md:gap-4">
-                      <div className="grid grid-cols-1 gap-2  md:gap-6">
-                        {questions[currentStep].options.map((option, index) => (
-                          <button
-                            key={index}
-                            onClick={() => handleAnswerClick(index)}
-                            className={`w-[220px] text-sm py-1 md:py-2 border rounded-3xl hover:scale-110 transition duration-200 ${
-                              selectedAnswers[currentStep] === index
-                                ? "bg-main text-white"
-                                : "bg-white border-2 border-gray-500 hover:bg-blue-500 hover:text-white"
-                            }`}
-                          >
-                            {option}
-                          </button>
-                        ))}
+                {
+                  currentStep <= 4
+                    ? <div className="w-full px-2 h-full flex flex-col mb-6 md:mb-0">
+                      <div className="w-full flex justify-between items-center">
+                        <img src={logo} alt="logo" className="w-20 h-20" />
+                        <div>
+                          <p className="text-base  bg-main text-white font-semibold rounded-full px-10 py-2">
+                            {currentStep + 1}/{questions.length}
+                          </p>
+                        </div>
                       </div>
-                      <button
-                        onClick={nextStep}
-                        disabled={selectedAnswers[currentStep] === null}
-                        className="mt-6 w-[120px] text-base bg-blue-600 text-white py-1 md:py-2 rounded-md mb-1 md:mb-4"
-                      >
-                        {currentStep < questions.length - 1
-                          ? "Next"
-                          : "See Results"}
+                      <div className="w-full h-full flex flex-col items-center justify-center ">
+                        <p className="text-md font-medium text-center mb-8 ">
+                          Q{currentStep + 1}. {questions[currentStep].question}
+                        </p>
+                        <div className="flex flex-col items-center gap-2 md:gap-4">
+                          <div className="grid grid-cols-1 gap-2  md:gap-6">
+                            {questions[currentStep].options.map((option, index) => (
+                              <button
+                                key={index}
+                                onClick={() => handleAnswerClick(index + 1)}
+                                className={`w-[220px] text-sm py-1 md:py-2 border rounded-3xl hover:scale-110 transition duration-200 ${selectedAnswers[currentStep] === index + 1
+                                  ? "bg-main text-white"
+                                  : "bg-white border-2 border-gray-500 hover:bg-blue-500 hover:text-white"
+                                  }`}
+                              >
+                                {option}
+                              </button>
+                            ))}
+                          </div>
+                          {/* <button
+                      onClick={nextStep}
+                      disabled={selectedAnswers[currentStep] === null}
+                      className="mt-6 w-[120px] text-base bg-blue-600 text-white py-1 md:py-2 rounded-md mb-1 md:mb-4"
+                    >
+                      {currentStep < questions.length - 1
+                        ? "Next"
+                        : "See Results"}
+                    </button> */}
+                        </div>
+                      </div>
+                    </div>
+                    : <div className="w-full px-2 h-full flex flex-col mb-8 md:mt-20 md:mb-0 font-montserrat">
+                      <div className="w-full h-auto flex flex-col md:flex-row gap-3 ">
+                        <div className="w-full h-auto flex flex-col md:w-[45%] gap-2">
+                          <label htmlFor="name" className="font-semibold">Name</label>
+                          <input type="text" id="name" className="py-2 px-3 border-2 rounded-sm" placeholder="Enter Name" />
+                        </div>
+                        <div className="w-full h-auto flex flex-col md:w-[45%] gap-2">
+                          <label htmlFor="age" className="font-semibold">Age</label>
+                          <input type="number" id="age" className="py-2 px-3 border-2 rounded-sm" placeholder="Enter Your Age" />
+                        </div>
+                      </div>
+                      <div className="w-full h-auto flex flex-col gap-2 mt-3">
+                        <label htmlFor="number" className="font-semibold">Number</label>
+                        <input type="number" id="number" className="py-2 px-3 border-2 rounded-sm" placeholder="Enter Number" />
+                      </div>
+                      <button onClick={() => setCurrentStep(currentStep + 1)} className="w-[200px] mx-auto mt-6 text-base bg-blue-600 text-white py-1 md:py-2 rounded-md mb-1 md:mb-4 md:hover:bg-blue-700">
+                        Click to View Result
                       </button>
                     </div>
-                  </div>
-                </div>
+                }
+
               </>
             ) : (
-              <div className="w-full h-full flex flex-col justify-center items-center text-center mb-36 md:mb-0 ">
+              <div className="w-full h-full flex flex-col justify-center items-center text-center mb-36 md:mb-0 md:mt-32 ">
                 <p className="text-lg font-medium">
                   Your Financial Knowledge Score:
                 </p>
@@ -200,7 +222,7 @@ const FinancialQuizModal = () => {
             )
           ) : (
             <div className="w-full flex flex-col gap-10 md:gap-20 h-full p-4">
-              <div className="w-full flex justify-between items-center mt-10">
+              <div className="w-full flex justify-between items-center mt-0 lg:mt-10">
                 <img src={logo} alt="logo" className="w-20 h-20" />
                 <div className="flex flex-col items-center">
                   <p className="text-xl font-medium text-[#b2b2b2]">

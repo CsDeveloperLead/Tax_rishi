@@ -7,17 +7,17 @@ const Navbar = () => {
   const [activeDropdown, setActiveDropdown] = useState(null); // Keeps track of the active dropdown
   const startupRef = useRef(null);
   const msmeRef = useRef(null);
- 
-    const [isExpanded, setIsExpanded] = useState(false);
-    const [isExpanded2, setIsExpanded2] = useState(false);
-  
-    const toggleAccordion = () => {
-      setIsExpanded((prev) => !prev);
-    };
-  
-    const toggleAccordion2 = () => {
-      setIsExpanded2((prev) => !prev);
-    };
+
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded2, setIsExpanded2] = useState(false);
+
+  const toggleAccordion = () => {
+    setIsExpanded((prev) => !prev);
+  };
+
+  const toggleAccordion2 = () => {
+    setIsExpanded2((prev) => !prev);
+  };
 
   const toggleDropdown = (dropdown) => {
     // Toggle the dropdown or close if clicked again
@@ -46,7 +46,7 @@ const Navbar = () => {
   }, []);
   return (
     <nav className="bg-white shadow-md font-montserrat">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7.5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link to='/'
@@ -79,7 +79,7 @@ const Navbar = () => {
             </button>
           </div>
           {/* Desktop Menu */}
-          <div className="hidden md:flex md:items-center space-x-10 font-bold">
+          <div className="hidden md:flex md:items-center space-x-10 text-sm font-bold">
             {/* Home Link */}
             <NavLink
               to="/"
@@ -95,6 +95,7 @@ const Navbar = () => {
 
             <div className="relative" ref={startupRef}>
               <NavLink
+                onMouseEnter={() => setActiveDropdown("startup")}
                 to="/startup/registration"
                 className={({ isActive }) =>
                   isActive
@@ -103,11 +104,11 @@ const Navbar = () => {
                 }
                 onClick={() => toggleDropdown("startup")}
               >
-                Startup Rishi
+                StartupRishi
                 {({ isActive }) => isActive && <span className="mt-1">.</span>}
               </NavLink>
               {activeDropdown === "startup" && (
-                <div className="absolute top-full mt-4 -left-16 bg-white border rounded shadow-lg z-50 w-[250px]">
+                <div onClick={() => setActiveDropdown(null)} className="absolute top-full mt-4 -left-16 bg-white border rounded shadow-lg z-50 w-[250px]">
                   <NavLink to="/startup/registration" className="block px-4 py-2 hover:bg-gray-100">Registration Process</NavLink>
                   <NavLink to="/startup/benefits" className="block px-4 py-2 hover:bg-gray-100">Benefits</NavLink>
                   <NavLink to="/startup/funding" className="block px-4 py-2 hover:bg-gray-100">Startup Funding</NavLink>
@@ -119,6 +120,7 @@ const Navbar = () => {
             {/* Msme Dropdown */}
             <div className="relative" ref={msmeRef}>
               <NavLink
+                onMouseEnter={() => setActiveDropdown("msme")}
                 to="/msme/registration"
                 className={({ isActive }) =>
                   isActive
@@ -127,11 +129,11 @@ const Navbar = () => {
                 }
                 onClick={() => toggleDropdown("msme")}
               >
-                Msme Rishi
+                MsmeRishi
                 {({ isActive }) => isActive && <span className="mt-1">.</span>}
               </NavLink>
               {activeDropdown === "msme" && (
-                <div className="absolute top-full mt-4 -left-16 bg-white border rounded shadow-lg z-50 w-[250px]">
+                <div onClick={() => setActiveDropdown(null)} className="absolute top-full mt-4 -left-16 bg-white border rounded shadow-lg z-50 w-[250px]">
                   <NavLink to="/msme/registration" className="block px-4 py-2 hover:bg-gray-100">Registration Process</NavLink>
                   <NavLink to="/msme/document" className="block px-4 py-2 hover:bg-gray-100">Document Required</NavLink>
                   <NavLink to="/msme/scheme" className="block px-4 py-2 hover:bg-gray-100">MSME Scheme</NavLink>
@@ -180,6 +182,32 @@ const Navbar = () => {
               {({ isActive }) => isActive && <span className="mt-1">.</span>}
             </NavLink>
 
+            {/* Gstrishi */}
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-main flex flex-col items-center"
+                  : "text-[#000] hover:text-main flex flex-col items-center"
+              }
+            >
+              GstRishi
+              {({ isActive }) => isActive && <span className="mt-1">.</span>}
+            </NavLink>
+            
+            {/* Tax rishi foundation */}
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-main flex flex-col items-center"
+                  : "text-[#000] hover:text-main flex flex-col items-center"
+              }
+            >
+              TaxRishi Foundation
+              {({ isActive }) => isActive && <span className="mt-1">.</span>}
+            </NavLink>
+
             {/* Get In Touch Button */}
             <Link
               to='https://wa.link/ponzo9'
@@ -202,87 +230,93 @@ const Navbar = () => {
           <NavLink to="/about" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
             About
           </NavLink>
+          <NavLink to="/" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
+            GstRishi
+          </NavLink>
+          <NavLink to="/" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
+            TaxRishi Foundation
+          </NavLink>
 
           <div className="w-full flex flex-col items-center">
-      {/* Accordion Header */}
-      <div
-        onClick={toggleAccordion}
-        className="cursor-pointer py-2 text-[#000] font-bold hover:text-main flex flex-col items-center"
-      >
-        <span>Startup Rishi</span>
-        <span>{isExpanded ? "" : ""}</span> {/* Icon toggles between up and down */}
-      </div>
+            {/* Accordion Header */}
+            <div
+              onClick={toggleAccordion}
+              className="cursor-pointer py-2 text-[#000] font-bold hover:text-main flex flex-col items-center"
+            >
+              <span>Startup Rishi</span>
+              <span>{isExpanded ? "" : ""}</span> {/* Icon toggles between up and down */}
+            </div>
 
-      {/* Accordion Content */}
-      {isExpanded && (
-        <div className="flex flex-col items-center ">
-          <NavLink
-            to="/startup/registration"
-            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
-          >
-            Startup Registration
-          </NavLink>
-          <NavLink
-            to="/startup/benefits"
-            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
-          >
-            Startup Benefits
-          </NavLink>
-          <NavLink
-            to="/startup/funding"
-            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
-          >
-            Startup Funding
-          </NavLink>
-          <NavLink
-            to="/startup/tax"
-            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
-          >
-            Startup Tax Exemption
-          </NavLink>
-        </div>
-      )}
-    </div>
-    <div className="w-full flex flex-col items-center">
-      {/* Accordion Header */}
-      <div
-        onClick={toggleAccordion2}
-        className="cursor-pointer py-2 text-[#000] font-bold hover:text-main flex flex-col items-center"
-      >
-        <span>Msme Rishi</span>
-        <span>{isExpanded ? "" : ""}</span> {/* Icon toggles between up and down */}
-      </div>
+            {/* Accordion Content */}
+            {isExpanded && (
+              <div className="flex flex-col items-center ">
+                <NavLink
+                  to="/startup/registration"
+                  className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+                >
+                  Startup Registration
+                </NavLink>
+                <NavLink
+                  to="/startup/benefits"
+                  className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+                >
+                  Startup Benefits
+                </NavLink>
+                <NavLink
+                  to="/startup/funding"
+                  className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+                >
+                  Startup Funding
+                </NavLink>
+                <NavLink
+                  to="/startup/tax"
+                  className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+                >
+                  Startup Tax Exemption
+                </NavLink>
+              </div>
+            )}
+          </div>
+          <div className="w-full flex flex-col items-center">
+            {/* Accordion Header */}
+            <div
+              onClick={toggleAccordion2}
+              className="cursor-pointer py-2 text-[#000] font-bold hover:text-main flex flex-col items-center"
+            >
+              <span>Msme Rishi</span>
+              <span>{isExpanded ? "" : ""}</span> {/* Icon toggles between up and down */}
+            </div>
 
-      {/* Accordion Content */}
-      {isExpanded2 && (
-        <div className="flex flex-col items-center ">
-          <NavLink
-            to="/msme/registration"
-            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
-          >
-            Msme Registration
-          </NavLink>
-          <NavLink
-            to="/msme/document"
-            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
-          >
-            Msme Documents
-          </NavLink>
-          <NavLink
-            to="/msme/scheme"
-            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
-          >
-            Msme Schemes
-          </NavLink>
-          <NavLink
-            to="/msme/gst"
-            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
-          >
-            Msme Gst Exemption
-          </NavLink>
-        </div>
-      )}
-    </div>
+            {/* Accordion Content */}
+            {isExpanded2 && (
+              <div className="flex flex-col items-center ">
+                <NavLink
+                  to="/msme/registration"
+                  className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+                >
+                  Msme Registration
+                </NavLink>
+                <NavLink
+                  to="/msme/document"
+                  className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+                >
+                  Msme Documents
+                </NavLink>
+                <NavLink
+                  to="/msme/scheme"
+                  className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+                >
+                  Msme Schemes
+                </NavLink>
+                <NavLink
+                  to="/msme/gst"
+                  className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+                >
+                  Msme Gst Exemption
+                </NavLink>
+              </div>
+            )}
+          </div>
           <NavLink to="/contact" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
             Contact
           </NavLink>

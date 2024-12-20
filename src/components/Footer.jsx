@@ -1,5 +1,6 @@
 import footmain from "../assets/footmain.png";
 // import foot1 from "../assets/foot1.png";
+import Logo from '../assets/Logo.png'
 import foot2 from "../assets/foot2.png";
 import foot3 from "../assets/foot3.png";
 import { Link } from "react-router-dom";
@@ -9,14 +10,7 @@ const Footer = () => {
     <div className="px-4  py-10 md:p-20 bg-main w-full flex flex-col md:flex-row items-center gap-10 font-montserrat ">
       <div className="w-full md:w-[30%] flex flex-col items-center md:items-start gap-6">
         <div className="flex items-center gap-4">
-          <span className="">
-            <img
-              src={footmain}
-              alt="footmain"
-              className="w-10 h-10 object-contain"
-            />
-          </span>
-          <h1 className="text-white text-2xl font-bold">Tax Rishi</h1>
+          <img src={Logo} alt="Logo" className="w-20 h-20" />
         </div>
         <p className="text-[13px] text-white text-center md:text-start w-full leading-8">
           Tax Rishi is more than just a tax consulting firm we are your
@@ -26,18 +20,18 @@ const Footer = () => {
         </p>
         <div className="flex items-center gap-10">
           <Link to="https://www.instagram.com/taxrishi_taxessimplifed?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-          <span className="text-white">
-          <BsInstagram size={20} />
-          </span>
+            <span className="text-white">
+              <BsInstagram size={20} />
+            </span>
           </Link>
 
           <span>
             <img src={foot2} alt="image" className="w-6 h-6 object-contain" />
           </span>
           <Link to="https://www.linkedin.com/company/taxrishi/" target="_blank">
-          <span>
-            <img src={foot3} alt="image" className="w-6 h-6 object-contain" />
-          </span>
+            <span>
+              <img src={foot3} alt="image" className="w-6 h-6 object-contain" />
+            </span>
           </Link>
         </div>
       </div>
@@ -58,7 +52,7 @@ const Footer = () => {
               <p className="text-white text-[12px]">Tax Resolution</p>
               <p className="text-white text-[12px]">Trust Planning</p>
             </div>
-           
+
           </div>
           <div>
             <div className="flex flex-col items-center md:items-start w-full">

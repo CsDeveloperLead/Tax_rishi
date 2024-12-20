@@ -79,7 +79,7 @@ const Contact = () => {
         <h1 className="text-2xl md:text-5xl text-center md:text-start font-bold md:leading-[50px]">Keep Connected & Lets Get In Touch With Our Team</h1>
         <p className="text-gray-400 text-center md:text-start">Maximize Your Tax Savings with Expert Guidance from TaxRishi – Your Trusted Partner in Tax Solutions.</p>
         <div className="flex flex-col items-center md:items-start md:flex-row gap-6">
-            <span>
+            <span className="flex-shrink-0">
                 <img src={con1} alt="" className="w-8 h-8 object-contain"/>
             </span>
             <span className="flex flex-col items-center md:items-start gap-2 font-semibold">
