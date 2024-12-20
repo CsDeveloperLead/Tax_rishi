@@ -55,9 +55,10 @@ const FinancialQuizModal = () => {
   };
 
   const nextStep = () => {
-    if (currentStep <= 5) {
+    if (currentStep <= 4) {
       setCurrentStep(currentStep + 1);
-    } else {
+    } else if (currentStep === 5) {
+      setCurrentStep(currentStep + 1);
       calculateScore();
     }
   };
@@ -71,6 +72,9 @@ const FinancialQuizModal = () => {
     });
     const percentage = (correctAnswers / questions.length) * 100;
     setScore(percentage);
+    console.log(percentage);
+
+    localStorage.setItem("score", JSON.stringify(percentage))
   };
 
   useEffect(() => {
@@ -83,6 +87,7 @@ const FinancialQuizModal = () => {
 
   const closeModal = () => {
     setIsOpen(false);
+    localStorage.removeItem("score")
   };
 
 
@@ -199,7 +204,7 @@ const FinancialQuizModal = () => {
                         <label htmlFor="number" className="font-semibold">Number</label>
                         <input type="number" id="number" className="py-2 px-3 border-2 rounded-sm" placeholder="Enter Number" />
                       </div>
-                      <button onClick={() => setCurrentStep(currentStep + 1)} className="w-[200px] mx-auto mt-6 text-base bg-blue-600 text-white py-1 md:py-2 rounded-md mb-1 md:mb-4 md:hover:bg-blue-700">
+                      <button onClick={nextStep} className="w-[200px] mx-auto mt-6 text-base bg-blue-600 text-white py-1 md:py-2 rounded-md mb-1 md:mb-4 md:hover:bg-blue-700">
                         Click to View Result
                       </button>
                     </div>
@@ -211,7 +216,7 @@ const FinancialQuizModal = () => {
                 <p className="text-lg font-medium">
                   Your Financial Knowledge Score:
                 </p>
-                <p className="text-2xl font-bold text-blue-600">{score}%</p>
+                <p className="text-2xl font-bold text-blue-600">{JSON.parse(localStorage.getItem("score"))}%</p>
                 <button
                   onClick={closeModal}
                   className="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md mb-4"
