@@ -37,7 +37,7 @@ const questions = [
 
 const FinancialQuizModal = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [order, setOrder] = useState(1);
+  const [isReversed, setIsReversed] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState(
     Array(questions.length).fill(null)
@@ -59,10 +59,6 @@ const FinancialQuizModal = () => {
     } else {
       calculateScore();
     }
-  };
-  const handleIncrement = () => {
-    setQuizStarted(true);
-    setOrder((prevOrder) => prevOrder + 1);
   };
 
   const calculateScore = () => {
@@ -88,6 +84,15 @@ const FinancialQuizModal = () => {
     setIsOpen(false);
   };
 
+
+
+
+  const handleToggleClass = () => {
+    setQuizStarted(true);
+    const isSmallScreen = window.innerWidth < 768; // Example breakpoint for small screens
+    setIsReversed((prev) => !prev); // Toggle the reverse state
+  };
+
   // Progress percentage calculation
   const progressPercentage = ((currentStep + 1) / questions.length) * 100;
 
@@ -96,32 +101,31 @@ const FinancialQuizModal = () => {
       isOpen={isOpen}
       onRequestClose={closeModal}
       contentLabel="Financial Knowledge Quiz"
-      className="modal-content"
+      className="modal-content "
       overlayClassName="modal-overlay"
     >
-      <div
-        className={`w-full flex flex-row ${
-          order % 2 === 0 ? "reverse" : ""
-        } h-full p-1 rounded-2xl`}
-        
+       <div
+        className={`w-full flex flex-col md:flex-row ${
+          isReversed ? (window.innerWidth < 768 ? "reverse2" : "reverse") : ""
+        } h-1/2 md:h-full p-1 rounded-2xl mt-0 md:mt-0`}
       >
         {/* Left Section */}
         <div
-          className="w-full md:w-1/2 h-full transform rounded-l-[8px] text-main rounded-2xl box1"
+          className="w-full md:w-1/2 h-[400px] md:h-full transform rounded-l-[8px] text-main rounded-2xl box1 "
           style={{ transition: "transform 1s ease" }}
         >
-          <div className="w-full h-full">
+          <div className="w-full h-1/2 md:h-full">
             <img
               src={quiz}
               alt=""
-              className="h-full w-full object-cover rounded-xl"
+              className="h-[370px] md:h-full w-full object-cover rounded-xl"
             />
           </div>
         </div>
 
         {/* Right Section */}
         <div
-          className="w-full md:w-1/2 h-full transform flex flex-col items-center  relative box2 "
+          className="w-full md:w-1/2 h-full transform flex flex-col items-center  relative box2  "
           style={{ transition: "transform 1s ease" }}
         >
           {/* Progress Bar */}
@@ -138,8 +142,8 @@ const FinancialQuizModal = () => {
           {quizStarted ? (
             score === null ? (
               <>
-                <div className="w-full px-2 h-full flex flex-col ">
-                  <div className="w-full flex justify-between items-center mt-4">
+                <div className="w-full px-2 h-full flex flex-col mb-6 md:mb-0">
+                  <div className="w-full flex justify-between items-center">
                     <img src={logo} alt="logo" className="w-20 h-20" />
                     <div>
                       <p className="text-base  bg-main text-white font-semibold rounded-full px-10 py-2">
@@ -147,40 +151,41 @@ const FinancialQuizModal = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="w-full h-full flex flex-col items-center justify-center">
-                  <p className="text-md font-medium text-center mb-8 ">
-                    Q{currentStep + 1}. {questions[currentStep].question}
-                  </p>
-                  <div className="flex flex-col items-center gap-4">
-                    <div className="grid grid-cols-1 gap-6">
-                      {questions[currentStep].options.map((option, index) => (
-                        <button
-                          key={index}
-                          onClick={() => handleAnswerClick(index)}
-                          className={`w-[220px] text-sm py-2 border rounded-3xl hover:scale-110 transition duration-200 ${
-                            selectedAnswers[currentStep] === index
-                              ? "bg-main text-white"
-                              : "bg-white border-2 border-gray-500 hover:bg-blue-500 hover:text-white"
-                          }`}
-                        >
-                          {option}
-                        </button>
-                      ))}
+                  <div className="w-full h-full flex flex-col items-center justify-center ">
+                    <p className="text-md font-medium text-center mb-8 ">
+                      Q{currentStep + 1}. {questions[currentStep].question}
+                    </p>
+                    <div className="flex flex-col items-center gap-2 md:gap-4">
+                      <div className="grid grid-cols-1 gap-2  md:gap-6">
+                        {questions[currentStep].options.map((option, index) => (
+                          <button
+                            key={index}
+                            onClick={() => handleAnswerClick(index)}
+                            className={`w-[220px] text-sm py-1 md:py-2 border rounded-3xl hover:scale-110 transition duration-200 ${
+                              selectedAnswers[currentStep] === index
+                                ? "bg-main text-white"
+                                : "bg-white border-2 border-gray-500 hover:bg-blue-500 hover:text-white"
+                            }`}
+                          >
+                            {option}
+                          </button>
+                        ))}
+                      </div>
+                      <button
+                        onClick={nextStep}
+                        disabled={selectedAnswers[currentStep] === null}
+                        className="mt-6 w-[120px] text-base bg-blue-600 text-white py-1 md:py-2 rounded-md mb-1 md:mb-4"
+                      >
+                        {currentStep < questions.length - 1
+                          ? "Next"
+                          : "See Results"}
+                      </button>
                     </div>
-                    <button
-                  onClick={nextStep}
-                  disabled={selectedAnswers[currentStep] === null}
-                  className="mt-6 w-[120px] text-base bg-blue-600 text-white py-2 rounded-md mb-4"
-                >
-                  {currentStep < questions.length - 1 ? "Next" : "See Results"}
-                </button>
-                </div>
                   </div>
                 </div>
-               
               </>
             ) : (
-              <div className="w-full h-full flex flex-col justify-center items-center text-center ">
+              <div className="w-full h-full flex flex-col justify-center items-center text-center mb-36 md:mb-0 ">
                 <p className="text-lg font-medium">
                   Your Financial Knowledge Score:
                 </p>
@@ -194,7 +199,7 @@ const FinancialQuizModal = () => {
               </div>
             )
           ) : (
-            <div className="w-full flex flex-col gap-20 h-full p-4">
+            <div className="w-full flex flex-col gap-10 md:gap-20 h-full p-4">
               <div className="w-full flex justify-between items-center mt-10">
                 <img src={logo} alt="logo" className="w-20 h-20" />
                 <div className="flex flex-col items-center">
@@ -209,9 +214,9 @@ const FinancialQuizModal = () => {
                   <p className="text-lg font-medium mb-4">
                     Do you want to take the quiz?
                   </p>
-                  <div className="flex justify-center space-x-4">
+                  <div className="flex justify-center space-x-4 mb-10 md:mb-0">
                     <button
-                      onClick={handleIncrement}
+                      onClick={handleToggleClass}
                       className="px-10 py-1 bg-main text-white rounded-md"
                     >
                       Yes

@@ -22,15 +22,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000; /* Make sure it overlays all content */
+    z-index: 1000; 
   }
   
   .modal-content {
     background: #fff;
-    /* padding: 1rem; */
     max-width: 950px;
-    height: 650px;
-    /* max-height: 700px; */
     width: 100%;
     border-radius: 16px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -71,8 +68,16 @@
   .reverse .box2{
     transform: translateX(-100%);
   }
-  
-  
+
+  .reverse2 .box1{
+
+    transform: translateY(100%);
+  }
+
+  .reverse2 .box2{
+    transform: translateY(-100%);
+  } 
+
 
   
   
