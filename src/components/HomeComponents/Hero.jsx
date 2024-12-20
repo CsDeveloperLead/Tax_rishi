@@ -40,7 +40,7 @@ const Hero = () => {
       {/* left image */}
 
       <div className="absolute left-20 mt-14 hidden md:block">
-        <div className="absolute -inset-8 bg-gradient-to-b from-[#bbd5fb] to-transparent blur-xl rounded-lg opacity-80"></div>
+        <div className="absolute -inset-8 bg-gradient-to-b from-[#398730] to-transparent blur-xl rounded-lg opacity-80"></div>
         <div className="w-[210px] h-[210px] relative flex justify-center items-center rounded-lg">
           <img
             src={LeftImage}
@@ -59,7 +59,7 @@ const Hero = () => {
       <div className="absolute md:right-14 md:bottom-28 bottom-10 flex flex-col xl:bottom-40">
         <div className="relative w-[200px] h-[250px] md:w-[250px] md:h-[350px] ">
           {/* Main Content */}
-          <div className="absolute -inset-8 bg-gradient-to-b from-[#bbd5fb] to-transparent blur-xl rounded-lg opacity-80"></div>
+          <div className="absolute -inset-8 bg-gradient-to-b from-[#398730] to-transparent blur-xl rounded-lg opacity-80"></div>
           <img
             src={RightImage}
             alt="image"

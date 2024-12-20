@@ -197,7 +197,7 @@ const FinancialQuizModal = () => {
                                 onClick={() => handleAnswerClick(index + 1)}
                                 className={`w-[220px] text-sm py-1 md:py-2 border rounded-3xl hover:scale-110 transition duration-200 ${selectedAnswers[currentStep] === index + 1
                                   ? "bg-main text-white"
-                                  : "bg-white border-2 border-gray-500 hover:bg-blue-500 hover:text-white"
+                                  : "bg-white border-2 border-gray-500 hover:bg-green-700 hover:text-white"
                                   }`}
                               >
                                 {option}
@@ -251,7 +251,7 @@ const FinancialQuizModal = () => {
 
                         <button
                           onClick={nextStep}
-                          className="w-full mt-4 md:mt-6 py-1.5 md:py-2 bg-main text-white font-medium rounded-md hover:bg-blue-700"
+                          className="w-full mt-4 md:mt-6 py-1.5 md:py-2 bg-main text-white font-medium rounded-md hover:bg-green-700"
                         >
                           Click to View Result
                         </button>
@@ -265,10 +265,10 @@ const FinancialQuizModal = () => {
                 <p className="text-lg font-medium">
                   Your Financial Knowledge Score:
                 </p>
-                <p className="text-2xl font-bold text-blue-600">{JSON.parse(localStorage.getItem("score"))}%</p>
+                <p className="text-2xl font-bold text-main">{JSON.parse(localStorage.getItem("score"))}%</p>
                 <button
                   onClick={closeModal}
-                  className="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md mb-4"
+                  className="mt-6 bg-main text-white py-2 px-4 rounded-md mb-4"
                 >
                   Close
                 </button>

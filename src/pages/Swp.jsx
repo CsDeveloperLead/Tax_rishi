@@ -187,7 +187,7 @@ function SWPCalculator() {
                 </p>
               </div>
               <Link to="/contact">
-              <button className="bg-main hover:bg-blue-800 text-white font-semibold mt-4 px-6 py-2 rounded-lg">
+              <button className="bg-main hover:bg-green-700 text-white font-semibold mt-4 px-6 py-2 rounded-lg">
                 INVEST NOW
               </button>
               </Link>

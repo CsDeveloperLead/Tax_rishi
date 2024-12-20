@@ -211,7 +211,7 @@ const Navbar = () => {
             {/* Get In Touch Button */}
             <Link
               to='https://wa.link/ponzo9'
-              className="px-4 py-2 bg-main text-white rounded-lg hover:bg-blue-700"
+              className="px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700"
             >
               Get In Touch
             </Link>

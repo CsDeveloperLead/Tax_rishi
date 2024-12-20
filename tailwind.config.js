@@ -21,7 +21,7 @@ export default {
         montserrat900: 900,
       },
       colors: {
-        main: '#0062f2',
+        main: '#398730',
         'custom-blue-start': '#0062F2',
         'custom-blue-end': '#B4C8E6',
         // Custom color defined here
