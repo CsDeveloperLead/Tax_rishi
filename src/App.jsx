@@ -34,6 +34,7 @@ import StartupRegistration from "./pages/StartupRegistration";
 import StartupFunding from "./pages/StartupFunding";
 import StartupTax from "./pages/StartupTax";
 import IrrCalculator from "./pages/Irr";
+import BlogPage from "./pages/Blogs";
 
 const App = () => {
   useEffect(() => {
@@ -54,6 +55,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
+          <Route path="/blog/:id?" element={<BlogPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/startup" element={<Startup />} />
           <Route path="/msme" element={<Msme />} />

@@ -48,6 +48,7 @@ const FinancialQuizModal = () => {
     name: "",
     age: "",
     number: "",
+    city: ""
   })
 
   const location = useLocation();
@@ -236,7 +237,17 @@ const FinancialQuizModal = () => {
                             />
                           </div>
                         </div>
-
+                        <div className="w-full flex flex-col gap-2 md:gap-4 mt-2 md:mt-4">
+                          <label htmlFor="city" className="text-sm font-semibold mb-1">City</label>
+                          <input
+                            type="text"
+                            id="city"
+                            value={user.city}
+                            onChange={(e) => setUser({ ...user, city: e.target.value })}
+                            className="py-1 md:py-2 px-3 border rounded-full focus:ring-2 focus:ring-main focus:outline-none"
+                            placeholder="Enter your City"
+                          />
+                        </div>
                         <div className="w-full flex flex-col gap-2 md:gap-4 mt-2 md:mt-4">
                           <label htmlFor="number" className="text-sm font-semibold mb-1">Number</label>
                           <input

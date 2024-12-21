@@ -168,6 +168,19 @@ const Navbar = () => {
               {({ isActive }) => isActive && <span className="mt-1">.</span>}
             </NavLink>
 
+            {/* Blog Link */}
+            <NavLink
+              to="/blog"
+              className={({ isActive }) =>
+                isActive
+                  ? "text-main flex flex-col items-center"
+                  : "text-[#14598D] hover:text-main flex flex-col items-center"
+              }
+            >
+              Blogs
+              {({ isActive }) => isActive && <span className="mt-1">.</span>}
+            </NavLink>
+
             {/* Contact Link */}
 
             <NavLink
@@ -229,6 +242,9 @@ const Navbar = () => {
           </NavLink>
           <NavLink to="/about" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
             About
+          </NavLink>
+          <NavLink to="/blog" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
+            Blogs
           </NavLink>
           <NavLink to="/" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
             GstRishi

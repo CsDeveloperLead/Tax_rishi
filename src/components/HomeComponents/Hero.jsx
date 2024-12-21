@@ -63,7 +63,7 @@ const Hero = () => {
           <img
             src={RightImage}
             alt="image"
-            className="w-[200px] h-[250px] md:w-[220px] md:h-[300px] rounded-lg relative z-30 xl:w-[260px] xl:h-[350px] animate-customBounce"
+            className="w-[200px] h-[200px] md:w-[220px] md:h-[250px] rounded-lg relative z-30 xl:w-[260px] xl:h-[250px] xl:mt-10 animate-customBounce"
           />
 
           {/* Overlay Content */}
