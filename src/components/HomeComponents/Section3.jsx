@@ -53,12 +53,12 @@ const Section3 = () => {
       <div className="bg-[#cdd4f1] text-main font-bold px-4 py-2 flex justify-center items-center rounded-[48px] w-[300px]">
         Why Choose Tax Rishi?
       </div>
-      <div className="w-full flex flex-col text-2xl md:text-5xl font-bold text-center gap-1 md:gap-4">
+      <div className="w-full flex flex-col text-2xl md:text-5xl font-bold text-center gap-1 md:gap-4 text-[#14598D]">
         <h1>Unmatched Expertise and</h1>
         <h1>Personal Service</h1>
       </div>
 
-      <p className="w-[95%] md:w-full text-[14px] md:text-base text-center">
+      <p className="w-[95%] md:w-full text-[14px] md:text-base text-center text-[#14598D]">
         Trust us to make tax season stress-free and beneficial for you
       </p>
       <div className="w-full px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:place-items-center">
@@ -78,7 +78,7 @@ const Section3 = () => {
             <h3 className="text-lg text-main group-hover:text-white font-semibold  mb-2">
               {card.title}
             </h3>
-            <p className="text-[12px] group-hover:text-white">{card.description}</p>
+            <p className="text-[12px] group-hover:text-white text-[#14598D]">{card.description}</p>
           </div>
         ))}
       </div>

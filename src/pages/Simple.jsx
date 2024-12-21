@@ -41,7 +41,7 @@ function Simple() {
   };
 
   return (
-    <div className="mx-4 md:mx-10 my-10 md:my-20">
+    <div className="mx-4 md:mx-10 my-10 md:my-20 text-[#14598D]">
       <div className="flex flex-col lg:flex-row">
         <div className="w-full md:w-[75%] flex flex-col gap-10">
           <div className="border h-auto md:h-[620px] flex flex-col md:flex-row bg-white p-6 gap-10  rounded-lg shadow-lg">
@@ -58,7 +58,7 @@ function Simple() {
               {/* Principal Amount Slider */}
               <div className="my-8">
                 <div className="flex justify-between items-center mb-2">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Principal Amount
                   </label>
                   <input
@@ -84,7 +84,7 @@ function Simple() {
               {/* Expected Return Rate Slider */}
               <div className="mb-6">
                 <div className="flex justify-between items-center mb-2">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Rate of Interest (p.a)
                   </label>
                   <input
@@ -108,7 +108,7 @@ function Simple() {
               {/* Time Period Slider */}
               <div className="mb-6">
                 <div className="flex justify-between items-center mb-2">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Time Period
                   </label>
                   <input
@@ -130,7 +130,7 @@ function Simple() {
               </div>
 
               {/* Summary */}
-              <div className="text-gray-700 font-medium mt-6">
+              <div className="font-medium mt-6">
                 <p className="py-2">
                   Principal amount :{" "}
                   <span className="font-semibold">
@@ -169,7 +169,7 @@ function Simple() {
             {/* <h1 className="text-3xl font-bold text-gray-900 mb-6">
               SIP Calculator – Systematic Investment Plan Calculator
             </h1> */}
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Investments earned on a scheme are calculated as gains accumulated
               against the interest accumulated. Such gains are compiled in
               either compound or simple interest. Interest is calculated on the
@@ -182,35 +182,35 @@ function Simple() {
               calculator. These calculators help you easily compute the total
               amount of funds you will be able to generate on maturity.
             </p>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               Simple Interest Formula
             </h2>
-            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+            <h3 className="text-xl font-semibold mt-8 mb-4">
               To calculate Total Maturity Amount Value:
             </h3>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               The simple interest formula for the calculator which is utilized
               to compute the overall gains accumulated is represented as:
             </p>
-            <p className="text-gray-700 mb-4">{"A = P(1 + rt)"}</p>
-            <p className="text-gray-700 mb-4">here:</p>
-            <p className="text-gray-700 mb-1">
+            <p className="mb-4">{"A = P(1 + rt)"}</p>
+            <p className="mb-4">here:</p>
+            <p className="mb-1">
               A represents the Total accumulated Amount (principal + interest)
             </p>
-            <p className="text-gray-700 mb-1">
+            <p className="mb-1">
               P represents the Principal Amount
             </p>
-            <p className="text-gray-700 mb-1">
+            <p className="mb-1">
               r represents the Rate of Interest per year in decimal; r = R/100
             </p>
-            <p className="text-gray-700 mb-1">
+            <p className="mb-1">
               t represents the Time Period (months or years)
             </p>
-            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+            <h3 className="text-xl font-semibold mt-8 mb-4">
               To calculate the Interest on the Investments and loans
             </h3>
-            <p className="text-gray-700 mb-4">SI= P X RX T/100</p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">SI= P X RX T/100</p>
+            <p className="mb-4">
               In it, the variables represent the following –
             </p>
             <div className="overflow-x-auto mb-4">
@@ -243,44 +243,44 @@ function Simple() {
                 </tbody>
               </table>
             </div>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Groww SI calculator uses this formula to help easily determine
               interest rates and gauge the increase in the value of the initial
               investment. Let’s understand it with the help of an instance.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Mr. A has invested an amount of Rs. 15000 at an interest rate of
               5% for almost 2 years. So his SI will be calculated as Rs. (15000
               X 5 X 2/100) which is equal to Rs.16500.
             </p>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               What is the Simple Interest Formula and when is it Used?
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               The amount one needs to pay or receive after a certain tenure base
               based on the interest can be calculated using the Simple Interest
               Formula. It is the best and simple method of calculating interest
               on the principal amount and should be used:
             </p>
             <ul className="w-full list-disc list-inside">
-              <li className="text-gray-900 mb-2">
-                <span className="text-black font-semibold">
+              <li className="mb-2">
+                <span className="font-semibold">
                   When one has borrowed money :
                 </span>{" "}
                 To repay extra payment of interest along with the borrowed
                 amount. The formula for simple interest can help to calculate
                 the borrowing cost as interest
               </li>
-              <li className="text-gray-900 mb-2">
-                <span className="text-black font-semibold">
+              <li className="mb-2">
+                <span className="font-semibold">
                   When someone lends money :
                 </span>{" "}
                 If someone has given money to someone to earn interest income in
                 exchange. By using simple interest formula, one can easily get
                 extra income figure as the interest
               </li>
-              <li className="text-gray-900 mb-2">
-                <span className="text-black font-semibold">
+              <li className="mb-2">
+                <span className="font-semibold">
                   When someone has invested money :
                 </span>{" "}
                 if someone has invested their surplus money in deposits such as
@@ -288,7 +288,7 @@ function Simple() {
                 calculate the interest Income with a simple Interest Calculator.
               </li>
             </ul>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               How to Calculate Simple Interest using Calculator?
             </h2>
             <ul className="w-full list-disc list-inside">
@@ -307,10 +307,10 @@ function Simple() {
                 increase in the invested capital.
               </li>
             </ul>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               Advantages of using Simple Interest Calculators
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               There are times when borrowers, depending on the manual method,
               people pay unpaid interest before principal. This situation leads
               to issues during computing simple interest on an amount. Following

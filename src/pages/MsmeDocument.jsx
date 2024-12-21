@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const MsmeDocument = () => {
   return (
-    <div className="w-full px-4 md:px-20 my-10 md:my-10 flex gap-10 flex-col md:flex-row font-montserrat">
+    <div className="w-full px-4 md:px-20 my-10 md:my-10 flex gap-10 flex-col md:flex-row font-montserrat text-[#14598D]">
       <div className="w-[80%] flex flex-col gap-2">
         <h1 className="text-4xl font-bold mb-2">
           Documents Required for MSME Registration in India
@@ -23,7 +23,7 @@ const MsmeDocument = () => {
           government.
         </p>
 
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">
+        <h2 className="text-4xl font-bold text-[#14598D] mb-4">
           MSME Enterprises
         </h2>
         <p className="mb-4">
@@ -63,13 +63,13 @@ const MsmeDocument = () => {
           </tbody>
         </table>
       </div>
-      <p className="text-lg text-gray-700 mb-6 mt-6">
+      <p className="text-lg text-[#14598D] mb-6 mt-6">
         These lower limits were killing the urge to grow as businesses were unable to scale further. 
         Also, there was a long-pending demand for the revision of the MSME classification so that they 
         could expand their operations while continuing to avail MSME benefits.
       </p>
       
-      <p className="text-lg text-gray-700 mb-6">
+      <p className="text-lg text-[#14598D] mb-6">
         Thus, under the <strong>Aatmanirbhar Bharat Abhiyan (ABA)</strong>, the government revised the MSME 
         classification by introducing composite criteria of both investment and annual turnover. 
         Moreover, the distinction between manufacturing and services sectors under the MSME definition was removed, 
@@ -78,7 +78,7 @@ const MsmeDocument = () => {
       
       <h3 className="text-xl font-semibold mb-4">Revised MSME Classification</h3>
       
-      <p className="text-lg text-gray-700 mb-6">
+      <p className="text-lg text-[#14598D] mb-6">
         The revised MSME classification will now consider both investment and annual turnover to decide whether a business qualifies as an MSME:
       </p>
       <table className="min-w-full border border-gray-300">
@@ -100,7 +100,7 @@ const MsmeDocument = () => {
         </tbody>
       </table>
 
-        <h3 className="text-2xl font-semibold text-gray-800 mt-6 mb-2">
+        <h3 className="text-2xl font-semibold text-[#14598D] mt-6 mb-2">
           Registration Process
         </h3>
         <p className="mb-4">
@@ -130,10 +130,10 @@ const MsmeDocument = () => {
           have the following documents:
         </p>
 
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+        <h2 className="text-2xl font-semibold text-[#14598D] mb-4">
           1. Aadhar Card
         </h2>
-        <ul className="list-disc list-inside space-y-2 text-gray-700 mb-4">
+        <ul className="list-disc list-inside space-y-2 text-[#14598D] mb-4">
           <li>
             For a Proprietorship Firm: The Aadhar number of the proprietor is to
             be entered in the Udyam Registration form.
@@ -153,7 +153,7 @@ const MsmeDocument = () => {
           </li>
         </ul>
 
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+        <h2 className="text-2xl font-semibold text-[#14598D] mb-4">
           2. PAN Card
         </h2>
         <p className="mb-4">
@@ -161,7 +161,7 @@ const MsmeDocument = () => {
           to be entered in the registration form.
         </p>
 
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+        <h2 className="text-2xl font-semibold text-[#14598D] mb-4">
           3. GSTIN (GST Identification Number)
         </h2>
         <p className="mb-4">
@@ -169,7 +169,7 @@ const MsmeDocument = () => {
           GSTIN is necessary for Udyam Registration.
         </p>
 
-        <p className="bg-gray-100 p-4 rounded-md mb-4 text-gray-700">
+        <p className="bg-gray-100 p-4 rounded-md mb-4 text-[#14598D]">
           <strong>Note:</strong> Having GSTIN is not compulsory for enterprises
           that do not require GST registration under the GST law. Such
           enterprises can register under MSME without having a GST registration.

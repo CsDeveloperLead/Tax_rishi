@@ -31,7 +31,7 @@ function Cagr() {
   }, [initialInvestment, finalInvestment, timePeriod]);
 
   return (
-    <div className="mx-4 md:mx-10 my-10 md:my-20">
+    <div className="mx-4 md:mx-10 my-10 md:my-20 text-[#14598D]">
       <div className="flex flex-col lg:flex-row">
         <div className="w-full md:w-[75%] flex flex-col gap-10">
           <div className="border h-auto md:h-[520px] flex bg-white p-6 gap-10  rounded-lg shadow-lg">
@@ -46,7 +46,7 @@ function Cagr() {
               {/* Initial Investment Slider */}
               <div className="my-8">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Initial Investment
                   </label>
                   <input
@@ -75,7 +75,7 @@ function Cagr() {
               {/* Final Investment Slider */}
               <div className="my-8">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Final Investment
                   </label>
                   <input
@@ -102,7 +102,7 @@ function Cagr() {
               {/* Time Period Slider */}
               <div className="mb-6">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Time Period
                   </label>
                   <input
@@ -138,7 +138,7 @@ function Cagr() {
             {/* <h1 className="text-3xl font-bold text-gray-900 mb-6">
               SIP Calculator – Systematic Investment Plan Calculator
             </h1> */}
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               CAGR is an acronym for Compounded Annual Growth Rate commonly used
               in determining how well a business is performing in the fiercely
               competitive market. It represents the growth of an organisation,
@@ -152,28 +152,28 @@ function Cagr() {
               accurate approach to calculate your business’ CAGR.
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               How can a CAGR Calculator Help You?
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               If you own a business, the CAGR can indicate a lot of factors that
               are otherwise overlooked. Unlike the concept of ‘absolute
               returns’, growth based on CAGR takes into account the element of
               time. It is thus a better indicator of growth over a period.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Note that the CAGR is an indicative figure and not a real one. In
               its most basic sense, it indicates the exact rate of an
               investment’s growth considering that it grows at the same rate and
               the returns are reinvested. Taking note of CAGR is also a huge
               bonus when you are considering differential investment options.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               A CAGR calculator helps you determine the true returns on
               investment yearly. In this sense, using our CAGR calculator online
               saves you time and other resources as it is completely free.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Thus, the CAGR calculator can tell you if:
             </p>
             <ul className="w-full list-disc list-inside mb-4">
@@ -192,20 +192,20 @@ function Cagr() {
                 market leaders in your business segment.
               </li>
             </ul>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Note that no CAGR calculator in India will give you any data on
               investment risk.
             </p>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               How to Calculate CAGR?
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               The CAGR formula to calculate the investments is represented by:
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               CAGR = {"(FV / PV) 1 / n – 1 "}
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               It is a mathematical calculation that determines the real-time
               CAGR for any organization. The values stand for the following:
             </p>
@@ -237,22 +237,22 @@ function Cagr() {
                 </tbody>
               </table>
             </div>
-            <p className="text-gray-700 mb-4">An example of CAGR calculation</p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">An example of CAGR calculation</p>
+            <p className="mb-4">
               If you have an initial investment of Rs. 1 Lakh in a business, it
               constitutes the PV. If the total investment has swollen to Rs 10
               Lakh (FV) after 5 years (N), the CAGR is:
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               {"(10,00,000/1,00,000)1 / 5 – 1 or 0.589 "}
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Thus, the CAGR percentage is CAGR x 100 or 58.9%.
             </p>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               How to use Groww’s CAGR calculator?
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               You can use Groww’s CAGR calculator online without any charges.
               Follow these simple steps.
             </p>
@@ -267,14 +267,14 @@ function Cagr() {
                 the CAGR calculator .
               </li>
             </ol>
-            <p className="text-black mb-4">
+            <p className="mb-4">
               The CAGR calculator will generate the results within seconds as
               soon as you input the values.
             </p>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               Advantages of Groww’s online CAGR calculator
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Our services provide you with several significant benefits.
             </p>
             <ul className="w-full list-disc list-inside mb-4">
@@ -295,7 +295,7 @@ function Cagr() {
                 results.
               </li>
             </ul>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               You can see a wide range of other calculators below. Feel free to
               use them. Our CAGR calculator is designed for safety, efficiency,
               and accuracy. It helps you plan your future finances efficiently.

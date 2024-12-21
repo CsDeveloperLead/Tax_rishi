@@ -23,7 +23,7 @@ function GSTCalculator() {
 
   return (
     <>
-      <div className="mx-10 my-10 md:my-20">
+      <div className="mx-10 my-10 md:my-20 text-[#14598D]">
         <div className="flex flex-col lg:flex-row">
           <div className="w-[75%] flex flex-col gap-10">
             <div className="border h-[520px] flex bg-white p-6 gap-10 rounded-lg shadow-lg">
@@ -59,7 +59,7 @@ function GSTCalculator() {
                 {/* Total Amount Slider */}
                 <div className="my-8">
                   <div className="flex justify-between items-center">
-                    <label className="text-gray-700 font-medium">
+                    <label className="font-medium">
                       Total amount
                     </label>
                     <input
@@ -124,7 +124,7 @@ function GSTCalculator() {
               {/* <h1 className="text-3xl font-bold text-gray-900 mb-6">
               SIP Calculator – Systematic Investment Plan Calculator
             </h1> */}
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 The GST Act was passed by the parliament on March 29, 2017 and
                 implemented from July 1 of the same year. The Good and Services
                 Tax is an indirect tax levied by the Indian government on all
@@ -132,7 +132,7 @@ function GSTCalculator() {
                 single tax that has eliminated multiple indirect taxes of the
                 previous regime such as sales tax, VAT, Excise Duty, etc
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 Every enterprise operating in India has to mandatorily register
                 for the GST. They are required to have a GST Identification
                 Number or GSTIN. Consumers have to pay this tax for all goods
@@ -141,10 +141,10 @@ function GSTCalculator() {
                 You may take the help of the GST calculator to evaluate the
                 same.
               </p>
-              <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+              <h2 className="text-2xl font-semibold mt-8 mb-4">
                 How Can a GST Calculator Help You?
               </h2>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 Everything that you purchase, be it a product or a service, is
                 taxed under the GST amount. It’s to your advantage to know how
                 much tax you are paying for the products you use. That’s where
@@ -163,98 +163,98 @@ function GSTCalculator() {
                   are an aware consumer who knows his/her taxes.
                 </li>
               </ul>
-              <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+              <h2 className="text-2xl font-semibold mt-8 mb-4">
                 Formula to Determine GST Amount
               </h2>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 The GST amount calculator uses a standardised method to
                 calculate GST. There are 2 aspects of this calculator- adding
                 GST and removing GST from the total price of an item.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 For adding GST, the following formula is used.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 GST amount = {"(Price x GST%)"}
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 Net price = Cost of the product + GST amount
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 For example, if a product or service costs Rs. 100 and the GST
                 levied on that is 18%, the GST amount will be 100 x 18% = Rs.
                 18. The net amount you’d have to pay would be Rs. 118.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 For removing GST from the net price of a product, the following
                 formula is used:
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 GST= Original cost – {"[Original cost x {100/(100+GST%)}]"}
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 Net price = Original cost – GST
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 For example, if the cost of a product after GST of 18% is Rs.
                 118, its original cost is 118 – {"[100/(100 + 18%)}]"}, which
                 equates to Rs. 100.
               </p>
-              <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+              <h2 className="text-2xl font-semibold mt-8 mb-4">
                 How to Use Groww GST Calculator Online
               </h2>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 You can use GST calculator India from the Groww website within
                 minutes. You have to simply-
               </p>
               <ul className="w-full list-disc list-inside">
-                <li className="text-gray-900 mb-2">
+                <li className="mb-2">
                   Input the variables, i.e., original cost and GST percentage.
                 </li>
-                <li className="text-gray-900 mb-2">
+                <li className="mb-2">
                   The GST amount will be displayed immediately.
                 </li>
               </ul>
-              <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+              <h3 className="text-xl font-semibold mt-8 mb-4">
                 - What is GST Inclusive Amount
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 GST inclusive amount means the total value of the product after
                 including the GST amount in the original price. Herein, the tax
                 is not charged separately from the customer since it is already
                 included in the price.
               </p>
-              <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+              <h3 className="text-xl font-semibold mt-8 mb-4">
                 - What is GST Exclusive Amount
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 GST Exclusive Amount means the value of the product without GST
                 being included. To calculate this amount, the GST amount is
                 subtracted from the product&apos;s GST inclusive value.
               </p>
-              <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+              <h2 className="text-2xl font-semibold mt-8 mb-4">
                 Advantages of using Groww GST calculator
               </h2>
               <ul className="w-full list-disc list-inside">
-                <li className="text-gray-900 mb-4">
+                <li className="mb-4">
                   You can figure out the tax amount you are paying.
                 </li>
-                <li className="text-gray-900 mb-4">
+                <li className="mb-4">
                   It is quick and accurate, thereby saving you valuable time.
                 </li>
-                <li className="text-gray-900 mb-4">
+                <li className="mb-4">
                   You stay protected from any fraudulent activities that may
                   arise out of wrong GST calculation.
                 </li>
               </ul>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 GST has fundamentally changed the tax regime in India. All
                 enterprises, regardless of their size or area of operation, now
                 fall under the same tax umbrella throughout the country. Use the
                 GST calculator online and find out how much tax you are paying
                 for the goods and services you purchase
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 “Looking to invest? Open an account with Groww and start
                 investing in direct Mutual Funds for free”
               </p>

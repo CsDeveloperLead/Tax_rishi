@@ -15,10 +15,10 @@ const Section2 = () => {
         <div className="w-full md:w-1/3 flex justify-center items-center font-bold bg-[#cdd4f1] text-main rounded-[49px] px-4 py-2">
           Here Our Services
         </div>
-        <h1 className="w-full text-center md:text-start text-xl md:text-5xl font-bold md:leading-[60px]">
+        <h1 className="w-full text-[#14598D] text-center md:text-start text-xl md:text-5xl font-bold md:leading-[60px]">
           Comprehensive Tax Solutions Tailored to Your Needs
         </h1>
-        <p className="w-full text-center md:text-start text-sm md:text-base font-montserrat500 md:leading-10">
+        <p className="w-full text-[#14598D] text-center md:text-start text-sm md:text-base font-montserrat500 md:leading-10">
           Our expert team provides personalized strategies and solutions to help
           you navigate
         </p>
@@ -33,9 +33,9 @@ const Section2 = () => {
                     className="w-[20px] h-[20px] object-contain"
                   />
                 </span>
-                <span className="text-xl font-bold">Tax Consulting</span>
+                <span className="text-xl font-bold text-[#14598D]">Tax Consulting</span>
               </div>
-              <p className="text-[10px] md:text-[12px]">
+              <p className="text-[10px] md:text-[12px] text-[#14598D]">
                 Our individualized tax planning and preparation services are
                 designed to maximize your returns and minimize your liabilities
               </p>
@@ -49,9 +49,9 @@ const Section2 = () => {
                     className="w-[20px] h-[20px] object-contain"
                   />
                 </span>
-                <span className="text-xl font-bold">Tax Resolution</span>
+                <span className="text-xl font-bold text-[#14598D]">Tax Resolution</span>
               </div>
-              <p className="text-[10px] md:text-[12px]">
+              <p className="text-[10px] md:text-[12px] text-[#14598D]">
                 Our tax resolution services are here to help you address and
                 resolve problems such as IRS audits
               </p>
@@ -68,9 +68,9 @@ const Section2 = () => {
                     className="w-[20px] h-[20px] object-contain"
                   />
                 </span>
-                <span className="text-xl font-bold">Business Tax Services</span>
+                <span className="text-xl font-bold text-[#14598D]">Business Tax Services</span>
               </div>
-              <p className="text-[10px] md:text-[12px]">
+              <p className="text-[10px] md:text-[12px] text-[#14598D]">
                 We offer comprehensive tax solutions for businesses of all
                 sizes. From startups to established enterprises
               </p>
@@ -84,9 +84,9 @@ const Section2 = () => {
                     className="w-[20px] h-[20px] object-contain"
                   />
                 </span>
-                <span className="text-xl font-bold">Trust Planning</span>
+                <span className="text-xl font-bold text-[#14598D]">Trust Planning</span>
               </div>
-              <p className="text-[10px] md:text-[12px]">
+              <p className="text-[10px] md:text-[12px] text-[#14598D]">
                 Proper estate and trust planning is essential for managing and
                 preserving your wealth
               </p>

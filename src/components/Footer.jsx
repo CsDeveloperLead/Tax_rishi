@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import { BsInstagram } from "react-icons/bs";
 const Footer = () => {
   return (
-    <div className="px-4  py-10 md:p-20 bg-main w-full flex flex-col md:flex-row items-center gap-10 font-montserrat ">
+    <div className="px-4  py-10 md:p-20 bg-[#398730] w-full flex flex-col md:flex-row items-center gap-10 font-montserrat ">
       <div className="w-full md:w-[30%] flex flex-col items-center md:items-start gap-6">
         <div className="flex items-center gap-4">
           <img src={Logo} alt="Logo" className="w-20 h-20" />

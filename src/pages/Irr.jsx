@@ -67,7 +67,7 @@ function IrrCalculator() {
   };
 
   return (
-    <div className="mx-4 md:mx-10 my-10 md:my-20">
+    <div className="mx-4 md:mx-10 my-10 md:my-20 text-[#14598D]">
       <div className="flex flex-col lg:flex-row ">
         <div className="w-full md:w-[75%] flex flex-col gap-10 ">
           <div className="border h-auto md:h-[600px] flex flex-col md:flex-row bg-white p-6 gap-10 rounded-lg shadow-lg">

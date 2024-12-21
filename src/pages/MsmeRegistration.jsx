@@ -9,13 +9,13 @@ import { Link } from 'react-router-dom';
 
 const MsmeRegistration = () => {
   return (
-    <div className="w-full px-4 md:px-20 my-10 md:my-10 flex gap-10 flex-col md:flex-row font-montserrat">
+    <div className="w-full px-4 md:px-20 my-10 md:my-10 flex gap-10 flex-col md:flex-row font-montserrat text-[#14598D]">
       <div className="w-[80%] flex flex-col gap-8">
         <div className="flex flex-col gap-6">
           <h1 className="text-4xl leading-[40px] font-bold">
             MSME Registration In India: Procedure, Documents Required
           </h1>
-          <p className="text-gray-600 text-base leading-8">
+          <p className="text-[#14598D] text-base leading-8">
             MSME industries are the backbone of the economy. They are also known
             as Small Scale Industries (SSIs). The government of India provides
             an MSME registration to the industries classified by the government
@@ -27,7 +27,7 @@ const MsmeRegistration = () => {
 
         <div className="flex flex-col gap-6">
           <h1 className="text-4xl leading-[40px] font-bold">What is MSME Classification?</h1>
-          <p className="text-gray-600 text-base leading-8">
+          <p className="text-[#14598D] text-base leading-8">
             nitially, when the government introduced the MSME registration in
             2006, the MSME classification was based on the investment criteria
             in plant and machinery or equipment. The government revised the MSME
@@ -35,7 +35,7 @@ const MsmeRegistration = () => {
             Also, the distinction between the manufacturing and the services
             sectors under the MSME definition was removed.
           </p>
-          <p className=" font-bold text-black">
+          <p className=" font-bold text-[#14598D]">
             The following is the current revised MSME classification, where the
             investment and annual turnover are to be considered for deciding if
             an entity is considered as an MSME:
@@ -48,38 +48,38 @@ const MsmeRegistration = () => {
               <tr>
                 <th
                   colSpan={4}
-                  className="py-3 px-4 text-center font-semibold text-gray-800 border-b"
+                  className="py-3 px-4 text-center font-semibold text-[#14598D] border-b"
                 >
                   Revised MSME Classification
                 </th>
               </tr>
               <tr>
-                <th className="py-3 px-4 text-left font-semibold text-gray-700 border-r border-gray-300">
+                <th className="py-3 px-4 text-left font-semibold text-[#14598D] border-r border-gray-300">
                   Criteria
                 </th>
-                <th className="py-3 px-4 text-center font-semibold text-gray-700 border-r border-gray-300">
+                <th className="py-3 px-4 text-center font-semibold text-[#14598D] border-r border-gray-300">
                   Micro
                 </th>
-                <th className="py-3 px-4 text-center font-semibold text-gray-700 border-r border-gray-300">
+                <th className="py-3 px-4 text-center font-semibold text-[#14598D] border-r border-gray-300">
                   Small
                 </th>
-                <th className="py-3 px-4 text-center font-semibold text-gray-700">
+                <th className="py-3 px-4 text-center font-semibold text-[#14598D]">
                   Medium*
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr className="border-b">
-                <td className="py-4 px-4 font-medium text-gray-700 border-r border-gray-300">
+                <td className="py-4 px-4 font-medium text-[#14598D] border-r border-gray-300">
                   Investment & Annual Turnover
                 </td>
-                <td className="py-4 px-4 text-center text-gray-700 border-r border-gray-300">
+                <td className="py-4 px-4 text-center text-[#14598D] border-r border-gray-300">
                   &lt; Rs.1 crore &amp; &lt; Rs.5 crore
                 </td>
-                <td className="py-4 px-4 text-center text-gray-700 border-r border-gray-300">
+                <td className="py-4 px-4 text-center text-[#14598D] border-r border-gray-300">
                   &lt; Rs.10 crore &amp; &lt; Rs.50 crore
                 </td>
-                <td className="py-4 px-4 text-center text-gray-700">
+                <td className="py-4 px-4 text-center text-[#14598D]">
                   &lt; Rs.50 crore &amp; &lt; Rs.250 crore
                 </td>
               </tr>
@@ -91,7 +91,7 @@ const MsmeRegistration = () => {
           <h1 className="text-4xl leading-[40px] font-bold">
             What is MSME Udyam Registration?{" "}
           </h1>
-          <p className="text-gray-600 text-base leading-8">
+          <p className="text-[#14598D] text-base leading-8">
             <strong>
               MSME registration is also called Udyam registration.
             </strong>{" "}
@@ -114,7 +114,7 @@ const MsmeRegistration = () => {
 
         <div className="flex flex-col gap-6">
           <h1 className="text-4xl leading-[40px] font-bold">MSME Registration Eligibility </h1>
-          <p className="text-gray-600 text-base leading-8">
+          <p className="text-[#14598D] text-base leading-8">
             <strong>
               All manufacturing, service industries, wholesale, and retail trade
               that fulfil the revised MSME classification criteria of annual
@@ -278,7 +278,7 @@ const MsmeRegistration = () => {
           <h1 className="text-4xl leading-[40px] font-bold">
             Registration For Entrepreneurs Already Having UAM
           </h1>
-          <p className="text-gray-600 text-base leading-8">
+          <p className="text-[#14598D] text-base leading-8">
             For those already having UAM registration, they need to click the
             button “For those having registration as UAM” or “For those already
             having registration as UAM through Assisted filing” shown on the
@@ -286,7 +286,7 @@ const MsmeRegistration = () => {
             Udyog Aadhaar Number is to be entered, and an OTP option should be
             selected.{" "}
           </p>
-          <p className="text-gray-600 text-base leading-8">
+          <p className="text-[#14598D] text-base leading-8">
             The options provided are to obtain OTP on mobile as filled in UAM or
             obtain OTP on email as filled UAM. After choosing the OTP Options,
             “Validate and Generate OTP” is to be clicked. After entering OTP,
@@ -300,7 +300,7 @@ const MsmeRegistration = () => {
 
         <div className="flex flex-col gap-6">
           <h1 className="text-4xl leading-[40px] font-bold">MSME Registration Fees</h1>
-          <p className="text-gray-600 text-base leading-8">
+          <p className="text-[#14598D] text-base leading-8">
             There are no fees charged by the government for MSME registration.
             It is free of cost on the official website, i.e. Udyam Portal.
           </p>
@@ -308,7 +308,7 @@ const MsmeRegistration = () => {
 
         <div className="flex flex-col gap-6">
           <h1 className="text-4xl leading-[40px] font-bold">MSME Registration Certificate</h1>
-          <p className="text-gray-600 text-base leading-8">
+          <p className="text-[#14598D] text-base leading-8">
             The Ministry of MSME issues an e-certificate known as the Udyam
             Registration Certificate to MSMEs in India. The Udyam registration
             certificate is known as the MSME registration certificate. The
@@ -321,7 +321,7 @@ const MsmeRegistration = () => {
 
         <div className="flex flex-col gap-6">
           <h1 className="text-4xl leading-[40px] font-bold">MSME Registration Number</h1>
-          <p className="text-gray-600 text-base leading-8">
+          <p className="text-[#14598D] text-base leading-8">
             An enterprise having an MSME registration is known as Udyam, and the
             permanent identity number assigned to by the Ministry of MSME is
             known as the ‘Udyam/MSME Registration number’. The MSME Registration
@@ -332,7 +332,7 @@ const MsmeRegistration = () => {
 
         <div className="flex flex-col gap-6">
           <h1 className="text-4xl leading-[40px] font-bold">MSME Registration Status</h1>
-          <p className="text-gray-600 text-base leading-8">
+          <p className="text-[#14598D] text-base leading-8">
           Below is the process to check MSME Registration Status:
           </p>{" "}
           <ul className="space-y-4 list-disc ml-4">
@@ -343,7 +343,7 @@ const MsmeRegistration = () => {
         </div>
         <div className="flex flex-col gap-6">
           <h1 className="text-4xl leading-[40px] font-bold">MSME Registration Certificate Download </h1>
-          <p className="text-gray-600 text-base leading-8">
+          <p className="text-[#14598D] text-base leading-8">
           Below is the process to download the MSME Registration Certificate:
           </p>{" "}
           <ul className="space-y-4 list-disc ml-4">
@@ -404,7 +404,7 @@ const MsmeRegistration = () => {
         </li>
       </ul>
 
-      <h3 className="text-4xl font-bold text-gray-800 mt-6 mb-4">How to check MSME registration by name?</h3>
+      <h3 className="text-4xl font-bold text-[#14598D] mt-6 mb-4">How to check MSME registration by name?</h3>
       <p className=" mb-4">
         You cannot check the MSME registration number by name. However, you can retrieve your MSME registration number by following the below process:
       </p>

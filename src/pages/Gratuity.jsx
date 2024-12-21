@@ -24,7 +24,7 @@ function Gratuity() {
   }, [monthlySalary, yearsOfService]);
 
   return (
-    <div className="mx-4 md:mx-10 my-10 md:my-20">
+    <div className="mx-4 md:mx-10 my-10 md:my-20 text-[#14598D]">
       <div className="flex flex-col lg:flex-row">
         <div className="w-full md:w-[75%] flex flex-col gap-10">
           <div className="border h-auto md:h-[500px] flex flex-col md:flex-row bg-white p-6 gap-10  rounded-lg shadow-lg">
@@ -39,7 +39,7 @@ function Gratuity() {
               {/* Monthly Salary Slider */}
               <div className="my-8">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Monthly Salary (Basic + DA)
                   </label>
                   <input
@@ -66,7 +66,7 @@ function Gratuity() {
               {/* Years of Service Slider */}
               <div className="mb-6">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Years of Service
                   </label>
                   <input
@@ -103,7 +103,7 @@ function Gratuity() {
             {/* <h1 className="text-3xl font-bold text-gray-900 mb-6">
               SIP Calculator – Systematic Investment Plan Calculator
             </h1> */}
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Any employee of a private company that provides EPF facilities is
               eligible to receive an amount as gratuity after completing 5 years
               of service. However, an employee is also eligible to get the
@@ -120,16 +120,16 @@ function Gratuity() {
               how much you are eligible for. Our online gratuity calculator will
               help you in that aspect too.
             </p>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               Gratuity Calculation Formula
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Groww uses a proprietary formula that is benchmarked with other
               similar offerings. The formula used by our online gratuity
               calculator is:
             </p>
-            <p className="text-gray-700 mb-4">G = n*b*15/26</p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">G = n*b*15/26</p>
+            <p className="mb-4">
               In the formula, the values are the following.
             </p>
             <div className="overflow-x-auto mb-4">
@@ -157,13 +157,13 @@ function Gratuity() {
                 </tbody>
               </table>
             </div>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               For example, if individual A has worked with an organisation for 5
               years, and your basic salary plus DA amounted to Rs. 30,000 every
               month, you are eligible to receive 5*30000*15/26 = Rs. 86,538.46
               as gratuity.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Note that under the existing laws –
             </p>
             <ul className="w-full list-disc list-inside mb-4">
@@ -177,10 +177,10 @@ function Gratuity() {
                 years.
               </li>
             </ul>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               How can a Gratuity Calculator Help You?
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Under the Payment of Gratuity Act of 1972, you are eligible to
               receive the gratuity amount provided –
             </p>
@@ -194,7 +194,7 @@ function Gratuity() {
                 You do not have any other full-time employer.
               </li>
             </ul>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               In such cases, a gratuity calculator online in India is useful
               because –
             </p>
@@ -212,25 +212,25 @@ function Gratuity() {
                 It helps you in long-term financial planning.
               </li>
             </ul>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               How to Use Groww’s Gratuity Calculator?
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Follow these simple steps to use the gratuity calculator.
             </p>
-            <p className="text-gray-700 mb-4">
-              <span className="text-black">Step 1 :</span> Keep all essential
+            <p className="mb-4">
+              <span className="">Step 1 :</span> Keep all essential
               details about your employment history handy.
             </p>
-            <p className="text-gray-700 mb-4">
-              <span className="text-black">Step 2 :</span> Enter the basic pay +
+            <p className="mb-4">
+              <span className="">Step 2 :</span> Enter the basic pay +
               dearness allowance value and the gratuity value will be reflected
               within seconds.
             </p>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               Advantages of Using Groww’s Gratuity Calculator
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               As a market leader in financial affairs, Groww provides you with
               the most sophisticated tools in the market. Here are the reasons
               why our Gratuity Calculator is helpful for you.
@@ -249,14 +249,14 @@ function Gratuity() {
                 product.
               </li>
             </ul>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               Taxation Rules for Gratuity
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               The taxes applicable to the gratuity amount depends on the type of
               employee:
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               The gratuity amount received by any government employee is exempt
               from the income tax. For private-sector employees, the least of
               the following three amounts will be exempt from income tax

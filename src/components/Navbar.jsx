@@ -86,7 +86,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? "text-main flex flex-col items-center"
-                  : "text-[#000] hover:text-main flex flex-col items-center"
+                  : "text-[#14598D] hover:text-main flex flex-col items-center"
               }
             >
               Home
@@ -100,7 +100,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   isActive
                     ? " flex flex-col text-main hover:text-main items-center cursor-pointer"
-                    : "text-[#000] hover:text-main flex flex-col items-center cursor-pointer"
+                    : "text-[#14598D] hover:text-main flex flex-col items-center cursor-pointer"
                 }
                 onClick={() => toggleDropdown("startup")}
               >
@@ -125,7 +125,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   isActive
                     ? "flex flex-col  text-main hover:text-main items-center cursor-pointer"
-                    : "text-[#000] hover:text-main flex flex-col items-center cursor-pointer"
+                    : "text-[#14598D] hover:text-main flex flex-col items-center cursor-pointer"
                 }
                 onClick={() => toggleDropdown("msme")}
               >
@@ -148,7 +148,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? "text-main flex flex-col items-center"
-                  : "text-[#000] hover:text-main flex flex-col items-center"
+                  : "text-[#14598D] hover:text-main flex flex-col items-center"
               }
             >
               Calculators
@@ -161,7 +161,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? "text-main flex flex-col items-center"
-                  : "text-[#000] hover:text-main flex flex-col items-center"
+                  : "text-[#14598D] hover:text-main flex flex-col items-center"
               }
             >
               About Us
@@ -175,7 +175,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? "text-main flex flex-col items-center"
-                  : "text-[#000] hover:text-main flex flex-col items-center"
+                  : "text-[#14598D] hover:text-main flex flex-col items-center"
               }
             >
               Contact Us
@@ -188,7 +188,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? "text-main flex flex-col items-center"
-                  : "text-[#000] hover:text-main flex flex-col items-center"
+                  : "text-[#14598D] hover:text-main flex flex-col items-center"
               }
             >
               GstRishi
@@ -201,7 +201,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive
                   ? "text-main flex flex-col items-center"
-                  : "text-[#000] hover:text-main flex flex-col items-center"
+                  : "text-[#14598D] hover:text-main flex flex-col items-center"
               }
             >
               TaxRishi Foundation

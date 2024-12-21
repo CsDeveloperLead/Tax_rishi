@@ -43,7 +43,7 @@ function RetirementCalculator() {
 
   return (
     <>
-      <div className="mx-4 md:mx-10 my-10 md:my-20">
+      <div className="mx-4 md:mx-10 my-10 md:my-20 text-[#14598D]">
         <div className="flex flex-col lg:flex-row">
           <div className="w-full md:w-[75%] flex flex-col gap-10">
             <div className="border h-auto md:h-[620px] flex  flex-col md:flex-row bg-white p-6 gap-10 rounded-lg shadow-lg">
@@ -153,16 +153,16 @@ function RetirementCalculator() {
               {/* <h1 className="text-3xl font-bold text-gray-900 mb-6">
               SIP Calculator – Systematic Investment Plan Calculator
             </h1> */}
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 Retiring comfortably is not an impossibility if you know how to invest and save wisely. To know how much return of investments you will be able to gain, you need the services of a retirement calculator. Remember that planning for the future is a mixture of both fiscal and investment prudence.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 Retirement planning is essential for every citizen and especially for salaried and self-employed. Groww has a benchmarked retirement planning calculator which is at par with the best in the business.
               </p>
-              <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+              <h2 className="text-2xl font-semibold mt-8 mb-4">
                 How does Groww’s Retirement Calculator help you?
               </h2>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 A retirement calculator in India is beneficial for several reasons such as:
               </p>
               <ul className="w-full list-disc list-inside">
@@ -173,13 +173,13 @@ function RetirementCalculator() {
                 <li className="mb-2">If you have any high-value plans post-retirement, our calculator will help you save accordingly for such exigencies and planned spending sessions.</li>
                 <li className="mb-2">Lastly, an online retirement calculator is useful when you are short on time and you need to take decisions on such important aspects as future investment options</li>
               </ul>
-              <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+              <h2 className="text-2xl font-semibold mt-8 mb-4">
                 Calculating Retirement Benefits using Our Calculator
               </h2>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 The calculator uses rules of compound interest to determine the total corpus you will be able to accumulate as per the investments made post-maturity.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 These values are given below alongside figures provided for illustrative purposes –
               </p>
               <div className="overflow-x-auto mb-4">
@@ -216,35 +216,35 @@ function RetirementCalculator() {
                   </tbody>
                 </table>
               </div>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 The figures above are only for illustrative purposes.
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 According to our formula, the person still has 30 years more of gainful employment and savings plus 10 years more post-retirement. An outlook of requirements and savings post-retirement –
               </p>
               <ul className="w-full list-disc list-inside">
-                <li className="text-gray-900 mb-2">You will need a total corpus of Rs. 58.18 Lakh for post-retirement.</li>
-                <li className="text-gray-900 mb-2">You will have to invest around Rs. 3,878 each month to reach the post-retirement figure.</li>
+                <li className="mb-2">You will need a total corpus of Rs. 58.18 Lakh for post-retirement.</li>
+                <li className="mb-2">You will have to invest around Rs. 3,878 each month to reach the post-retirement figure.</li>
               </ul>
-              <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+              <h2 className="text-2xl font-semibold mt-8 mb-4">
                 How to use Groww’s Retirement Calculator?
               </h2>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 All you have to do is input values in the designated slots and the calculated value will be displayed instantly.
               </p>
-              <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+              <h2 className="text-2xl font-semibold mt-8 mb-4">
                 Advantages of Groww’s Retirement Calculator
               </h2>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 Like most reliable online retirement calculators, this Groww calculator is a specially designed financial tool to help you determine the precise sums you need to save each month. It will aid you in long-term investment planning too
               </p>
-              <p className="text-gray-700 mb-4">
+              <p className="mb-4">
                 Here are some other advantages –
               </p>
               <ul className="w-full list-decimal list-inside">
-                <li className="text-gray-900 mb-2">Easy to use and reliable. Makes manual calculations unnecessary.</li>
-                <li className="text-gray-900 mb-2">Standardised formula to determine corpus required for a peaceful retirement.</li>
-                <li className="text-gray-900 mb-2">One-click solution.</li>
+                <li className="mb-2">Easy to use and reliable. Makes manual calculations unnecessary.</li>
+                <li className="mb-2">Standardised formula to determine corpus required for a peaceful retirement.</li>
+                <li className="mb-2">One-click solution.</li>
               </ul>
             </div>
           </div>

@@ -41,7 +41,7 @@ function SIPCalculator() {
   };
 
   return (
-    <div className="mx-4 md:mx-10  my-10 md:my-20">
+    <div className="mx-4 md:mx-10  my-10 md:my-20 text-[#14598D]">
       <div className="flex flex-col md:flex-row ">
         <div className="w-full md:w-[75%] flex flex-col gap-10 ">
           <div className="border h-auto md:h-[600px] flex flex-col md:flex-row bg-white p-6 gap-10  rounded-lg shadow-lg">
@@ -55,8 +55,8 @@ function SIPCalculator() {
 
               {/* Monthly Investment Slider */}
               <div className="my-8">
-                <div className="flex  justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                <div className="flex  justify-between items-center text-[#14598D]">
+                  <label className="font-medium">
                     Monthly investment
                   </label>
                   <input
@@ -85,7 +85,7 @@ function SIPCalculator() {
               {/* Expected Return Rate Slider */}
               <div className="mb-6">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Expected return rate (p.a)
                   </label>
                   <input
@@ -117,7 +117,7 @@ function SIPCalculator() {
               {/* Time Period Slider */}
               <div className="mb-6">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Time period
                   </label>
                   <input
@@ -147,7 +147,7 @@ function SIPCalculator() {
               </div>
 
               {/* Summary */}
-              <div className="text-gray-700 font-medium mt-6">
+              <div className="font-medium mt-6">
                 <p className="py-2">
                   Invested amount:{" "}
                   <span className="font-semibold">
@@ -182,11 +182,11 @@ function SIPCalculator() {
               />
             </div>
           </div>
-          <div className="mr-10 w-full">
-            <h1 className="text-2xl font-bold text-gray-900 mb-6">
+          <div className="mr-10 w-full text-[#14598D]">
+            <h1 className="text-2xl font-bold mb-6">
               SIP Calculator – Systematic Investment Plan Calculator
             </h1>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Prospective investors can think that SIPs and mutual funds are the
               same. However, SIPs are merely a method of investing in mutual
               funds, the other method being a lump sum. A SIP calculator is a
@@ -197,16 +197,16 @@ function SIPCalculator() {
               invest weekly, quarterly, or monthly.
             </p>
 
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               What is a SIP Calculator?
             </h2>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               A SIP calculator is a simple tool that allows individuals to get
               an idea of the returns on their mutual fund investments made
               through SIP. SIP investments in mutual funds have become one of
               the most popular investment options for millennials lately.
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               These mutual fund SIP calculators are designed to give potential
               investors an estimate on their mutual fund investments. However,
               the actual returns offered by a mutual fund scheme vary depending
@@ -214,20 +214,20 @@ function SIPCalculator() {
               clarification for the exit load and expense ratio (if any).
             </p>
 
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               How can a SIP return calculator help you?
             </h2>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               SIPs are a more lucrative mode of investing funds compared to a
               lump sum amount according to several mutual fund experts. It helps
               you become financially disciplined and create a habit of savings
               that can benefit you in the future.
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               A SIP calculator online is a beneficial tool, which shows the
               estimated returns you will earn after the investment tenure.
             </p>
-            <ul className="list-disc list-inside text-sm md:text-base text-justify text-gray-700 mb-4">
+            <ul className="list-disc list-inside text-sm md:text-base text-justify mb-4">
               <li>
                 Assists you to determine the amount you want to invest in.
               </li>
@@ -235,16 +235,16 @@ function SIPCalculator() {
               <li>Gives an estimated value of the returns.</li>
             </ul>
 
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               How do SIP calculators work?
             </h2>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               A SIP plan calculator works on the following formula:
             </p>
             <p className="text-gray-800 bg-gray-200 p-4 rounded-md font-mono mb-4">
               M = P × ((1 + i)^n – 1) / i × (1 + i)
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Where:
               <br />
               M is the amount you receive upon maturity.
@@ -255,26 +255,26 @@ function SIPCalculator() {
               <br />i is the periodic rate of interest.
             </p>
 
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               Example Calculation:
             </h2>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               For example, if you want to invest ₹1,000 per month for 12 months
               at an interest rate of 12%, the maturity amount can be calculated
               as follows:
             </p>
-            <p className="text-gray-800 bg-gray-200 p-4 rounded-md font-mono mb-4">
+            <p className="bg-gray-200 p-4 rounded-md font-mono mb-4">
               M = 1,000 × ((1 + 0.01)^12 – 1) / 0.01 × (1 + 0.01) ≈ ₹12,809
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               The rate of interest on a SIP will vary according to market
               conditions, so the actual returns may differ.
             </p>
 
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               Advantages of using Our SIP Calculator
             </h2>
-            <ul className="list-disc list-inside text-sm md:text-base text-justify text-gray-700 mb-4">
+            <ul className="list-disc list-inside text-sm md:text-base text-justify mb-4">
               <li>Plan your investment based on the amount and tenure.</li>
               <li>
                 Compute an estimation of the total value of investments at the

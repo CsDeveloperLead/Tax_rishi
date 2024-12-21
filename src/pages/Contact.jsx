@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <>
     <div className="px-4 md:px-20 flex flex-col md:flex-row items-center gap-20 my-10 md:my-10 font-montserrat">
-      <div className="w-full md:w-[45%] flex flex-col gap-4 bg-[#f9f9f9] rounded-3xl p-4 md:p-10">
+      <div className="w-full md:w-[45%] flex flex-col gap-4 bg-[#f9f9f9] rounded-3xl p-4 md:p-10 text-[#14598D]">
         <h1 className="text-2xl md:text-4xl font-bold">Leave a Message For Us</h1>
         <p className="text-[#6e6e6e] text-sm md:text-base">
         Navigating Taxes, Maximizing Savings – Your Trusted Taxation Partner. Simplify compliance, focus on growth with us!
@@ -76,14 +76,14 @@ const Contact = () => {
       </div>
       <div className="w-full md:w-[50%] flex flex-col items-center md:items-start gap-8">
         <div className="bg-[#cdd4f1] text-main font-bold flex justify-center items-center py-2 w-[250px] rounded-3xl">Stay tuned with us</div>
-        <h1 className="text-2xl md:text-5xl text-center md:text-start font-bold md:leading-[50px]">Keep Connected & Lets Get In Touch With Our Team</h1>
+        <h1 className="text-2xl md:text-5xl text-center md:text-start font-bold md:leading-[50px] text-[#14598D]">Keep Connected & Lets Get In Touch With Our Team</h1>
         <p className="text-gray-400 text-center md:text-start">Maximize Your Tax Savings with Expert Guidance from TaxRishi – Your Trusted Partner in Tax Solutions.</p>
         <div className="flex flex-col items-center md:items-start md:flex-row gap-6">
             <span className="flex-shrink-0">
                 <img src={con1} alt="" className="w-8 h-8 object-contain"/>
             </span>
             <span className="flex flex-col items-center md:items-start gap-2 font-semibold">
-                <p className="text-base md:text-xl ">Our Head Office</p>
+                <p className="text-base md:text-xl text-[#14598D]">Our Head Office</p>
                 <p className="text-gray-400 text-base text-center md:text-start "> Office No. 102, Shree Mahaveer Arcade, First Floor, C-19, Sector-15, Adjoing SBI Bank, Near Atal Chowk, Vasundhara, Ghaziabad - 201012 (U.P.)</p>
             </span>
         </div>
@@ -92,7 +92,7 @@ const Contact = () => {
                 <img src={con2} alt="" className="w-8 h-8 object-contain"/>
             </span>
             <span className="flex flex-col items-center md:items-start gap-2 font-semibold">
-                <p className="text-base md:text-xl ">Email Address</p>
+                <p className="text-base md:text-xl text-[#14598D]">Email Address</p>
                 <p className="text-gray-400 text-base text-center md:text-start ">support@taxrishi.in</p>
             </span>
         </div>
@@ -101,7 +101,7 @@ const Contact = () => {
                 <img src={con3} alt="" className="w-8 h-8 object-contain"/>
             </span>
             <span className="flex flex-col items-center md:items-start gap-2 font-semibold">
-                <p className="text-base md:text-xl ">Telephone</p>
+                <p className="text-base md:text-xl text-[#14598D]">Telephone</p>
                 <p className="text-gray-400 text-base text-center md:text-start ">(+91) 9654640119</p>
             </span>
         </div>

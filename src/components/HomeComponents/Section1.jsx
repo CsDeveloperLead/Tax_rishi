@@ -28,9 +28,9 @@ const Section1 = () => {
       </div>
       <div className="w-full md:w-[50%] flex flex-col items-center md:items-start gap-8">
         <div className="text-main bg-[#cdd4f1] rounded-[49px] py-2 flex justify-center items-center w-[90%] md:w-[40%] font-bold text-sm md:text-lg mt-24 md:mt-0">Wanna Know Our Story?</div>
-        <h1 className="w-[90%] md:w-full text-center md:text-start text-2xl md:text-5xl font-bold md:leading-[60px] ">Discover Story Excellence in Tax Consulting</h1>
-        <p className="w-[90%] md:w-full text-center md:text-start text-sm md:text-base font-montserrat500 md:leading-10">Tax Rishi is a leading tax consulting firm dedicated to helping individuals and businesses achieve their financial objectives. With a client-first approach and a commitment to excellence, our expert team ensures that you get the most out of your tax filings while staying compliant with all regulations</p>
-        <p className="w-[90%] md:w-full text-center md:text-start text-sm md:text-base font-montserrat500 md:leading-10">Our team of experienced and highly qualified tax professionals brings a wealth of knowledge and expertise across various industries</p>
+        <h1 className="w-[90%] md:w-full text-center md:text-start text-2xl md:text-5xl font-bold md:leading-[60px] text-[#14598D]">Discover Story Excellence in Tax Consulting</h1>
+        <p className="w-[90%] md:w-full text-center md:text-start text-sm md:text-base font-montserrat500 md:leading-10 text-[#14598D]">Tax Rishi is a leading tax consulting firm dedicated to helping individuals and businesses achieve their financial objectives. With a client-first approach and a commitment to excellence, our expert team ensures that you get the most out of your tax filings while staying compliant with all regulations</p>
+        <p className="w-[90%] md:w-full text-center md:text-start text-sm md:text-base font-montserrat500 md:leading-10 text-[#14598D]">Our team of experienced and highly qualified tax professionals brings a wealth of knowledge and expertise across various industries</p>
         <a href='#section4' className="bg-main text-white flex justify-center items-center font-bold w-1/3 py-2 md:py-4 rounded-lg md:rounded-2xl">Learn More</a>
       </div>
     </div>

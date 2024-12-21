@@ -8,13 +8,13 @@ import img7 from "../assets/msme7.png";
 import { Link } from "react-router-dom";
 const StartupRegistration = () => {
   return (
-    <div className="w-full px-4 md:px-20 my-10 md:my-10 flex gap-10 flex-col md:flex-row font-montserrat">
+    <div className="w-full px-4 md:px-20 my-10 md:my-10 flex gap-10 flex-col md:flex-row font-montserrat text-[#14598D]">
       <div className="w-full md:w-[80%] flex flex-col gap-8">
         <div className="flex flex-col gap-6">
           <h1 className="text-2xl  md:text-4xl leading-[40px] font-bold">
             Startup Registration India – 7 Steps to Register your Startup
           </h1>
-          <p className="text-gray-600 text-sm md:text-base leading-8">
+          <p className="text-[#14598D] text-sm md:text-base leading-8">
             Startups are booming in India. The government is also supporting
             young entrepreneurs to establish startups. Startups help to boost
             the country's economy. A startup is a business that offers
@@ -26,7 +26,7 @@ const StartupRegistration = () => {
 
         <div className="flex flex-col gap-6">
           <h1 className="text-2xl md:text-4xl leading-[40px] font-bold">Startup India</h1>
-          <p className="text-gray-600 text-sm md:text-base leading-8">
+          <p className="text-[#14598D] text-sm md:text-base leading-8">
             The Government of India, under the leadership of PM Narendra Modi,
             has started and promoted the Startup India initiative to develop the
             Indian economy, recognise and promote startups and attract talented
@@ -154,7 +154,7 @@ const StartupRegistration = () => {
 
       <div className="mb-6">
         <h2 className="text-2xl font-semibold">Patents, Trademarks, and Design Registration</h2>
-        <p className="text-gray-700">
+        <p className="text-[#14598D]">
           If you need a patent for your innovation or a trademark for your business, you can easily approach any facilitator from the list issued by the government. 
           You only need to bear the statutory fees, receiving an 80% reduction in fees.
         </p>
@@ -162,7 +162,7 @@ const StartupRegistration = () => {
 
       <div className="mb-6">
         <h2 className="text-2xl font-semibold">Funding</h2>
-        <p className="text-gray-700">
+        <p className="text-[#14598D]">
           Accessing finance can be a major challenge for startups due to lack of experience, security, or cash flow, which makes it difficult to attract investors.
           To address this, the government launched the Startup India Seed Fund Scheme (SISFS) on January 21, 2021, with a fund of Rs. 945 crore to support startups over the next four years.
         </p>
@@ -170,7 +170,7 @@ const StartupRegistration = () => {
 
       <div className="mb-6">
         <h2 className="text-2xl font-semibold">Self-Certification Under Employment and Labour Laws</h2>
-        <p className="text-gray-700">
+        <p className="text-[#14598D]">
           Startups can self-certify under certain labour and environment laws to reduce compliance costs and focus on core business activities.
           They are allowed to self-certify under 6 labour laws and 3 environment laws for 3 to 5 years from incorporation.
           Additionally, units in the "white category" of industries do not need clearance under 3 environment-related acts for 3 years.
@@ -179,7 +179,7 @@ const StartupRegistration = () => {
 
       <div className="mb-6">
         <h2 className="text-2xl font-semibold">Tax Exemption</h2>
-        <p className="text-gray-700">
+        <p className="text-[#14598D]">
           Startups are eligible for an income tax exemption for 3 years, provided they are certified by the Inter-Ministerial Board (IMB).
           Startups incorporated on or after April 1, 2016, can apply for this tax exemption.
         </p>

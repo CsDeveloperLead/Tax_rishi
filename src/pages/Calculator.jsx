@@ -27,16 +27,16 @@ function CalculatorGrid() {
   }, []);
   return (
    <div className="px-4 md:px-20 font-montserrat mt-10">
-    <div className="flex justify-center text-4xl font-bold my-6">
+    <div className="flex justify-center text-4xl font-bold my-6 text-[#14598D]">
         Calculators
     </div>
     <div className="grid grid-cols-2 gap-6 md:gap-10 p-2 md:p-4 sm:grid-cols-3 lg:grid-cols-4">
       {data.map((item, index) => (
         
-        <div key={index} className="group bg-white border h-44 md:h-40 border-gray-200 rounded-lg p-4 md:p-6 shadow-md flex hover:bg-main hover:scale-105 duration-500 ">
+        <div key={index} className="group bg-white text-[#14598D] border h-44 md:h-40 border-gray-200 rounded-lg p-4 md:p-6 shadow-md flex hover:bg-main hover:scale-105 duration-500 ">
             <Link to={item.link} >
           <h3 className="text-base md:text-xl font-bold mb-2 group-hover:text-white">{item.title}</h3>
-          <p className="text-gray-600 text-[12px] group-hover:text-white ">{item.description}</p>
+          <p className="text-[12px] group-hover:text-white ">{item.description}</p>
           </Link>
         </div>
         

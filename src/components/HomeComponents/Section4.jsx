@@ -49,14 +49,14 @@ const Section4 = () => {
       </div>
       <div className="w-full md:w-[45%] text-center md:text-start flex flex-col gap-4">
         {/* Your content goes here */}
-        <h1 className='text-2xl md:text-5xl font-bold md:leading-[60px]'>Calculate your Taxes with our Calculator</h1>
-        <p className='text-[#6e7191] text-[12px] md:text-sm md:leading-8'>Tired of the hassle of figuring out your taxes? Our intuitive tax calculator simplifies the process, helping you accurately calculate your taxes in just a few clicks. Whether you&apos;re an individual, freelancer, or business owner, this tool ensures precision and convenience.</p>
-        <p className='text-[#6e7191] text-[12px] md:text-sm md:leading-8'>Unlike other online tools, our calculator is built for reliability, designed to handle even complex tax scenarios. Say goodbye to confusion and hello to clarity with the first truly user-friendly tax solution.</p>
-         <div className='flex gap-4 items-center justify-center md:justify-start'>
+        <h1 className='text-2xl md:text-5xl font-bold md:leading-[60px] text-[#14598D]'>Calculate your Taxes with our Calculator</h1>
+        <p className='text-[12px] md:text-sm md:leading-8 text-[#14598D]'>Tired of the hassle of figuring out your taxes? Our intuitive tax calculator simplifies the process, helping you accurately calculate your taxes in just a few clicks. Whether you&apos;re an individual, freelancer, or business owner, this tool ensures precision and convenience.</p>
+        <p className='text-[12px] md:text-sm md:leading-8 text-[#14598D]'>Unlike other online tools, our calculator is built for reliability, designed to handle even complex tax scenarios. Say goodbye to confusion and hello to clarity with the first truly user-friendly tax solution.</p>
+         <div className='flex gap-4 items-center justify-center md:justify-start text-[#14598D]'>
           <span className='text-base md:text-xl font-bold'>268%</span>
           <p className='font-bold text-[10px]'>Investment Growth Year Over Year</p>
          </div>
-         <div className='flex gap-4 md:gap-6 items-center justify-center md:justify-start '><span className='text-base md:text-xl font-bold'>10k+</span><p className='font-bold text-[10px]'>New Investors Joining Everyday</p></div>
+         <div className='flex gap-4 md:gap-6 items-center justify-center md:justify-start text-[#14598D]'><span className='text-base md:text-xl font-bold'>10k+</span><p className='font-bold text-[10px]'>New Investors Joining Everyday</p></div>
          <div className='w-full flex justify-center md:justify-start'><Link to='/calculator' className='bg-main text-white font-bold text-sm flex justify-center items-center py-3 w-[250px] rounded-lg'>Discover Calculator</Link>
          </div>
       </div>

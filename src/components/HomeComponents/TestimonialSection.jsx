@@ -45,7 +45,7 @@ const TestimonialSection = () => {
           <span className="bg-[#cdd4f1] rounded-3xl text-base w-[200px] py-2 text-main flex justify-center items-center font-bold">
             Testimonials
           </span>
-          <h1 className="text-3xl text-center mb-6 md:mb-0 font-bold">Best Feedback From Clients</h1>
+          <h1 className="text-3xl text-center mb-6 md:mb-0 font-bold text-[#14598D]">Best Feedback From Clients</h1>
         </div>
         <Link to='https://maps.app.goo.gl/KT7X6nk4kYwiYA1aA' className="text-main uppercase cursor-pointer flex items-center gap-2 font-bold text-[12px]">
           See All Reviews{" "}
@@ -73,7 +73,7 @@ const TestimonialSection = () => {
           <div className="w-full flex flex-col items-center md:justify-center lg:justify-start lg:items-start md:flex-row gap-8 lg:absolute lg:w-auto lg:left-[300px] xl:left-[360px] 2xl:left-[540px] mt-10 lg:mt-0">
             <div className="w-[350px] lg:w-[300px] lg:h-[270px] xl:h-[250px] xl:w-[400px] h-[250px] flex flex-col gap-4 p-6 rounded-2xl bg-white shadow-custom-combined">
               <span>⭐⭐⭐⭐⭐</span>
-              <p className="">
+              <p className="text-[#14598D]">
                 “ My accounting has been never this simpler and tention free. They helped me with my startup funding. I am grateful for that. ☺️ “
               </p>
               <div className="flex  gap-4">
@@ -90,7 +90,7 @@ const TestimonialSection = () => {
             </div>
             <div className="w-[350px] lg:w-[300px] lg:h-[270px] xl:h-[250px] xl:w-[400px] h-[250px] flex flex-col gap-4 p-6 rounded-2xl bg-white shadow-custom-combined">
               <span>⭐⭐⭐⭐⭐</span>
-              <p className="h-[150px]">
+              <p className="h-[150px] text-[#14598D]">
                 “ Highly recommended for startup funding and grants “
               </p>
               <div className="flex  gap-4">

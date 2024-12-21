@@ -10,8 +10,8 @@ const Hero = () => {
         Your Trusted Partner
       </div>
       <div className="flex flex-col gap-2 md:gap-6 text-center">
-        <h1 className="text-2xl md:text-6xl font-bold">Maximize Your Returns with</h1>
-        <h1 className="text-2xl md:text-6xl font-bold">
+        <h1 className="text-2xl md:text-6xl font-bold text-[#14598D]">Maximize Your Returns with</h1>
+        <h1 className="text-2xl md:text-6xl font-bold text-[#14598D]">
           Expert
           <span className="bg-main fot-bold text-white md:px-8 rounded-md md:rounded-lg mx-2 md:mx-6 leading-0">
             Tax
@@ -19,7 +19,7 @@ const Hero = () => {
           Consulting
         </h1>
       </div>
-      <div className="flex flex-col text-center font-montserrat500 mt-4 md:mt-10">
+      <div className="flex flex-col text-center font-montserrat500 mt-4 md:mt-10 text-[#14598D]">
         <p className="text-[12px] md:text-base">
           we specialize in providing personalized tax consulting services to
           help you navigate complex tax{" "}
@@ -32,7 +32,7 @@ const Hero = () => {
         <a href="#section3" className="bg-main px-4 md:px-8 py-2 md:py-4 text-white rounded-xl">
           Get Started
         </a>
-        <a href="#section4" className="bg-white px-4 md:px-8 py-2 md:py-4 text-black rounded-xl border-2 border-main">
+        <a href="#section4" className="bg-white text-[#14598D] px-4 md:px-8 py-2 md:py-4 rounded-xl border-2 border-main">
           Learn More
         </a>
       </div>

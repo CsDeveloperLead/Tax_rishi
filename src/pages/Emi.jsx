@@ -44,7 +44,7 @@ function Emi() {
   };
 
   return (
-    <div className="mx-4 md:mx-10 my-10 md:my-20">
+    <div className="mx-4 md:mx-10 my-10 md:my-20 text-[#14598D]">
       <div className="flex flex-col lg:flex-row">
         <div className="w-full md:w-[75%] flex flex-col gap-10">
           <div className="border h-auto md:h-[620px] flex flex-col md:flex-row bg-white p-6 gap-10  rounded-lg shadow-lg">
@@ -54,7 +54,7 @@ function Emi() {
               {/* Loan Amount Slider */}
               <div className="my-8">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Loan Amount
                   </label>
                   <input
@@ -81,7 +81,7 @@ function Emi() {
               {/* Interest Rate Slider */}
               <div className="mb-6">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Rate of Interest (p.a)
                   </label>
                   <input
@@ -108,7 +108,7 @@ function Emi() {
               {/* Loan Tenure Slider */}
               <div className="mb-6">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Loan Tenure
                   </label>
                   <input
@@ -133,7 +133,7 @@ function Emi() {
               </div>
 
               {/* Summary */}
-              <div className="text-gray-700 font-medium mt-6">
+              <div className="font-medium mt-6">
                 <p className="py-2">
                   Monthly EMI:{" "}
                   <span className="font-semibold">
@@ -177,7 +177,7 @@ function Emi() {
             {/* <h1 className="text-3xl font-bold text-gray-900 mb-6">
               SIP Calculator – Systematic Investment Plan Calculator
             </h1> */}
-            <p className="text-sm  md:text-base   text-justify text-gray-700 mb-4">
+            <p className="text-sm  md:text-base   text-justify mb-4">
               The credit market in India is steadily on the rise. It is
               currently the 4th largest credit industry in the world, recording
               a CAGR of over 11% year on year. A vast majority of these advances
@@ -193,10 +193,10 @@ function Emi() {
               the exact EMI amount they are liable to pay for a loan.
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               Factors Affecting Your Due Amount
             </h2>
-            <p className="text-sm  md:text-base   text-justify text-gray-700 mb-4">
+            <p className="text-sm  md:text-base   text-justify mb-4">
               There are certain factors you need to consider while planning for
               applying for a loan. Based upon your financial and repayment
               capacity, you will be required to calculate equated monthly
@@ -204,21 +204,21 @@ function Emi() {
             </p>
             <ul className="w-full list-disc list-inside">
               <li className="mb-4">Term of Loan</li>
-              <p className="text-sm  md:text-base  text-justify text-gray-700 mb-4">
+              <p className="text-sm  md:text-base  text-justify mb-4">
                 A loan’s tenure may get reduced or extended. Subsequently, there
                 will be an increase or a decrease in the EMI amount as well.
                 Thus, considering the term of a loan is also an important factor
                 that may affect your due amount.
               </p>
               <li className="mb-4">Rate of Interest</li>
-              <p className="text-sm  md:text-base  text-justify text-gray-700 mb-4">
+              <p className="text-sm  md:text-base  text-justify mb-4">
                 The rate of interest is a vital factor that will help to assess
                 the installment amount owed. You can compare the product and opt
                 for one which has a lower rate of interest so that your overall
                 repayment stays low.
               </p>
               <li className="mb-4">Amount of Loan</li>
-              <p className="text-sm  md:text-base  text-justify text-gray-700 mb-4">
+              <p className="text-sm  md:text-base  text-justify mb-4">
                 Choosing the loan amount is another significant factor for
                 determining your EMI. Based on the loan amount you choose, your
                 equated monthly installment will be calculated accordingly.
@@ -231,14 +231,14 @@ function Emi() {
               <li>You don’t need to be a subject expert to be able to use this calculator. It’s simple to use, and even someone who hasn’t used it before will not find it challenging to navigate.</li>
             </ul> */}
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               How can an online EMI calculator help you?
             </h2>
-            <p className="text-sm  md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm  md:text-base text-justify mb-4">
               The number of credit accounts is growing at an even higher CAGR of
               28% and has reached 107 million accounts at the end of FY18.
             </p>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Regardless of the type of loan you want to avail of, be it a
               secured or unsecured advance, it is paramount that you know how
               much monthly instalment you have to make before you avail it. That
@@ -261,14 +261,14 @@ function Emi() {
                 loan.
               </li>
             </ul>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               The formula to determine loan EMI amount
             </h2>
-            <p className="text-sm  md:text-base   text-justify text-gray-700 mb-4">
+            <p className="text-sm  md:text-base   text-justify mb-4">
               There is a specific formula that Groww uses to compute the EMI
               amount for a loan.
             </p>
-            <p className="text-sm  md:text-base   text-justify text-gray-700 mb-4">
+            <p className="text-sm  md:text-base   text-justify mb-4">
               EMI = {"[P x R x (1+R) ^N]/ [(1+R) ^ (N-1)]"}, where –
             </p>
             <ul className="w-full list-disc list-inside">
@@ -276,14 +276,14 @@ function Emi() {
               <li>R is the rate of interest</li>
               <li>N is the loan tenure</li>
             </ul>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               This is the standardized formula used by any online loan
               calculator. Some variables may be added based on the type of loan.
             </p>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               Types Of EMI Calculator
             </h2>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               There are numerous types of EMI Calculators that you can use on
               Groww to calculate your equated monthly installments for home
               loans, personal loans, car loans, etc.
@@ -291,7 +291,7 @@ function Emi() {
             <h3 className="text-xl font-semibold text-main mt-8 mb-4">
               Home Loan EMI Calculator
             </h3>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Home loans usually have a huge loan principal amount and a long
               tenure. It requires strategic planning for its repayment. You can
               use the Home Loan EMI Calculator of Groww to calculate your EMI.
@@ -303,7 +303,7 @@ function Emi() {
             <h3 className="text-xl font-semibold text-main mt-8 mb-4">
               Car Loan EMI Calculator
             </h3>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Buying a car is one of the major investments one can make. You may
               require a car loan to fund this substantial investment. Often, a
               car loan’s EMI is supposed is to be repaid with due interest
@@ -318,7 +318,7 @@ function Emi() {
             <h3 className="text-xl font-semibold text-main mt-8 mb-4">
               Personal Loan EMI Calculator
             </h3>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Personal loans are mostly taken to serve multiple purposes like
               medical emergency, vacation, relocation, wedding, home renovation,
               etc. Since they are an unsecured loan, they have a relatively
@@ -327,10 +327,10 @@ function Emi() {
               amount that you can pay with ease. By entering your loan amount,
               rate of interest, and loan tenure, you can calculate your EMI.
             </p>
-            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+            <h3 className="text-xl font-semibold mt-8 mb-4">
               Education Loan EMI Calculator
             </h3>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Affording good education in recent times has been quite a task for
               parents as its cost has risen at a rapid pace. To finance this
               cost, an education loan is one of the best options a parent can
@@ -341,10 +341,10 @@ function Emi() {
               Loan EMI Calculator, you can calculate the sum of the EMI amount
               which you need to repay.
             </p>
-            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+            <h3 className="text-xl font-semibold mt-8 mb-4">
               Loan against Property EMI Calculator
             </h3>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               A loan against property is a type of secured loan that one can
               avail against a property owned by them. Be it residential,
               commercial, or land, any property can be mortgaged with the lender
@@ -352,10 +352,10 @@ function Emi() {
               without any financial strain, you can use a Loan against Property
               EMI Calculator.
             </p>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               How to use Groww online EMI calculator?
             </h2>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               The Groww online calculator is easy-to-use and takes just a few
               seconds of your time. Here’s how.
             </p>
@@ -366,7 +366,7 @@ function Emi() {
               </li>
               <li>The calculated EMI value will be displayed immediately.</li>
             </ul>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               Advantages of using Groww calculator
             </h2>
             <ul className="w-full list-disc list-inside">
@@ -379,12 +379,12 @@ function Emi() {
                 It’s fast and provides an accurate estimate instantaneously.
               </li>
             </ul>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Apart from the loan EMI calculator, Groww also offers other
               calculators as you can see below. All of them are free to use and
               you can use them as many times as you want.
             </p>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               “Looking to invest? Open an account with Groww and start investing
               in direct Mutual funds for free”
             </p>

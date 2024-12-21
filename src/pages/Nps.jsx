@@ -27,7 +27,7 @@ function NpsCalculator() {
   const minAnnuityInvestment = Math.round(maturityAmount * 0.4); // Assuming 40% of maturity goes to annuity
 
   return (
-    <div className="mx-4 md:mx-10 my-10 md:my-20">
+    <div className="mx-4 md:mx-10 my-10 md:my-20 text-[#14598D]">
       <div className="flex flex-col lg:flex-row">
         <div className="w-full md:w-[75%] flex flex-col gap-10">
           <div className="border h-auto md:h-[520px] flex flex-col md:flex-row bg-white p-6 gap-10  rounded-lg shadow-lg">
@@ -37,7 +37,7 @@ function NpsCalculator() {
               {/* Monthly Investment Slider */}
               <div className="my-4">
                 <div className="flex justify-between items-center mb-2">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Investment per month
                   </label>
                   <input
@@ -66,7 +66,7 @@ function NpsCalculator() {
               {/* Expected Return Rate Slider */}
               <div className="my-4">
                 <div className="flex justify-between items-center mb-2">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Expected return (p.a)
                   </label>
                   <input
@@ -93,7 +93,7 @@ function NpsCalculator() {
               {/* Age Slider */}
               <div className="my-4">
                 <div className="flex justify-between items-center mb-2">
-                  <label className="text-gray-700 font-medium">Your age</label>
+                  <label className="font-medium">Your age</label>
                   <input
                     type="text"
                     value={age}
@@ -116,7 +116,7 @@ function NpsCalculator() {
               </div>
 
               {/* Summary */}
-              <div className="mt-6 text-gray-700 font-medium">
+              <div className="mt-6 font-medium">
                 <div className="flex justify-between py-2">
                   <span>Total investment</span>
                   <span>₹ {formatToIndianCurrency(totalInvestment)}</span>
@@ -140,7 +140,7 @@ function NpsCalculator() {
             {/* <h1 className="text-3xl font-bold text-gray-900 mb-6">
               SIP Calculator – Systematic Investment Plan Calculator
             </h1> */}
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               The National Pension System or NPS is a measure to introduce a
               degree of financial stability for Indian citizens after they have
               retired. It was previously known as the National Pension Scheme.
@@ -148,7 +148,7 @@ function NpsCalculator() {
               in the pension corpus. You will need an NPS calculator to
               determine how much the total accumulation amounts to.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Any resident of the country who is between 18 and 60 years of age
               is eligible to build up a pension corpus. It is an investment and
               an asset after retirement. Since most people in India have private
@@ -156,10 +156,10 @@ function NpsCalculator() {
               calculator. Pension schemes in the country are not market-linked
               instruments and earn sound returns.
             </p>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               How can an NPS calculator help you?
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Here are the ways the NPS pension calculator will assist you.
             </p>
             <ol className="w-full list-decimal list-inside mb-4">
@@ -189,19 +189,19 @@ function NpsCalculator() {
                 several other details- all via the calculator.
               </li>
             </ol>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               Formula for calculating Pension amounts
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               NPS, like all pension schemes around the world, uses compounding
               interest to calculate returns.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               The formula that the National Pension Scheme calculator India uses
               is:
             </p>
-            <p className="text-gray-700 mb-4">{"A = P (1 + r/n) ^ nt"}</p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">{"A = P (1 + r/n) ^ nt"}</p>
+            <p className="mb-4">
               In the equation, the amount is A. The other variables are the
               following.
             </p>
@@ -235,48 +235,48 @@ function NpsCalculator() {
                 </tbody>
               </table>
             </div>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               An example of how pension aggregates is essential here.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               If you are 34 years old and your monthly contribution is Rs 3000,
               you will need to add to the pension account for 26 more years.
               Assuming that the rate of interest or ROI is expected at 10% every
               year, the following are the details the National Pension Plan
               calculator offers.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Total Principal invested= Rs 9.36 Lakh
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Sum expected on Maturity = 44.35 Lakh
             </p>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               How to use the NPS calculator?
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Follow the simple steps mentioned below to use the NPS calculator
             </p>
-            <p className="text-gray-700 mb-4">
-              <span className="text-black">Step 1 :</span> Enter the amount you
+            <p className="mb-4">
+              <span className="">Step 1 :</span> Enter the amount you
               want to invest every month towards your retirement corpus in the
               pension scheme
             </p>
-            <p className="text-gray-700 mb-4">
-              <span className="text-black">Step 2 :</span> Enter your present
+            <p className="mb-4">
+              <span className="">Step 2 :</span> Enter your present
               age
             </p>
-            <p className="text-gray-700 mb-4">
-              <span className="text-black">Step 3 :</span> Use the slider to
+            <p className="mb-4">
+              <span className="">Step 3 :</span> Use the slider to
               select the expected rate of return
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               The results will be displayed within seconds
             </p>
-            <h3 className="text-xl font-semibold text-gray-900 mt-8 mb-4">
+            <h3 className="text-xl font-semibold mt-8 mb-4">
               Advantages of using the National Pension Scheme calculator
             </h3>
-            <p className="text-gray-700 mb-4">These are the following:</p>
+            <p className="mb-4">These are the following:</p>
             <ul className="w-full list-disc list-inside mb-4">
               <li className="mb-4">
                 No more manual calculations. The right results every time.
@@ -287,12 +287,12 @@ function NpsCalculator() {
               </li>
               <li className="mb-4">One-stop online calculation.</li>
             </ul>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Likewise, Groww provides you with a wide range of other financial
               tools besides the NPS calculator. You will find them at the bottom
               of the page.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               “Looking to invest? Open an account with Groww and start investing
               in direct Mutual Funds for free”
             </p>

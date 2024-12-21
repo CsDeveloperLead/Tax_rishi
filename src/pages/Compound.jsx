@@ -52,7 +52,7 @@ function Compound() {
   };
 
   return (
-    <div className="mx-4 md:mx-10 my-10 md:my-20">
+    <div className="mx-4 md:mx-10 my-10 md:my-20 text-[#14598D]">
       <div className="flex flex-col lg:flex-row">
         <div className="w-full md:w-[75%] flex flex-col gap-10">
           <div className="border h-auto md:h-[620px] flex flex-col md:flex-row bg-white p-6 gap-10  rounded-lg shadow-lg">
@@ -62,7 +62,7 @@ function Compound() {
               </div>
 
               <div className="mb-6">
-                <label className="text-gray-700 font-medium">Principal amount</label>
+                <label className="font-medium">Principal amount</label>
                 <input
                   type="number"
                   value={principal}
@@ -72,7 +72,7 @@ function Compound() {
               </div>
 
               <div className="mb-6">
-                <label className="text-gray-700 font-medium">Rate of interest (p.a)</label>
+                <label className="font-medium">Rate of interest (p.a)</label>
                 <input
                   type="number"
                   value={rate}
@@ -82,7 +82,7 @@ function Compound() {
               </div>
 
               <div className="mb-6">
-                <label className="text-gray-700 font-medium">Time period (years)</label>
+                <label className="font-medium">Time period (years)</label>
                 <input
                   type="number"
                   value={time}
@@ -93,7 +93,7 @@ function Compound() {
 
 
               <div className="mb-6">
-                <label className="text-gray-700 font-medium">Compounding frequency</label>
+                <label className="font-medium">Compounding frequency</label>
                 <select
                   value={frequency}
                   onChange={(e) => setFrequency(e.target.value)}
@@ -105,7 +105,7 @@ function Compound() {
                 </select>
               </div>
 
-              <div className="text-gray-700 space-y-2 font-medium mt-8">
+              <div className="space-y-2 font-medium mt-8">
                 <p>Principal amount: <span className="font-semibold">₹{formatToIndianCurrency(principal)}</span></p>
                 <p>Total Interest: <span className="font-semibold">₹{formatToIndianCurrency(totalInterest)}</span></p>
                 <p>Total Amount: <span className="font-bold text-main">₹{formatToIndianCurrency(totalAmount)}</span></p>
@@ -120,13 +120,13 @@ function Compound() {
             {/* <h1 className="text-3xl font-bold text-gray-900 mb-6">
               SIP Calculator – Systematic Investment Plan Calculator
             </h1> */}
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Compounding interest, as opposed to simple interest, is the situation where your wealth increases exponentially because you earn interest on your total investments, the aggregation of your principal amount and the interest it incurs. Mathematically, the possibilities of compound interest are endless. Most of the modern business thrives on it. One needs a reliable compound interest calculator to ensure they are receiving the right ROI.
             </p>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               How can a Compound Interest Calculator Help You?
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               The nature of compound interest makes it extremely lucrative for businesses. When you use a compound interest calculator online, you can avail the following benefits.
             </p>
             <ul className="w-full list-disc list-inside">
@@ -136,16 +136,16 @@ function Compound() {
               <li className="mb-2">A Compound interest calculator helps calculate the total returns as well as yearly returns in case you need to consider breaking such an investment as per your future financial planning. If so, it is also advisable to consider pre-closure charges of the investment corpus.</li>
               <li className="mb-2">To keep deposit rates in line with the market, the Indian Government decided to annualize the interest rates on National Savings Certificates. The changes were effected in 2016. To determine how much your savings schemes now work, you must use an online calculator.</li>
             </ul>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               How to Calculate Compound Interest?
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Groww uses a globally standardized method to determine the total compound interest accrued. The formula is –
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               {'A = P (1 + r/n) ^ nt'}
             </p>
-            <p className="text-gray-700 mb-1">
+            <p className="mb-1">
               The variables in the formula are the following.
             </p>
             <div className="overflow-x-auto mb-4">
@@ -174,40 +174,40 @@ function Compound() {
                 </tbody>
               </table>
             </div>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               For example, if you invest Rs. 50,000 with an annual interest rate of 10% for 5 years, the returns for the first year will be 50,000 x 10/100 or Rs. 5,000.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               For the second year, the interest will be calculated on Rs. 50,000 + Rs. 5000 or Rs. 55,000. The interest will be Rs. 5550.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               For the third year, the amount will stand at Rs 6055 and so on.
             </p>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Obviously, it is difficult to calculate these amounts manually. That is why you need a compound interest calculator in India to make the task easier.
             </p>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               How to Use Groww’s Compound Interest Formula Calculator?
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Using Groww’s calculator is easy when you remember these easy steps.
             </p>
             <ul className="w-full list-disc list-inside">
-              <li className="text-gray-900 mb-2">Enter the principal, rate, and tenor you wish to calculate compound interest for</li>
-              <li className="text-gray-900 mb-2">The calculator will display the results within seconds.</li>
+              <li className="mb-2">Enter the principal, rate, and tenor you wish to calculate compound interest for</li>
+              <li className="mb-2">The calculator will display the results within seconds.</li>
             </ul>
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               Advantages of using Groww’s compound interest calculator
             </h2>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Groww provides you with an accurate compound interest calculator for unlimited use. Groww is ideal for daily use thanks to –
             </p>
             <ul className="w-full list-disc list-inside mb-4">
-              <li className="text-gray-900 mb-2">Ease of use.</li>
-              <li className="text-gray-900 mb-2">Reliability and accuracy.</li>
-              <li className="text-gray-900 mb-2">Data security.</li>
+              <li className="mb-2">Ease of use.</li>
+              <li className="mb-2">Reliability and accuracy.</li>
+              <li className="mb-2">Data security.</li>
             </ul>
-            <p className="text-gray-700 mb-4">
+            <p className="mb-4">
               Besides the compound interest calculator, you can also use a wide range of other calculators as seen below. Each one of our calculators is benchmarked against the best in the business and is ideal for everyday use.
             </p>
 
@@ -953,7 +953,7 @@ function Compound() {
               <h2 className="text-xl font-semibold mb-2">
                 Invest the way you want
               </h2>
-              <p className="text-gray-600 mb-4">
+              <p className="mb-4">
                 Join millions of Indians who trust and love Groww
               </p>
               <button className="bg-main text-white font-semibold py-2 px-4 rounded-lg">
@@ -1060,7 +1060,7 @@ function Compound() {
                   },
                 ].map((calculator, index) => (
                   <Link to={calculator.link} key={index}>
-                    <li className="px-4 py-3 hover:bg-gray-100 border-b border-gray-200 cursor-pointer text-gray-800">
+                    <li className="px-4 py-3 hover:bg-gray-100 border-b border-gray-200 cursor-pointer ">
                       {calculator.title}
                     </li>
                   </Link>

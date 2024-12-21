@@ -37,7 +37,7 @@ const AboutSection1 = () => {
           </span>
         </div>
       </div>
-      <div className="w-full md:w-[50%] mt-20 md:mt-0 flex flex-col items-center md:items-start gap-8">
+      <div className="w-full md:w-[50%] mt-20 md:mt-0 flex flex-col items-center md:items-start gap-8 text-[#14598D]">
         <div className="bg-[#cdd4f1] text-main flex justify-center items-center font-bold rounded-3xl py-3 w-full md:w-1/2">
           Wanna Know Our Story ?
         </div>

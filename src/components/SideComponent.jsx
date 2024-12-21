@@ -4,7 +4,7 @@ const SideComponent = () => {
   return (
     <div className="px-4">
     {/* Promotional Section */}
-    <div className="border rounded-lg p-6 text-center mb-6 shadow-sm">
+    <div className="border rounded-lg p-6 text-center mb-6 shadow-sm text-[#14598D]">
       <div className="flex justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -750,7 +750,7 @@ const SideComponent = () => {
     </div>
 
     {/* Popular Calculators Section */}
-    <div className="border rounded-lg shadow-sm">
+    <div className="border rounded-lg shadow-sm text-[#14598D]">
       <h3 className="text-lg font-semibold p-4 border-b">
         Popular Calculators
       </h3>
@@ -854,7 +854,7 @@ const SideComponent = () => {
           },
         ].map((calculator, index) => (
           <Link to={calculator.link} key={index}>
-            <li className="px-4 py-3 hover:bg-gray-100 border-b border-gray-200 cursor-pointer text-gray-800">
+            <li className="px-4 py-3 hover:bg-gray-100 border-b border-gray-200 cursor-pointer text-[#14598D]">
               {calculator.title}
             </li>
           </Link>

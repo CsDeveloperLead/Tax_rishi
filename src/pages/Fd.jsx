@@ -73,7 +73,7 @@ function Fd() {
   };
 
   return (
-    <div className="mx-4 md:mx-10 my-10 md:my-20">
+    <div className="mx-4 md:mx-10 my-10 md:my-20 text-[#14598D]">
       <div className="flex flex-col lg:flex-row">
         <div className="w-full md:w-[75%] flex flex-col gap-10">
           <div className="border h-auto md:h-[620px] flex flex-col md:flex-row bg-white p-6 gap-10  rounded-lg shadow-lg">
@@ -88,7 +88,7 @@ function Fd() {
               {/* Total Investment Slider */}
               <div className="my-8">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Total investment
                   </label>
                   <input
@@ -115,7 +115,7 @@ function Fd() {
               {/* Expected Return Rate Slider */}
               <div className="mb-6">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Expected return rate (p.a)
                   </label>
                   <input
@@ -142,7 +142,7 @@ function Fd() {
               {/* Time Period Slider */}
               <div className="mb-6">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Time period
                   </label>
                   <div className="flex items-center">
@@ -181,7 +181,7 @@ function Fd() {
               </div>
 
               {/* Summary */}
-              <div className="text-gray-700 font-medium mt-6">
+              <div className="font-medium mt-6">
                 <p className="py-2">
                   Invested amount:{" "}
                   <span className="font-semibold">
@@ -219,7 +219,7 @@ function Fd() {
             {/* <h1 className="text-3xl font-bold text-gray-900 mb-6">
               SIP Calculator – Systematic Investment Plan Calculator
             </h1> */}
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               A fixed deposit is a type of term investment offered by several
               banks and NBFCs. These deposits typically offer a higher rate of
               interest, subject to certain terms and conditions. The amount you
@@ -232,10 +232,10 @@ function Fd() {
               simple-to-use tool available on the Groww website.
             </p>
 
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               How can an FD calculator help you?
             </h2>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Calculating the maturity amount of an FD can be a complicated and
               time-consuming process. An online FD calculator enables one to
               figure it without breaking a sweat
@@ -263,19 +263,19 @@ function Fd() {
               <li>You don’t need to be a subject expert to be able to use this calculator. It’s simple to use, and even someone who hasn’t used it before will not find it challenging to navigate.</li>
             </ul> */}
 
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               The formula to determine FD maturity amount
             </h2>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               There are two types of FD that you may avail of – simple interest
               FD and compound interest FD. Groww has calculators for both types
               of FD
             </p>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justimb-4">
               The fixed deposit calculator for simple interest FD uses the
               following formula –
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               {"M = P + (P x r x t/100)"}, where –
             </p>
             <ul className="w-full text-sm md:text-base text-justify list-disc list-inside">
@@ -283,21 +283,21 @@ function Fd() {
               <li>r is the rate of interest per annum</li>
               <li>t is the tenure in years</li>
             </ul>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               For example, if you deposit a sum of Rs. 1,00,000 for 5 years at
               10% interest, the equation reads –
             </p>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               M= Rs. 1,00,000 + (1,00,000 x 10 x 5/100)
             </p>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               = Rs. 1,50,000
             </p>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               For compound interest FD, the FD return calculator uses the
               following formula –
             </p>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               {"M= P + P {(1 + i / 100) t – 1}"}, where –
             </p>
             <ul className="w-full text-sm md:text-base text-justify list-disc list-inside">
@@ -305,24 +305,24 @@ function Fd() {
               <li>i is the rate of interest per period</li>
               <li>t is the tenure</li>
             </ul>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               For example, if you take the same variables, the compound interest
               FD will accrue,
             </p>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               M= Rs. 1,00,000 {" {(1 + 10/100) 5-1} "}
             </p>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Or, Rs. 1,61,051
             </p>
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               How to use Groww’s FD calculator?
             </h2>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Know the exact amount you will receive at the time of FD maturity
               using the FD amount calculator.
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               There are several other advantages of using these calculators –
             </p>
             <ul className="w-full text-sm md:text-base text-justify list-disc list-inside">
@@ -339,7 +339,7 @@ function Fd() {
                 easily.
               </li>
             </ul>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Besides the Fixed deposit calculator, you can easily plan your
               finances using the following calculators. All of our offerings are
               free to use and you can use them as frequently as you want.

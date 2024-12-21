@@ -45,7 +45,7 @@ function SWPCalculator() {
   };
 
   return (
-    <div className="mx-4 md:mx-10  my-10 md:my-20">
+    <div className="mx-4 md:mx-10  my-10 md:my-20 text-[#14598D]">
       <div className="flex flex-col lg:flex-row ">
         <div className="w-full md:w-[75%] flex flex-col gap-10 ">
           <div className="border h-auto md:h-[620px] flex flex-col md:flex-row bg-white p-6 gap-10  rounded-lg shadow-lg">
@@ -60,7 +60,7 @@ function SWPCalculator() {
               {/* Total Investment Slider */}
               <div className="my-8">
                 <div className="flex justify-between">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Total investment
                   </label>
                   <input
@@ -87,7 +87,7 @@ function SWPCalculator() {
               {/* Withdrawal per month */}
               <div className="my-8">
                 <div className="flex justify-between">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Withdrawal per month
                   </label>
                   <input
@@ -114,7 +114,7 @@ function SWPCalculator() {
               {/* Expected Return Rate Slider */}
               <div className="mb-6">
                 <div className="flex justify-between">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Expected return rate (p.a)
                   </label>
                   <input
@@ -141,7 +141,7 @@ function SWPCalculator() {
               {/* Time Period Slider */}
               <div className="mb-6">
                 <div className="flex justify-between">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Time period
                   </label>
                   <input
@@ -166,7 +166,7 @@ function SWPCalculator() {
               </div>
 
               {/* Summary */}
-              <div className="text-gray-700 font-medium mt-6">
+              <div className="font-medium mt-6">
                 <p className="py-2">
                   Invested amount:{" "}
                   <span className="font-semibold">
@@ -203,7 +203,7 @@ function SWPCalculator() {
             {/* <h1 className="text-3xl font-bold text-gray-900 mb-6">
               SIP Calculator – Systematic Investment Plan Calculator
             </h1> */}
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               SWP stands for systematic withdrawal plan. Under SWP, if you
               invest lump sum in a mutual fund, you can set an amount you’ll
               withdraw regularly and the frequency at which you’ll withdraw.
@@ -220,7 +220,7 @@ function SWPCalculator() {
               from your lumpsum investments.
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               How can a SWP calculator assist you?
             </h2>
             <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
@@ -230,7 +230,7 @@ function SWPCalculator() {
               deducted from the investment while it continues to accumulate
               interest.
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               It is difficult to accurately calculate the monthly withdrawals
               and total matured sum. Groww can help you with this complex
               calculations with the its SWP calculator. This Systematic
@@ -239,21 +239,21 @@ function SWPCalculator() {
               the way people invest in mutual funds.
             </p>
 
-            <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-2xl font-semibold mt-8 mb-4">
               Example of Systematic Withdrawal Plan
             </h2>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               As mentioned before, the SWP allows investors to generate both
               monthly revenue as well as an accumulated sum at the end of the
               maturity period. Refer to this investment and withdrawal schedule
               for an in-depth idea.
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Here, an individual has invested Rs. 50,000 for tenure of 1 year
               along with a systematic withdrawal of Rs. 1,000 per month.
               Interest rate stands at 10%.
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               As such, total return of investments after the end of the tenor
               stands at Rs. 4,565.
             </p>
@@ -453,7 +453,7 @@ function SWPCalculator() {
               </table>
             </div>
 
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               How to use SWP calculator?
             </h2>
             <p className=" text-sm md:text-base text-justify mb-4">
@@ -471,7 +471,7 @@ function SWPCalculator() {
               </li>
             </ul>
 
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               How can a SWP calculator benefit you?
             </h2>
             <p className=" text-sm md:text-base text-justify mb-4">

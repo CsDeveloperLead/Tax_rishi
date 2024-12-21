@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 const StartupFunding = () => {
   return (
-    <div className="w-full px-4 md:px-20 my-10 md:my-10 flex gap-10 flex-col md:flex-row font-montserrat">
+    <div className="w-full px-4 md:px-20 my-10 md:my-10 flex gap-10 flex-col md:flex-row font-montserrat text-[#14598D]">
       <div className="w-[80%] flex flex-col gap-8">
         <div className="flex flex-col gap-6">
           <h1 className="text-4xl leading-[40px] font-bold">Startup Funding</h1>

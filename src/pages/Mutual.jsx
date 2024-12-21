@@ -40,7 +40,7 @@ function Mutual() {
   };
 
   return (
-    <div className="mx-4 md:mx-10 my-10 md:my-20">
+    <div className="mx-4 md:mx-10 my-10 md:my-20 text-[#14598D]">
       <div className="flex flex-col lg:flex-row">
         <div className="w-full md:w-[75%] flex flex-col gap-10">
           <div className="border h-auto md:h-[620px] flex flex-col md:flex-row bg-white p-6 gap-10  rounded-lg shadow-lg">
@@ -55,7 +55,7 @@ function Mutual() {
               {/* Total Investment Slider */}
               <div className="my-8">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Total investment
                   </label>
                   <input
@@ -82,7 +82,7 @@ function Mutual() {
               {/* Expected Return Rate Slider */}
               <div className="mb-6">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Expected return rate (p.a)
                   </label>
                   <input
@@ -109,7 +109,7 @@ function Mutual() {
               {/* Time Period Slider */}
               <div className="mb-6">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Time period
                   </label>
                   <input
@@ -134,7 +134,7 @@ function Mutual() {
               </div>
 
               {/* Summary */}
-              <div className="text-gray-700 font-medium mt-6">
+              <div className="font-medium mt-6">
                 <p className="py-2">
                   Invested amount:{" "}
                   <span className="font-semibold">
@@ -173,7 +173,7 @@ function Mutual() {
             {/* <h1 className="text-3xl font-bold text-gray-900 mb-6">
               SIP Calculator – Systematic Investment Plan Calculator
             </h1> */}
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Mutual funds are one of the most popular avenues of investment in
               the Indian context. As of June 2019, the average assets under
               management (AuM) of the entire MF industry stands at a staggering
@@ -187,16 +187,16 @@ function Mutual() {
               amount of the expected returns.
             </p>
 
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               How Can a Mutual Fund Return Calculator Online Help You?
             </h2>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               There are various types of mutual fund returns that an investor
               should be familiar with. They are absolute return, annualised
               return, total return, trailing return, point to point return, and
               rolling return.
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               It can be somewhat confusing for a prospective investor to keep so
               many factors in mind, which is where the mutual fund return
               calculator online can be immensely helpful.
@@ -218,56 +218,56 @@ function Mutual() {
               </li>
             </ul>
 
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               How does a Mutual Fund Total Return Calculator Work?
             </h2>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               A mutual fund calculator is a practical financial tool that
               enables an investor to calculate the returns yielded by investing
               in mutual funds. In broad terms, there are two ways in which one
               can invest in mutual funds – one time & monthly.
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               SIP or Systematic Investment Plan is an avenue of investing in
               mutual funds. In a SIP, an individual invests a small amount every
               month on designated schemes. One thing to remember is that the NAV
               of such funds changes every month and the same amount of money can
               purchase a variable number of units in different months.
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Imagine that you invest via SIP of Rs. 1000 for 12 months. At the
               time of availing the SIP, the NAV of your chosen stock is Rs. 10.
               So, you can purchase 100 units of the stock in the first month. In
               the second month, the NAV increases to Rs. 20. Your 1000 rupees
               can now buy just 50 units of the same stock.
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               An online SIP calculator predicts the returns on your SIP based on
               specific parameters. You simply need to input the SIP amount, the
               duration of investment and the expected rate of return, and the
               calculator will wield the results in seconds.
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               An investment is when an individual invests a substantial amount
               at one go in a particular scheme. One of the primary advantages of
               opting for one-time investment is that the change in NAV value
               does not affect the number of units you can purchase.
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               You need to input three essential data points; namely, your
               investment amount, estimated ROI and the duration of your
               investment.
             </p>
 
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               Estimated Returns on Key Schemes
             </h2>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               There are mainly three types of stocks that you can invest in –
               equity, debt, and hybrid. Here are some of the most high-yielding
               stocks in India in each category and their estimated returns.
             </p>
-            <h4 className="text-lg font-semibold text-gray-900 mt-8 mb-4">
+            <h4 className="text-lg font-semibold mt-8 mb-4">
               Equity Funds
             </h4>
             <div className="overflow-x-auto">
@@ -334,7 +334,7 @@ function Mutual() {
                 </tbody>
               </table>
             </div>
-            <h4 className="text-lg font-semibold text-gray-900 mt-8 mb-4">
+            <h4 className="text-lg font-semibold mt-8 mb-4">
               Dept Funds
             </h4>
             <div className="overflow-x-auto my-6">
@@ -401,7 +401,7 @@ function Mutual() {
                 </tbody>
               </table>
             </div>
-            <h4 className="text-lg font-semibold text-gray-900 mt-8 mb-4">
+            <h4 className="text-lg font-semibold mt-8 mb-4">
               Hybird Funds
             </h4>
             <div className="overflow-x-auto ">
@@ -469,29 +469,29 @@ function Mutual() {
               </table>
             </div>
 
-            <p className="text-sm md:text-base text-justify text-gray-700 my-4">
+            <p className="text-sm md:text-base text-justify my-4">
               When you use a mutual fund returns calculator India, you will have
               to insert the variables as mentioned in these tables along with
               the duration of your investment.
             </p>
 
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               How to use Groww’s calculator?
             </h2>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Online financial solution providers, Groww, offers mutual funds
               returns calculator in India, which is exceptionally easy to use.
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Enter the amount you have invested, the expected rate of return
               and the number of years for which you have made the investment.
               The appreciated amount of your investment at the end of the
               specified tenure will be reflected within seconds.
             </p>
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               Advantages of using Groww online mutual funds calculator
             </h2>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               There are several advantages of using these calculators which make
               the life of investors easier.
             </p>
@@ -509,12 +509,12 @@ function Mutual() {
                 incredibly convenient to perform financial planning on the go.
               </li>
             </ul>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Mutual funds, as an investment instrument, are growing at a steady
               pace in India. Although there is some inherent risk in these
               investments, the returns are proportionately higher.
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 my-4">
+            <p className="text-sm md:text-base text-justify my-4">
               “Looking to invest? Open an account with Groww and start investing
               in direct Mutual Funds for free”
             </p>

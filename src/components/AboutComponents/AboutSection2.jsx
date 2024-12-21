@@ -44,7 +44,7 @@ const AboutSection2 = () => {
           <div className="w-12 h-12 bg-[#cdd4f1] rounded-lg flex justify-center items-center">
             <img src={item.icon} alt={item.label} className="w-6 h-6 object-contain" />
           </div>
-          <div className="text-3xl font-bold flex">
+          <div className="text-3xl font-bold flex text-[#14598D]">
             <RollingNumber targetNumber={item.value} duration={1000} stepTime={10} />
             {
               item.id === 1 || item.id === 4

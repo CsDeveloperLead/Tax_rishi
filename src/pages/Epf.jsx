@@ -51,7 +51,7 @@ function Epf() {
   }, [monthlySalary, returnRate, age, contribution, annualIncrease]);
 
   return (
-    <div className="mx-4 md:mx-10 my-10 md:my-20">
+    <div className="mx-4 md:mx-10 my-10 md:my-20 text-[#14598D]">
       <div className="flex flex-col lg:flex-row">
         <div className="w-full md:w-[75%] flex flex-col gap-10">
           <div className="border h-auto md:h-[660px] flex bg-white p-6 gap-10 rounded-lg shadow-lg">
@@ -66,7 +66,7 @@ function Epf() {
               {/* Monthly Salary Slider */}
               <div className="my-8">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Monthly Salary (Basic + DA)
                   </label>
                   <input
@@ -93,7 +93,7 @@ function Epf() {
               {/* Age Slider */}
               <div className="my-8">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">Your age</label>
+                  <label className="font-medium">Your age</label>
                   <input
                     type="text"
                     value={age}
@@ -118,7 +118,7 @@ function Epf() {
               {/* Contribution to EPF Slider */}
               <div className="my-8">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Your contribution to EPF
                   </label>
                   <input
@@ -145,7 +145,7 @@ function Epf() {
               {/* Annual Increase in Salary Slider */}
               <div className="my-8">
                 <div className="flex justify-between items-center">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Annual increase in salary
                   </label>
                   <input
@@ -172,7 +172,7 @@ function Epf() {
               {/* Expected Return Rate Display (No slider here) */}
               <div className="mb-6">
                 <div className="flex justify-between">
-                  <label className="text-gray-700 font-medium">
+                  <label className="font-medium">
                     Expected return rate (p.a)
                   </label>
                   <span className="text-main text-sm bg-[#CDD4F1] w-[100px] px-1 md:px-4 py-1 font-bold text-right">
@@ -193,7 +193,7 @@ function Epf() {
             {/* <h1 className="text-3xl font-bold text-gray-900 mb-6">
               SIP Calculator – Systematic Investment Plan Calculator
             </h1> */}
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Most private sector employees are entitled to receive
               post-retirement benefits if they function in the organised sector.
               Note that government employees are additionally eligible for
@@ -212,15 +212,15 @@ function Epf() {
               for future financial decision-making.
             </p>
 
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               How can an EPF calculator help you?
             </h2>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Once you start using our PF calculator in India, you can easily
               track where your hard-earned money is being stored, and how much
               interest it has accumulated.
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Here are some interesting advantages of using an EPF calculator
               online.
             </p>
@@ -248,10 +248,10 @@ function Epf() {
               </li>
             </ul>
 
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               The formula to determine EPF amount
             </h2>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               When you use Groww’s EPF calculator in India, you are assured of
               quality and reliability. This is the data you should keep in handy
               before you use the calculator.
@@ -294,37 +294,37 @@ function Epf() {
                 </tbody>
               </table>
             </div>
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               How to use Groww’s EPF calculator?
             </h2>
-            <p className="text-sm md:text-base text-justify text-black mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               It is very easy to access and use our EPF calculator. Just input
               the values and the result will be generated within seconds.
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
-              <span className="text-sm md:text-base text-justify text-black">
+            <p className="text-sm md:text-base text-justify mb-4">
+              <span className="text-sm md:text-base text-justify">
                 Step 1:{" "}
               </span>{" "}
               Enter your basic salary and your age
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
-              <span className="text-sm md:text-base text-justify text-black">
+            <p className="text-sm md:text-base text-justify mb-4">
+              <span className="text-sm md:text-base text-justify">
                 Step 2:{" "}
               </span>{" "}
               As soon as you input the values, the employer’s contribution (
               EPS+EPF), total interest earned and total maturity amount will be
               reflected in the results.
             </p>
-            <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mt-8 mb-4">
+            <h2 className="text-xl md:text-2xl font-semibold mt-8 mb-4">
               What are the advantages of Groww’s PF account calculator?
             </h2>
-            <p className="text-sm md:text-base text-justify text-gray-700 mb-4">
+            <p className="text-sm md:text-base text-justify mb-4">
               Groww offers you a number of choices with many different
               calculators, a list of which you can see below. All of our
               calculators are free to use. They are regularly updated to avoid
               any glitches.
             </p>
-            <p className="text-sm md:text-base text-justify text-gray-700 my-4">
+            <p className="text-sm md:text-base text-justify my-4">
               “Looking to invest? Open an account with Groww and start investing
               in direct Mutual Funds for free”
             </p>
