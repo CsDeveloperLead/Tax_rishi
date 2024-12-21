@@ -22,7 +22,7 @@ export default {
       },
       colors: {
         main: '#398730',
-        'custom-blue-start': '#0062F2',
+        'custom-blue-start': '#398730',
         'custom-blue-end': '#B4C8E6',
         // Custom color defined here
       },

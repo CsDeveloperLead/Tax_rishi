@@ -38,7 +38,7 @@ function Emi() {
     datasets: [
       {
         data: [loanAmount, totalInterest],
-        backgroundColor: ["#e0e7ff", "#0062f2"],
+        backgroundColor: ["#e0e7ff", "#398730"],
       },
     ],
   };
