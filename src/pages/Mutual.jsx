@@ -34,7 +34,7 @@ function Mutual() {
     datasets: [
       {
         data: [totalInvested, estimatedReturns],
-        backgroundColor: ["#e0e7ff", "#0062f2"],
+        backgroundColor: ["#e0e7ff", "#398730"],
       },
     ],
   };
