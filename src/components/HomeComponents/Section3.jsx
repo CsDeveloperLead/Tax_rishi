@@ -26,21 +26,21 @@ const Section3 = () => {
         "Our expert financial advisors guide you through complex decisions and offer tailored solutions.",
     },
     {
-      id: 1,
+      id: 4,
       img: ser1,
       title: "Tax Consulting",
       description:
         "Our individualized tax planning and preparation services are designed to maximize your returns and minimize your liabilities.",
     },
     {
-      id: 2,
+      id: 5,
       img: ser2, // Add your image source
       title: "Business Strategy",
       description:
         "We help businesses create effective strategies that lead to success in today's competitive market.",
     },
     {
-      id: 3,
+      id: 6,
       img: ser3, // Add your image source
       title: "Financial Advisory",
       description:
