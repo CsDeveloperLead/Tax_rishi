@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import { Link, NavLink } from 'react-router-dom';
-import Logo from '../assets/Logo.png'
+import { Link, NavLink } from "react-router-dom";
+import Logo from "../assets/Logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,10 +69,8 @@ const Navbar = () => {
       <div className="max-w-7.5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link to='/'
-              className="text-xl font-montserrat700">
+            <Link to="/" className="text-xl font-montserrat700">
               <img src={Logo} alt="Logo" className="w-20 h-20" />
-
             </Link>
           </div>
           {/* Hamburger Icon (Mobile) */}
@@ -93,7 +91,9 @@ const Navbar = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d={isOpen ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'}
+                  d={
+                    isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
+                  }
                 />
               </svg>
             </button>
@@ -228,7 +228,7 @@ const Navbar = () => {
 
             {/* Get In Touch Button */}
             <Link
-              to='https://wa.link/ponzo9'
+              to="https://wa.link/ponzo9"
               className="px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700"
             >
               Get In Touch
@@ -239,22 +239,40 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden flex flex-col items-center py-6">
-          <NavLink to="/" className="block px-4 mb-2 text-[#000] font-bold hover:text-main">
+          <NavLink
+            to="/"
+            className="block px-4 mb-2 text-[#000] font-bold hover:text-main"
+          >
             Home
           </NavLink>
-          <NavLink to="/calculator" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
+          <NavLink
+            to="/calculator"
+            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+          >
             Calculators
           </NavLink>
-          <NavLink to="/about" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
+          <NavLink
+            to="/about"
+            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+          >
             About
           </NavLink>
-          <NavLink to="/blog" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
+          <NavLink
+            to="/blog"
+            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+          >
             Blogs
           </NavLink>
-          <NavLink to="/" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
+          <NavLink
+            to="/"
+            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+          >
             GstRishi
           </NavLink>
-          <NavLink to="/" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
+          <NavLink
+            to="/"
+            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+          >
             TaxRishi Foundation
           </NavLink>
 
@@ -265,7 +283,8 @@ const Navbar = () => {
               className="cursor-pointer py-2 text-[#000] font-bold hover:text-main flex flex-col items-center"
             >
               <span>Startup Rishi</span>
-              <span>{isExpanded ? "" : ""}</span> {/* Icon toggles between up and down */}
+              <span>{isExpanded ? "" : ""}</span>{" "}
+              {/* Icon toggles between up and down */}
             </div>
 
             {/* Accordion Content */}
@@ -305,7 +324,8 @@ const Navbar = () => {
               className="cursor-pointer py-2 text-[#000] font-bold hover:text-main flex flex-col items-center"
             >
               <span>Msme Rishi</span>
-              <span>{isExpanded ? "" : ""}</span> {/* Icon toggles between up and down */}
+              <span>{isExpanded ? "" : ""}</span>{" "}
+              {/* Icon toggles between up and down */}
             </div>
 
             {/* Accordion Content */}
@@ -338,7 +358,10 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <NavLink to="/contact" className="block px-4 py-2 text-[#000] font-bold hover:text-main">
+          <NavLink
+            to="/contact"
+            className="block px-4 py-2 text-[#000] font-bold hover:text-main"
+          >
             Contact
           </NavLink>
           <a

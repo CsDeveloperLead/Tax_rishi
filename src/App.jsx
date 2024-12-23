@@ -44,13 +44,11 @@ const App = () => {
     <Router>
       {/* Navbar */}
       <Navbar />
-
       {/* Page Content */}
       <div className="min-h-screen">
         <div className="">
           <FinancialQuizModal />
         </div>
-      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
