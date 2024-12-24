@@ -67,10 +67,10 @@ const FinancialQuizModal = () => {
 
     emailjs
       .sendForm(
-        "service_efr75bc", // replace with your EmailJS service ID
-        "template_8ax1t2y", // replace with your EmailJS template ID
+        "service_g5mi40g", // replace with your EmailJS service ID
+        "template_6cxp6cl", // replace with your EmailJS template ID
         form.current,
-        "zjsxgaBlAE1A72O8D" // replace with your EmailJS user ID
+        "BBL1j3BSWBcAq19wP" // replace with your EmailJS user ID
       )
       .then(
         (result) => {
@@ -85,10 +85,15 @@ const FinancialQuizModal = () => {
   };
 
   const nextStep = () => {
-    if (currentStep <= 4) {
+    if (currentStep < 4) {
       // For steps 1-4, simply move to the next step
       console.log(currentStep);
       setCurrentStep(currentStep + 1);
+    } else if (currentStep === 4) {
+      // When reaching step 4, validate all fields
+
+      setCurrentStep(currentStep + 1);
+      calculateScore();
     } else if (currentStep === 5) {
       console.log(currentStep);
       // When reaching step 5, validate all fields
@@ -100,8 +105,6 @@ const FinancialQuizModal = () => {
         alert("Please enter a valid phone number.");
       } else {
         console.log(user);
-        calculateScore();
-        sendEmail(user);
       }
     }
   };
@@ -175,12 +178,18 @@ const FinancialQuizModal = () => {
           className="w-full md:w-1/2 h-1/2 md:h-full transform rounded-l-[8px] text-main rounded-2xl box1 "
           style={{ transition: "transform 1s ease" }}
         >
-          <div className="w-full h-full md:h-full">
+          <div className="w-full h-full md:h-full relative">
             <img
               src={quiz}
               alt="quiz logo"
-              className="h-full md:h-full w-full md:object-cover rounded-xl"
+              className="h-full md:h-full w-full md:object-cover rounded-xl "
             />
+            <p
+              className="w-8 md:w-12 h-8 md:h-12 bg-white rounded-full flex justify-center items-center text-black absolute top-2 md:top-4 right-2 md:right-4"
+              onClick={closeModal}
+            >
+              X
+            </p>
           </div>
         </div>
 
@@ -240,6 +249,8 @@ const FinancialQuizModal = () => {
                   </div>
                 ) : (
                   <div className="flex flex-col items-center justify-center w-full h-full font-montserrat px-4">
+                    <h1 className="text-xl font-bold">Thank you for completing the quiz!!!</h1>
+                    <p className="text-xl font-bold">Your score is: <span className="text-2xl text-green-600 mx-2">{score}%</span></p>
                     <form
                       className="w-full max-w-md bg-white shadow-md rounded-lg p-2 md:p-6"
                       ref={form}
@@ -249,7 +260,7 @@ const FinancialQuizModal = () => {
                         User Information
                       </h1>
                       <p className="text-sm text-center text-red-500">
-                        *Fill Information to get your result
+                        ***Fill Information for Further Assistance***
                       </p>
 
                       <div className="w-full flex flex-col md:flex-row gap-2 md:gap-4 mt-2 md:mt-10">
@@ -263,7 +274,7 @@ const FinancialQuizModal = () => {
                           <input
                             type="text"
                             id="name"
-                            name="user_name" // Name attribute required for EmailJS
+                            name="from_name" // Name attribute required for EmailJS
                             value={user.name}
                             onChange={(e) =>
                               setUser({ ...user, name: e.target.value })
@@ -341,7 +352,7 @@ const FinancialQuizModal = () => {
                         type="submit"
                         className="w-full mt-4 md:mt-6 py-1.5 md:py-2 bg-main text-white font-medium rounded-md hover:bg-green-700"
                       >
-                        Get Your Score
+                        Submit{" "}
                       </button>
                     </form>
                   </div>
