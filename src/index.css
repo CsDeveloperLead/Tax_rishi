@@ -73,3 +73,16 @@ input[type="range"] {
  outline: none;
  border: none !important;
 }
+
+.counter-reset-custom {
+  counter-reset: custom-counter; /* Reset counter */
+}
+
+.counter-item::before {
+  content: counter(custom-counter, lower-roman) ") ";
+  counter-increment: custom-counter; /* Increment counter */
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: #4b5563; /* Tailwind's text-gray-700 */
+}

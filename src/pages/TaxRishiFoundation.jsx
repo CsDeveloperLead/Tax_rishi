@@ -4,462 +4,403 @@ import img3 from "../assets/start3.png";
 import img4 from "../assets/start4.png";
 import img5 from "../assets/start5.png";
 import img6 from "../assets/start6.png";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import Carousel from "../components/Carousel";
 
-
 const TaxRishiFoundation = () => {
+    const tableData = [
+        {
+          srNo: 1,
+          name: "Mr. Rishi Pal Bansal",
+          designation: "President",
+          pan: "AAEPB2662B",
+          aadhaar: "7451 5514 9108",
+        },
+        {
+          srNo: 2,
+          name: "Mr. Bhavya Bansal",
+          designation: "General Secretary",
+          pan: "APMPB0774R",
+          aadhaar: "4429 7008 7983",
+        },
+        {
+          srNo: 3,
+          name: "Mrs. Romila Bansal",
+          designation: "Senior Vice President",
+          pan: "AERPB6767L",
+          aadhaar: "2693 2435 2310",
+        },
+        {
+          srNo: 4,
+          name: "Mrs. Pooja Bansal",
+          designation: "Treasurer",
+          pan: "BCNPG8614E",
+          aadhaar: "6629 8729 6375",
+        },
+      ];
   return (
     <div className="w-full px-4 md:px-20 my-10 md:my-10 flex flex-col  font-montserrat text-[#14598D]">
-        <div className="w-full">
-         <Carousel />
-        </div>
-        <div className="flex gap-10 flex-col md:flex-row">
-      <div className="w-[80%] flex flex-col gap-8">
-        <div className="flex flex-col gap-6">
-          <h1 className="text-4xl leading-[40px] font-bold">
-            MSME Registration In India: Procedure, Documents Required
-          </h1>
-          <p className="text-[#14598D] text-base leading-8">
-            MSME industries are the backbone of the economy. They are also known
-            as Small Scale Industries (SSIs). The government of India provides
-            an MSME registration to the industries classified by the government
-            as Micro, Small and Medium Enterprises (MSME) in India. The MSME
-            registration helps MSMEs to obtain various benefits provided by the
-            government for their establishment and growth.{" "}
-          </p>
-        </div>
+      <div className="w-full">
+        <Carousel />
+      </div>
+      <div className="flex gap-10 flex-col md:flex-row">
+        <div className="w-[80%] flex flex-col gap-8 ">
+          <div className="p-6 font-montserrat text-[#14598D]">
+            <h1 className="text-2xl font-bold mb-4">Trust Details</h1>
 
-        <div className="flex flex-col gap-6">
-          <h1 className="text-4xl leading-[40px] font-bold">What is MSME Classification?</h1>
-          <p className="text-[#14598D] text-base leading-8">
-            nitially, when the government introduced the MSME registration in
-            2006, the MSME classification was based on the investment criteria
-            in plant and machinery or equipment. The government revised the MSME
-            classification by inserting annual investment and annual criteria.
-            Also, the distinction between the manufacturing and the services
-            sectors under the MSME definition was removed.
-          </p>
-          <p className=" font-bold text-[#14598D]">
-            The following is the current revised MSME classification, where the
-            investment and annual turnover are to be considered for deciding if
-            an entity is considered as an MSME:
-          </p>
-        </div>
+            {/* Name Section */}
+            <div className="mb-6">
+              <h2 className="text-lg font-semibold mb-2">1. NAME:</h2>
+              <p>
+                The name of the Trust shall be{" "}
+                <strong>“TAXRISHI FOUNDATION”</strong>.
+              </p>
+            </div>
 
-        <div className="overflow-x-auto">
-          <table className="min-w-full border border-gray-300">
-            <thead className="bg-gray-100">
-              <tr>
-                <th
-                  colSpan={4}
-                  className="py-3 px-4 text-center font-semibold text-[#14598D] border-b"
-                >
-                  Revised MSME Classification
-                </th>
-              </tr>
-              <tr>
-                <th className="py-3 px-4 text-left font-semibold text-[#14598D] border-r border-gray-300">
-                  Criteria
-                </th>
-                <th className="py-3 px-4 text-center font-semibold text-[#14598D] border-r border-gray-300">
-                  Micro
-                </th>
-                <th className="py-3 px-4 text-center font-semibold text-[#14598D] border-r border-gray-300">
-                  Small
-                </th>
-                <th className="py-3 px-4 text-center font-semibold text-[#14598D]">
-                  Medium*
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="border-b">
-                <td className="py-4 px-4 font-medium text-[#14598D] border-r border-gray-300">
-                  Investment & Annual Turnover
-                </td>
-                <td className="py-4 px-4 text-center text-[#14598D] border-r border-gray-300">
-                  &lt; Rs.1 crore &amp; &lt; Rs.5 crore
-                </td>
-                <td className="py-4 px-4 text-center text-[#14598D] border-r border-gray-300">
-                  &lt; Rs.10 crore &amp; &lt; Rs.50 crore
-                </td>
-                <td className="py-4 px-4 text-center text-[#14598D]">
-                  &lt; Rs.50 crore &amp; &lt; Rs.250 crore
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+            {/* Office Section */}
+            <div className="mb-6">
+              <h2 className="text-lg font-semibold mb-2">2. OFFICE:</h2>
+              <p>
+                The office of the Trust for the time being shall be{" "}
+                <strong>
+                  203, Shree Mahaveer Arcade, 2nd Floor, C-19, Sector-15, Near
+                  SBI Bank, Atal Chowk, Vasundhara, Ghaziabad, UP-201012
+                </strong>{" "}
+                with the power given to the Trustees to shift the same to any
+                other place as they may mutually agree upon.
+              </p>
+            </div>
 
-        <div className="flex flex-col gap-6">
-          <h1 className="text-4xl leading-[40px] font-bold">
-            What is MSME Udyam Registration?{" "}
-          </h1>
-          <p className="text-[#14598D] text-base leading-8">
-            <strong>
-              MSME registration is also called Udyam registration.
-            </strong>{" "}
-            The entities that fulfill the MSME classification can apply for MSME
-            registration from the government portal, the Udyam portal. The MSME
-            registration is entirely online and can be obtained from the
-            <a
-              href="https://udyamregistration.gov.in/"
-              className="text-main font-semibold"
-            >
-              {" "}
-              Udyam registration portal{" "}
-            </a>
-            . It is not mandatory for MSMEs to obtain this registration, but it
-            is beneficial to get one’s business registered under this because it
-            provides a lot of benefits in terms of taxation, setting up the
-            business, credit facilities, loans, etc.
-          </p>
-        </div>
+            {/* Date of Commencement */}
+            <div className="mb-6">
+              <h2 className="text-lg font-semibold mb-2">
+                3. DATE OF COMMENCEMENT:
+              </h2>
+              <p>
+                The date of commencement of the trust is the{" "}
+                <strong>21st August 2024</strong>.
+              </p>
+            </div>
 
-        <div className="flex flex-col gap-6">
-          <h1 className="text-4xl leading-[40px] font-bold">MSME Registration Eligibility </h1>
-          <p className="text-[#14598D] text-base leading-8">
-            <strong>
-              All manufacturing, service industries, wholesale, and retail trade
-              that fulfil the revised MSME classification criteria of annual
-              turnover and investment can apply for MSME registration.
-            </strong>{" "}
-            Thus, the MSME registration eligibility depends on an entity’s
-            annual turnover and investment. The following entities are eligible
-            for MSME registration:
-          </p>
-          <ul className="space-y-4 list-disc pl-4">
-            <li>Individuals, startups, business owners, and entrepreneurs</li>
-            <li>Private and public limited companies</li>
-            <li>Sole proprietorship</li>
-            <li>Partnership firm</li>
-            <li>Limited Liability Partnerships (LLPs)</li>
-            <li>Self Help Groups (SHGs)</li>
-            <li>Co-operative societies</li>
-            <li>Trusts</li>
-          </ul>
-        </div>
+            {/* Objects Section */}
+            <div className="mb-6">
+              <h2 className="text-lg font-semibold mb-2">4. OBJECTS:</h2>
+              <p className="mb-4">The objects of the trust are:</p>
 
-        <div className="flex flex-col gap-4">
-          <h1 className="text-4xl leading-[40px] font-bold">
-            Documents Required for MSME Registration{" "}
-          </h1>
-          <p className="text-blxk text-base leading-8">
-            <strong>The MSME registration documents are as follows:</strong>{" "}
-          </p>
-          <ul className="space-y-2 list-disc pl-4 font-bold">
-            <li>Aadhaar card</li>
-            <li>PAN card</li>
-          </ul>
-          <p className="text-blxk text-base leading-8">
-            <strong>There are no MSME registration fees</strong> and it does not
-            require proof of documents. PAN and GST-linked details on investment
-            and turnover of enterprises will be taken automatically by the Udyam
-            Registration Portal from the Government databases since the portal
-            is integrated with Income Tax and GSTIN systems.
-          </p>
-          <p className="text-blxk text-base leading-8">
-            <strong>
-              GST registration is not compulsory for enterprises that do not
-              require a GST registration.
-            </strong>{" "}
-            However, enterprises that mandatorily need to obtain GST
-            registration under the GST law, must enter their GSTIN for obtaining
-            the MSME Registration or{" "}
-            <a
-              href="https://udyamregistration.gov.in/"
-              className="text-main font-semibold"
-            >
-              {" "}
-              Udyam registration portal{" "}
-            </a>
-            .
-          </p>
-        </div>
+              {/* Taxation Section */}
+              <h3 className="text-md font-semibold mb-2">a) Taxation</h3>
+              <ul className="list-disc list-inside pl-4">
+                <li>
+                  To provide educational resources and training to individuals
+                  and businesses, helping them understand tax laws and
+                  compliance requirements.
+                </li>
+                <li>
+                  To work to alleviate the fear of tax authorities and
+                  harassment by offering guidance on dealing with tax-related
+                  issues.
+                </li>
+                <li>
+                  To offer assistance in resolving tax disputes, ensuring fair
+                  treatment, and protecting taxpayers' rights.
+                </li>
+                <li>
+                  To assist businesses and individuals with tax filing
+                  procedures, making the process easier and more efficient.
+                </li>
+                <li>
+                  To conduct awareness campaigns to inform the public about tax
+                  benefits, incentives, and the importance of tax compliance.
+                </li>
+                <li>
+                  To launch campaigns to combat abusive tax practices and ensure
+                  fair treatment of taxpayers.
+                </li>
+              </ul>
 
-        <div className="flex flex-col gap-4">
-          <h1 className="text-4xl leading-[40px] font-bold">
-            How to Apply for MSME Registration on Udyam Registration Portal?{" "}
-          </h1>
-          <p className="text-base leading-8">
-            <strong>
-              The MSME registration process is entirely online. MSME online
-              registration is to be done on the government portal of{" "}
-              <a
-                href="https://udyamregistration.gov.in/"
-                className="text-main font-semibold"
-              >
-                udyamregistration.gov.in{" "}
-              </a>
-              .
-            </strong>{" "}
-            MSME registration online can be done under the following two
-            categories in the portal –
+              {/* Economic Reforms Section */}
+              <h3 className="text-md font-semibold mt-4 mb-2">
+                b) Economic Reforms
+              </h3>
+              <ul className="list-disc list-inside pl-4">
+                <li>
+                  <strong>Policy Advocacy:</strong> To advise the government on
+                  necessary economic reforms that can stimulate business growth
+                  and overall economic prosperity.
+                </li>
+                <li>
+                  <strong>Research and Analysis:</strong> To conduct research on
+                  taxation policies and their impact on the economy, providing
+                  data-driven insights to policymakers.
+                </li>
+                <li>
+                  <strong>Global Trade Policies:</strong> To provide
+                  recommendations on global trade policies that favor India's
+                  economic interests and support local businesses in global
+                  markets.
+                </li>
+                <li>
+                  <strong>Encouraging Investment:</strong> To promote tax
+                  policies that attract both domestic and foreign investments,
+                  contributing to economic growth and job creation.
+                </li>
+              </ul>
+
+              {/* Business Support Section */}
+              <h3 className="text-md font-semibold mt-4 mb-2">
+                c) Business Support
+              </h3>
+              <ul className="list-disc list-inside pl-4">
+                <li>
+                  <strong>Ease of Doing Business:</strong> To help businesses
+                  navigate complex tax regulations, enabling them to focus on
+                  growth and innovation.
+                </li>
+                <li>
+                  <strong>Consultation Services:</strong> To offer consultation
+                  services to businesses on tax planning, compliance, and
+                  strategic decision-making.
+                </li>
+                <li>
+                  <strong>Support for Start-ups:</strong> To provide specialized
+                  support to start-ups, helping them understand tax incentives
+                  and compliance requirements to foster growth.
+                </li>
+                <li>
+                  <strong>Collaboration with Industry Bodies:</strong> To
+                  collaborate with industry associations to address common tax
+                  challenges and advocate for favorable policies.
+                </li>
+                <li>
+                  <strong>Workshops and Seminars:</strong> To organize workshops
+                  and seminars to keep businesses updated on the latest tax
+                  laws, economic reforms, and global trade developments.
+                </li>
+              </ul>
+            </div>
+
+            {/* Closing Note */}
+            <div className="mt-6">
+              <p>
+                <strong>TAXRISHI FOUNDATION</strong> will play a vital role in
+                fostering a business-friendly environment, promoting economic
+                growth, and ensuring a transparent and fair taxation system.
+              </p>
+            </div>
+            <h3 className="text-md font-semibold mt-4 mb-2">
+              d) Other Objects
+            </h3>
+            <ol className="list-disc list-inside pl-4">
+              <li>
+                To provide education and health services and help in the
+                development of poor people in rural and urban areas without any
+                distinction of caste, color, creed, or religion.
+              </li>
+              <li>
+                To design and implement development projects aimed at improving
+                the quality of life of the socially marginalized and
+                economically backward classes.
+              </li>
+              <li>
+                To develop and promote appropriate and environmentally sound
+                technologies for enhancing the quality of life.
+              </li>
+              <li>
+                To implement development projects on traditional skills with
+                participation from local people and groups.
+              </li>
+              <li>
+                To exchange all information with other organizations, groups,
+                and individuals working in the same area or other areas in India
+                and abroad.
+              </li>
+              <li>
+                To network and exchange skills with other Non-Government
+                Organizations, Private Limited Companies, Institutions, Donor
+                Agencies, Government Institutions, and the Government.
+              </li>
+              <li>
+                To infuse useful knowledge among the people, including medical,
+                paramedical, technical, computer, vocational, and
+                self-employment oriented education, and to establish, manage,
+                and run schools, institutions, and centers for the benefit of
+                the people.
+              </li>
+              <li>
+                To establish a Documentation Centre and Facility Centre for the
+                awareness of environment, sanitation, hygiene, and related
+                issues.
+              </li>
+              <li>
+                To grant relief during natural calamities such as famine, flood,
+                fire, pestilence, and other similar situations, and to give
+                donations, subscriptions, or contributions to institutions or
+                persons during such relief work.
+              </li>
+              <li>
+                To establish or assist in the establishment or support and
+                maintenance of technical institutes and research institutes for
+                the benefits of the people.
+              </li>
+              <li>
+                To raise funds, accept donations, grants, subscriptions, gifts,
+                benefactions, and other offerings in cash or kind of movable and
+                immovable property to serve the purpose of the Trust.
+              </li>
+              <li>
+                To develop the aforesaid objects by joining with other societies
+                or trusts who also believe in the aforesaid objects and for that
+                purpose to enter into all activities including affiliating,
+                emulating wholly or partially taking possession on terms of
+                lease license, management and control of properties,
+                institutions and organizations and obtaining of gifts of money
+                and acquiring movable properties.
+              </li>
+              <li>
+                To render assistance and / or grant aid to other public
+                charitable trusts or institutions.
+              </li>
+              <li>
+                To do all such other acts and things as may be required in order
+                to further its above objectives.
+              </li>
+            </ol>
+            <div className="mt-6">
+              <h2 className="text-lg font-semibold mb-2">5. PROPERTIES:</h2>
+            </div>
+
+            <p className="my-2">The Trust properties shall consist of:-</p>
+            <ol className="list-disc list-inside pl-4">
+              <li>
+                The amount Transferred by the SETTLOR as mentioned above,
+                towards the Corpus fund of the Trust.
+              </li>
+              <li>
+                Any cash, kind, properties, movable and immovable that may be
+                acquired by purchase or otherwise or all manner of rights, title
+                or interest in or over any property movable or immovable.
+              </li>
+              <li>
+                All additions and accretions to the Trust properties and the
+                income there from.
+              </li>
+              <li>
+                All donations, gifts, legacies or grants, in cash or kind
+                accepted by the Trustees upon Trust.
+              </li>
+            </ol>
+
+            <div className="mt-6">
+              The properties of the Trust shall be utilized for the objects set
+              forth herein above and subject to the provisions and conditions
+              herein mentioned.
+            </div>
+            <div className="mt-6">
+              <h2 className="text-lg font-semibold mb-2">
+                6. BENEFICIARIES OF THE TRUST:
+              </h2>
+            </div>
+            <p className="my-2">
+              All the mankind without any discrimination on the basis of
+              religion, caste, colour, creed or sex shall be beneficiaries of
+              this trust. The trust shall exist solely for philanthropic
+              purposes and not for purposes of profit.
+            </p>
+            <div className="mt-6">
+            <h2 className="text-lg font-semibold mb-2">
+              7. QUALIFICATION OF TRUSTEE:
+            </h2>
+          </div>
+          <p className="my-2">
+            For becoming a trustee of the trust, a person has to qualify the
+            following conditions:-
           </p>
-          <ol className="space-y-4 pl-4">
+          <ol className="list-disc list-inside pl-4">
+            <li>A person who have attained the age of majority.</li>
+            <li>Person is to be an Indian resident.</li>
+            <li>Person of good moral character.</li>
+            <li>Person should be of sound mind.</li>
+            <li>Person should not be declared an insolvent.</li>
             <li>
-              <span className="font-bold mr-1">1.</span> For New Entrepreneurs
-              who are not Registered yet as MSME or those with EM-II and
-            </li>
-            <li>
-              <span className="font-bold mr-1">2.</span> For those having
-              registration as UAM and For those already having registration as
-              UAM through Assisted filing
+              Person shall not be barred or disqualified from entering into the
+              contract by the law being in force at that time.
             </li>
           </ol>
-          <p className="text-xl my-2">
-            <strong>
-              For New Entrepreneurs who are not Registered yet as MSME or those
-              with EM-II{" "}
-            </strong>
-          </p>
-          <div>
-            <p className="">
-              <span className="font-bold mr-2">Step 1:</span>
-              New entrepreneurs and entrepreneurs having EM-II registration need
-              to click the button “For New Entrepreneurs who are not Registered
-              yet as MSME or those with EM-II” shown on the home page of Udyam
-              Registration Portal.
-            </p>
-
-            <div className="my-6">
-              <img src={img1} alt="" />
-            </div>
-          </div>
-          <div>
-            <p className="">
-              <span className="font-bold mr-2">Step 2:</span>
-              On the next page, enter the Aadhaar number and the name of the
-              entrepreneur and click on the “Validate and Generate OTP Button”.
-              Once this button is clicked and OTP is received and entered, the
-              PAN Verification page opens.{" "}
-            </p>
-
-            <div className="my-6">
-              <img src={img2} alt="" />
-            </div>
-          </div>
-          <div>
-            <p className="">
-              <span className="font-bold mr-2">Step 3:</span>
-              The entrepreneur must enter the “Type of Organisation” and the PAN
-              Number and click on the “Validate PAN” button. The portal gets the
-              PAN details from the government databases and validates the PAN
-              number of the entrepreneur.{" "}
-            </p>
-            <div className="my-6">
-              <img src={img3} alt="" />
-            </div>
-          </div>
-          <div>
-            <p className="">
-              <span className="font-bold mr-2">Step 4:</span>
-              After verification of PAN, the Udyam Registration form will
-              appear, and the entrepreneurs need to fill in their personal
-              details and details of their enterprise.{" "}
-            </p>
-            <div className="my-6">
-              <img src={img4} alt="" />
-            </div>
-          </div>
-          <div>
-            <p className="">
-              <span className="font-bold mr-2">Step 5:</span>
-              Enter the investment and turnover details, select the declaration,
-              and click on the “Submit and Get Final OTP” button. The OTP is
-              sent, and after entering the OTP and submitting the form, the
-              Udyam Registration Certificate will be sent through email.
-              Entrepreneurs can also find out the MSME registration status from
-              the Udyam Registration Portal.{" "}
-            </p>
-            <div className="my-6">
-              <img src={img5} alt="" />
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-6">
-          <h1 className="text-4xl leading-[40px] font-bold">
-            Registration For Entrepreneurs Already Having UAM
-          </h1>
-          <p className="text-[#14598D] text-base leading-8">
-            For those already having UAM registration, they need to click the
-            button “For those having registration as UAM” or “For those already
-            having registration as UAM through Assisted filing” shown on the
-            home page of the government portal. This will open a page where
-            Udyog Aadhaar Number is to be entered, and an OTP option should be
-            selected.{" "}
-          </p>
-          <p className="text-[#14598D] text-base leading-8">
-            The options provided are to obtain OTP on mobile as filled in UAM or
-            obtain OTP on email as filled UAM. After choosing the OTP Options,
-            “Validate and Generate OTP” is to be clicked. After entering OTP,
-            registration details are to be filled on the MSME registration form,
-            and Udyam registration will be complete.{" "}
-          </p>
-          <div className="my-6">
-            <img src={img6} alt="" />
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-6">
-          <h1 className="text-4xl leading-[40px] font-bold">MSME Registration Fees</h1>
-          <p className="text-[#14598D] text-base leading-8">
-            There are no fees charged by the government for MSME registration.
-            It is free of cost on the official website, i.e. Udyam Portal.
-          </p>
-        </div>
-
-        <div className="flex flex-col gap-6">
-          <h1 className="text-4xl leading-[40px] font-bold">MSME Registration Certificate</h1>
-          <p className="text-[#14598D] text-base leading-8">
-            The Ministry of MSME issues an e-certificate known as the Udyam
-            Registration Certificate to MSMEs in India. The Udyam registration
-            certificate is known as the MSME registration certificate. The
-            entrepreneurs receive the MSME registration certificate upon
-            completion of the MSME registration process. The certificate will
-            contain a QR Code, from which the enterprise details can be
-            accessed.{" "}
-          </p>
-        </div>
-
-        <div className="flex flex-col gap-6">
-          <h1 className="text-4xl leading-[40px] font-bold">MSME Registration Number</h1>
-          <p className="text-[#14598D] text-base leading-8">
-            An enterprise having an MSME registration is known as Udyam, and the
-            permanent identity number assigned to by the Ministry of MSME is
-            known as the ‘Udyam/MSME Registration number’. The MSME Registration
-            Certificate will contain the 19-digit MSME/Udyam Registration
-            Number.{" "}
-          </p>{" "}
-        </div>
-
-        <div className="flex flex-col gap-6">
-          <h1 className="text-4xl leading-[40px] font-bold">MSME Registration Status</h1>
-          <p className="text-[#14598D] text-base leading-8">
-          Below is the process to check MSME Registration Status:
-          </p>{" "}
-          <ul className="space-y-4 list-disc ml-4">
-            <li>Visit the Udyam registration portal.</li>
-            <li>Click on the ‘Print/Verify’ option and click on the ‘Verify Udyam Registration Number’ option.</li>
-            <li>Enter the ‘Reference Number’, enter the captcha code and click on the ‘Verify’ button. </li>
-          </ul>
-        </div>
-        <div className="flex flex-col gap-6">
-          <h1 className="text-4xl leading-[40px] font-bold">MSME Registration Certificate Download </h1>
-          <p className="text-[#14598D] text-base leading-8">
-          Below is the process to download the MSME Registration Certificate:
-          </p>{" "}
-          <ul className="space-y-4 list-disc ml-4">
-            <li>Visit the Udyam registration portal.</li>
-            <li>Click the ‘Print/Verify’ option and select the ‘Print Udyam Certificate’ option.</li>
-            <li>Enter the ‘Udyam Registration Number’, ‘Mobile’, choose the OTP option and click on the ‘Validate & Generate OTP’ button.  </li>
-            <li>Enter the OTP received on the mobile/email and click on the ‘Validate OTP and Login’ button.  </li>
-            <li>After logging in, take a printout of the Udyam registration certificate.  </li>
-          </ul>
-        </div>
-
-        <div className="">
-      <h2 className="text-4xl font-bold mb-4">MSME Registration Benefits</h2>
-      <p className="text-base mb-4">Below listed are the MSME registration benefits:</p>
-
-      <ul className="list-disc pl-4 space-y-4">
-        <li>
-          Due to MSME Registration India, bank loans become cheaper as the interest rate is very low, around 1-1.5%, much lower than interest on regular loans.
-        </li>
-        <li>
-          Allows credit for minimum alternate tax (MAT) to be carried forward for up to 15 years instead of 10 years.
-        </li>
-        <li>
-          Once registered, the cost of getting a patent or setting up the industry reduces as many rebates and concessions are available.
-        </li>
-        <li>
-          MSME registration helps to acquire government tenders easily as the Udyam Registration Portal is integrated with the Government e-Marketplace and various other State Government portals.
-        </li>
-        <li>
-          One Time Settlement Fee for non-paid amounts of MSME.
-        </li>
-        <li>
-          MSME registration helps in availing benefits of government schemes such as the Credit Guarantee Scheme, Credit Linked Capital Subsidy Scheme, Public Procurement Policy, Protection against delayed payments, etc.
-        </li>
-        <li>
-          Eligible for priority sector lending from banks.
-        </li>
-        <li>
-          Benefit of a government security deposit waiver for participating in e-tenders.
-        </li>
-        <li>
-          Allows adding any number of activities, including service or manufacturing, in one MSME registration.
-        </li>
-        <li>
-          Barcode registration subsidy.
-        </li>
-        <li>
-          Exemption scheme from direct taxes.
-        </li>
-        <li>
-          ISO certification fees reimbursement.
-        </li>
-        <li>
-          Electricity bills concession.
-        </li>
-        <li>
-          Special consideration in international trade fairs.
-        </li>
-      </ul>
-
-      <h3 className="text-4xl font-bold text-[#14598D] mt-6 mb-4">How to check MSME registration by name?</h3>
-      <p className=" mb-4">
-        You cannot check the MSME registration number by name. However, you can retrieve your MSME registration number by following the below process:
-      </p>
-
-      <ol className="list-decimal pl-4 space-y-4">
-        <li>Visit the Udyam Registration Portal.</li>
-        <li>Click on the ‘Forgot Udyam/UAM No.’ option under ‘Print/Verify’ on the homepage.</li>
-        <li>Choose the registration option.</li>
-        <li>Choose the OTP option.</li>
-        <li>Enter the mobile/email address.</li>
-        <li>Click on the ‘Validate & Generate OTP’ button.</li>
-        <li>Enter the OTP. The MSME registration number will be displayed.</li>
-      </ol>
+          <div className="flex justify-center items-center mt-10">
+      <div className="w-full max-w-5xl bg-white shadow-md rounded-lg overflow-hidden">
+        <table className="table-auto w-full border-collapse border border-gray-200">
+          <thead>
+            <tr className="bg-gray-200 text-left">
+              <th className="border border-gray-300 px-4 py-2">Sr. No.</th>
+              <th className="border border-gray-300 px-4 py-2">Name</th>
+              <th className="border border-gray-300 px-4 py-2">Designation</th>
+              <th className="border border-gray-300 px-4 py-2">PAN</th>
+              <th className="border border-gray-300 px-4 py-2">Aadhaar</th>
+            </tr>
+          </thead>
+          <tbody>
+            {tableData.map((row, index) => (
+              <tr
+                key={index}
+                className={`${
+                  index % 2 === 0 ? "bg-gray-100" : "bg-white"
+                } hover:bg-gray-50`}
+              >
+                <td className="border border-gray-300 px-4 py-2 text-center">
+                  {row.srNo}
+                </td>
+                <td className="border border-gray-300 px-4 py-2">{row.name}</td>
+                <td className="border border-gray-300 px-4 py-2">
+                  {row.designation}
+                </td>
+                <td className="border border-gray-300 px-4 py-2">{row.pan}</td>
+                <td className="border border-gray-300 px-4 py-2">
+                  {row.aadhaar}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
-
-
-      </div>
-      <div className="w-[25%]">
-        <div className="bg-[#f9f9f9] rounded-xl px-6 py-10 shadow-xl">
-          <h1 className="font-bold text-2xl">BROWSE BY TOPICS</h1>
-          <ul className="space-y-6 pl-4 mt-8">
-            <Link to="/msme/registration">
-              <li className=" font-semibold my-6">MSME Registration</li>
-            </Link>
-            <Link to="/msme/document">
-              <li className=" font-semibold my-6">MSME Document Required</li>
-            </Link>
-
-            <Link to="/msme/scheme">
-              <li className=" font-semibold my-6">MSME Schemes</li>
-            </Link>
-            <Link to="/msme/gst">
-              <li className=" font-semibold my-6">NEW Gst Act</li>
-            </Link>
-            <Link to="/startup/registration">
-              <li className=" font-semibold my-6">Startup Registration</li>
-            </Link>
-            <Link to="/startup/benefits">
-              <li className=" font-semibold my-6">Startup Benefits</li>
-            </Link>
-            <Link to="/startup/funding">
-              {" "}
-              <li className=" font-semibold my-6">Startup Funding</li>
-            </Link>
-            <Link to="/startup/tax">
-              <li className=" font-semibold my-6">Tax Exemption Eligibility</li>
-            </Link>
-          </ul>
+          </div>
+          
         </div>
-      </div>
+        <div className="w-[25%]">
+          <div className="bg-[#f9f9f9] rounded-xl px-6 py-10 shadow-xl">
+            <h1 className="font-bold text-2xl">BROWSE BY TOPICS</h1>
+            <ul className="space-y-6 pl-4 mt-8">
+              <Link to="/msme/registration">
+                <li className=" font-semibold my-6">MSME Registration</li>
+              </Link>
+              <Link to="/msme/document">
+                <li className=" font-semibold my-6">MSME Document Required</li>
+              </Link>
+
+              <Link to="/msme/scheme">
+                <li className=" font-semibold my-6">MSME Schemes</li>
+              </Link>
+              <Link to="/msme/gst">
+                <li className=" font-semibold my-6">NEW Gst Act</li>
+              </Link>
+              <Link to="/startup/registration">
+                <li className=" font-semibold my-6">Startup Registration</li>
+              </Link>
+              <Link to="/startup/benefits">
+                <li className=" font-semibold my-6">Startup Benefits</li>
+              </Link>
+              <Link to="/startup/funding">
+                {" "}
+                <li className=" font-semibold my-6">Startup Funding</li>
+              </Link>
+              <Link to="/startup/tax">
+                <li className=" font-semibold my-6">
+                  Tax Exemption Eligibility
+                </li>
+              </Link>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -224,7 +224,7 @@ const FinancialQuizModal = () => {
                       </div>
                     </div>
                     <div className="w-full h-[280px] md:h-full flex flex-col items-center justify-center ">
-                      <p className="text-md md:mx-4 md:text-xl font-medium text-center mb-8 ">
+                      <p className=" text-md md:mx-4 md:text-3xl font-medium  mb-8 ">
                         Q{currentStep + 1}. {questions[currentStep].question}
                       </p>
                       <div className="flex flex-col items-center gap-2 md:gap-4">
