@@ -35,6 +35,11 @@ import StartupFunding from "./pages/StartupFunding";
 import StartupTax from "./pages/StartupTax";
 import IrrCalculator from "./pages/Irr";
 import BlogPage from "./pages/Blogs";
+import GstBasics from "./components/GstRishiComponent/GstBasics";
+import GstRegistration from "./components/GstRishiComponent/GstRegistration";
+import InputTaxCredits from "./components/GstRishiComponent/InputTaxCredits";
+import GstInvoice from "./components/GstRishiComponent/GstInvoice";
+import InvoicingGst from "./components/GstRishiComponent/InvoicingGst";
 
 const App = () => {
   useEffect(() => {
@@ -86,6 +91,13 @@ const App = () => {
             element={<StartupRegistration />}
           />
           <Route path="startup/funding" element={<StartupFunding />} />
+
+          <Route path="/gstrishi/gst-basics" element={<GstBasics />} />
+          <Route path="/gstrishi/gst-registration" element={<GstRegistration />} />
+          <Route path="/gstrishi/gst-input-tax-credit" element={<InputTaxCredits />} />
+          <Route path="/gstrishi/gst-invoice" element={<GstInvoice />} />
+          <Route path="/gstrishi/invoicing-gst" element={<InvoicingGst />} />
+          
         </Routes>
       </div>
 

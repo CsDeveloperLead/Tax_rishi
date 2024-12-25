@@ -9,6 +9,7 @@ const Navbar = () => {
   const startupRef = useRef(null);
   const taxRishiRef = useRef(null);
   const msmeRef = useRef(null);
+  const gstrishiRef = useRef(null);
 
   const [isExpanded, setIsExpanded] = useState(false);
   const [isExpanded2, setIsExpanded2] = useState(false);
@@ -38,7 +39,9 @@ const Navbar = () => {
       startupRef.current &&
       !startupRef.current.contains(event.target) &&
       msmeRef.current &&
-      !msmeRef.current.contains(event.target)
+      !msmeRef.current.contains(event.target) &&
+      gstrishiRef.current &&
+      !gstrishiRef.current.contains(event.target)
     ) {
       setActiveDropdown(null); // Close both dropdowns
     }
@@ -168,7 +171,35 @@ const Navbar = () => {
                       </div>
                     )}
                   </div>
-                  <NavLink to="" onMouseEnter={() => setActiveDropdown(null)} className="block px-4 py-2 hover:bg-gray-100 text-[#14598D] hover:text-main cursor-pointer">GstRishi</NavLink>
+                  <div className="group block px-4 py-2 hover:bg-gray-100" onMouseEnter={() => setActiveDropdown("gstrishi")} ref={gstrishiRef}>
+                    <NavLink
+                      to="/gstrishi/gst-basics"
+                      className={({ isActive }) =>
+                        isActive
+                          ? " text-main group-hover:text-main cursor-pointer"
+                          : "text-[#14598D] group-hover:text-main cursor-pointer"
+                      }
+                      onClick={() => toggleDropdown("msme")}
+                    >
+                      GstRishi
+                      {({ isActive }) => isActive && <span className="mt-1">.</span>}
+                    </NavLink>
+                    {activeDropdown === "gstrishi" && (
+                      <div onClick={() => setActiveDropdown(null)} onMouseLeave={() => setActiveDropdown(null)} className="absolute top-4 mt-4 left-[248px] bg-white border rounded shadow-lg z-50 w-[250px]">
+                        <NavLink to="/gstrishi/gst-basics" className="block px-4 py-2 hover:bg-gray-100">Gst Basics</NavLink>
+                        <NavLink to="/gstrishi/gst-registration" className="block px-4 py-2 hover:bg-gray-100">Gst Registration</NavLink>
+                        <NavLink to="/gstrishi/gst-input-tax-credit" className="block px-4 py-2 hover:bg-gray-100">Gst Input Tax Credit</NavLink>
+                        <NavLink to="/gstrishi/gst-invoice" className="block px-4 py-2 hover:bg-gray-100">GST Invoice</NavLink>
+                        <NavLink to="/gstrishi/invoicing-gst" className="block px-4 py-2 hover:bg-gray-100">Invoicing Gst</NavLink>
+                        <NavLink to="/gstrishi/gst-composition-scheme" className="block px-4 py-2 hover:bg-gray-100">Gst Composition Scheme</NavLink>
+                        <NavLink to="/gstrishi/gst-returns" className="block px-4 py-2 hover:bg-gray-100">GST Returns</NavLink>
+                        <NavLink to="/gstrishi/reverse-charge-gst" className="block px-4 py-2 hover:bg-gray-100">Reverse Charge Gst</NavLink>
+                        <NavLink to="/gstrishi/refund-process-gst" className="block px-4 py-2 hover:bg-gray-100">Refund Process Under GST</NavLink>
+                        <NavLink to="/gstrishi/prosecution-under-gst" className="block px-4 py-2 hover:bg-gray-100">Prosecution Under GST</NavLink>
+                      </div>
+                    )}
+                  </div>
+                  {/* <NavLink to="" onMouseEnter={() => setActiveDropdown(null)} className="block px-4 py-2 hover:bg-gray-100 text-[#14598D] hover:text-main cursor-pointer"></NavLink> */}
                   <NavLink to="" onMouseEnter={() => setActiveDropdown(null)} className="block px-4 py-2 hover:bg-gray-100 text-[#14598D] hover:text-main cursor-pointer">TaxRishi Foundation</NavLink>
                 </div>
               )}
