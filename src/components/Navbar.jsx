@@ -259,7 +259,9 @@ const Navbar = () => {
 
             {/* Get In Touch Button */}
             <Link
-              to="https://wa.link/ponzo9"
+              to="https://calendly.com/investup91"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-4 py-2 bg-main text-white rounded-lg hover:bg-green-700"
             >
               Get In Touch
@@ -396,7 +398,7 @@ const Navbar = () => {
             Contact
           </NavLink>
           <a
-            href="#getintouch"
+            href="https://calendly.com/investup91"
             className="flex justify-center items-center px-4 w-[90%] py-2 bg-main text-white hover:bg-blue-700 text-center rounded-lg"
           >
             Get In Touch
