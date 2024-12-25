@@ -40,6 +40,11 @@ import GstRegistration from "./components/GstRishiComponent/GstRegistration";
 import InputTaxCredits from "./components/GstRishiComponent/InputTaxCredits";
 import GstInvoice from "./components/GstRishiComponent/GstInvoice";
 import InvoicingGst from "./components/GstRishiComponent/InvoicingGst";
+import GstComposition from "./components/GstRishiComponent/GstComposition";
+import GstReturn from "./components/GstRishiComponent/GstReturn";
+import ReverseGst from "./components/GstRishiComponent/ReverseGst";
+import RefundProcess from "./components/GstRishiComponent/RefundProcess";
+import ProsecutionUnderGst from "./components/GstRishiComponent/ProsecutionUnderGst";
 import TaxRishiFoundation from "./pages/TaxRishiFoundation";
 
 const App = () => {
@@ -98,6 +103,11 @@ const App = () => {
           <Route path="/gstrishi/gst-input-tax-credit" element={<InputTaxCredits />} />
           <Route path="/gstrishi/gst-invoice" element={<GstInvoice />} />
           <Route path="/gstrishi/invoicing-gst" element={<InvoicingGst />} />
+          <Route path="/gstrishi/gst-composition-scheme" element={<GstComposition />} />
+          <Route path="/gstrishi/gst-returns" element={<GstReturn />} />
+          <Route path="/gstrishi/reverse-charge-gst" element={<ReverseGst />} />
+          <Route path="/gstrishi/refund-process-gst" element={<RefundProcess />} />
+          <Route path="/gstrishi/prosecution-under-gst" element={<ProsecutionUnderGst />} />
           <Route path="/taxrishi-foundation" element={<TaxRishiFoundation />} />
           
         </Routes>
