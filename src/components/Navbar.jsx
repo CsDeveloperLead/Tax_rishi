@@ -200,7 +200,7 @@ const Navbar = () => {
                     )}
                   </div>
                   {/* <NavLink to="" onMouseEnter={() => setActiveDropdown(null)} className="block px-4 py-2 hover:bg-gray-100 text-[#14598D] hover:text-main cursor-pointer"></NavLink> */}
-                  <NavLink to="" onMouseEnter={() => setActiveDropdown(null)} className="block px-4 py-2 hover:bg-gray-100 text-[#14598D] hover:text-main cursor-pointer">TaxRishi Foundation</NavLink>
+                  <NavLink to="/taxrishi-foundation" onMouseEnter={() => setActiveDropdown(null)} className="block px-4 py-2 hover:bg-gray-100 text-[#14598D] hover:text-main cursor-pointer">TaxRishi Foundation</NavLink>
                 </div>
               )}
             </div>

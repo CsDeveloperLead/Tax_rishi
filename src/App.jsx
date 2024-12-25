@@ -40,6 +40,7 @@ import GstRegistration from "./components/GstRishiComponent/GstRegistration";
 import InputTaxCredits from "./components/GstRishiComponent/InputTaxCredits";
 import GstInvoice from "./components/GstRishiComponent/GstInvoice";
 import InvoicingGst from "./components/GstRishiComponent/InvoicingGst";
+import TaxRishiFoundation from "./pages/TaxRishiFoundation";
 
 const App = () => {
   useEffect(() => {
@@ -97,6 +98,7 @@ const App = () => {
           <Route path="/gstrishi/gst-input-tax-credit" element={<InputTaxCredits />} />
           <Route path="/gstrishi/gst-invoice" element={<GstInvoice />} />
           <Route path="/gstrishi/invoicing-gst" element={<InvoicingGst />} />
+          <Route path="/taxrishi-foundation" element={<TaxRishiFoundation />} />
           
         </Routes>
       </div>
