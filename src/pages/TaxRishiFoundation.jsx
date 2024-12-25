@@ -8,36 +8,36 @@ import { Link } from "react-router-dom";
 import Carousel from "../components/Carousel";
 
 const TaxRishiFoundation = () => {
-    const tableData = [
-        {
-          srNo: 1,
-          name: "Mr. Rishi Pal Bansal",
-          designation: "President",
-          pan: "AAEPB2662B",
-          aadhaar: "7451 5514 9108",
-        },
-        {
-          srNo: 2,
-          name: "Mr. Bhavya Bansal",
-          designation: "General Secretary",
-          pan: "APMPB0774R",
-          aadhaar: "4429 7008 7983",
-        },
-        {
-          srNo: 3,
-          name: "Mrs. Romila Bansal",
-          designation: "Senior Vice President",
-          pan: "AERPB6767L",
-          aadhaar: "2693 2435 2310",
-        },
-        {
-          srNo: 4,
-          name: "Mrs. Pooja Bansal",
-          designation: "Treasurer",
-          pan: "BCNPG8614E",
-          aadhaar: "6629 8729 6375",
-        },
-      ];
+  const tableData = [
+    {
+      srNo: 1,
+      name: "Mr. Rishi Pal Bansal",
+      designation: "President",
+      pan: "AAEPB2662B",
+      aadhaar: "7451 5514 9108",
+    },
+    {
+      srNo: 2,
+      name: "Mr. Bhavya Bansal",
+      designation: "General Secretary",
+      pan: "APMPB0774R",
+      aadhaar: "4429 7008 7983",
+    },
+    {
+      srNo: 3,
+      name: "Mrs. Romila Bansal",
+      designation: "Senior Vice President",
+      pan: "AERPB6767L",
+      aadhaar: "2693 2435 2310",
+    },
+    {
+      srNo: 4,
+      name: "Mrs. Pooja Bansal",
+      designation: "Treasurer",
+      pan: "BCNPG8614E",
+      aadhaar: "6629 8729 6375",
+    },
+  ];
   return (
     <div className="w-full px-4 md:px-20 my-10 md:my-10 flex flex-col  font-montserrat text-[#14598D]">
       <div className="w-full">
@@ -307,64 +307,73 @@ const TaxRishiFoundation = () => {
               purposes and not for purposes of profit.
             </p>
             <div className="mt-6">
-            <h2 className="text-lg font-semibold mb-2">
-              7. QUALIFICATION OF TRUSTEE:
-            </h2>
+              <h2 className="text-lg font-semibold mb-2">
+                7. QUALIFICATION OF TRUSTEE:
+              </h2>
+            </div>
+            <p className="my-2">
+              For becoming a trustee of the trust, a person has to qualify the
+              following conditions:-
+            </p>
+            <ol className="list-disc list-inside pl-4">
+              <li>A person who have attained the age of majority.</li>
+              <li>Person is to be an Indian resident.</li>
+              <li>Person of good moral character.</li>
+              <li>Person should be of sound mind.</li>
+              <li>Person should not be declared an insolvent.</li>
+              <li>
+                Person shall not be barred or disqualified from entering into
+                the contract by the law being in force at that time.
+              </li>
+            </ol>
+            <div className="flex justify-center items-center mt-10">
+              <div className="w-full max-w-5xl bg-white shadow-md rounded-lg overflow-hidden">
+                <table className="table-auto w-full border-collapse border border-gray-200">
+                  <thead>
+                    <tr className="bg-gray-200 text-left">
+                      <th className="border border-gray-300 px-4 py-2">
+                        Sr. No.
+                      </th>
+                      <th className="border border-gray-300 px-4 py-2">Name</th>
+                      <th className="border border-gray-300 px-4 py-2">
+                        Designation
+                      </th>
+                      <th className="border border-gray-300 px-4 py-2">PAN</th>
+                      <th className="border border-gray-300 px-4 py-2">
+                        Aadhaar
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {tableData.map((row, index) => (
+                      <tr
+                        key={index}
+                        className={`${
+                          index % 2 === 0 ? "bg-gray-100" : "bg-white"
+                        } hover:bg-gray-50`}
+                      >
+                        <td className="border border-gray-300 px-4 py-2 text-center">
+                          {row.srNo}
+                        </td>
+                        <td className="border border-gray-300 px-4 py-2">
+                          {row.name}
+                        </td>
+                        <td className="border border-gray-300 px-4 py-2">
+                          {row.designation}
+                        </td>
+                        <td className="border border-gray-300 px-4 py-2">
+                          {row.pan}
+                        </td>
+                        <td className="border border-gray-300 px-4 py-2">
+                          {row.aadhaar}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
-          <p className="my-2">
-            For becoming a trustee of the trust, a person has to qualify the
-            following conditions:-
-          </p>
-          <ol className="list-disc list-inside pl-4">
-            <li>A person who have attained the age of majority.</li>
-            <li>Person is to be an Indian resident.</li>
-            <li>Person of good moral character.</li>
-            <li>Person should be of sound mind.</li>
-            <li>Person should not be declared an insolvent.</li>
-            <li>
-              Person shall not be barred or disqualified from entering into the
-              contract by the law being in force at that time.
-            </li>
-          </ol>
-          <div className="flex justify-center items-center mt-10">
-      <div className="w-full max-w-5xl bg-white shadow-md rounded-lg overflow-hidden">
-        <table className="table-auto w-full border-collapse border border-gray-200">
-          <thead>
-            <tr className="bg-gray-200 text-left">
-              <th className="border border-gray-300 px-4 py-2">Sr. No.</th>
-              <th className="border border-gray-300 px-4 py-2">Name</th>
-              <th className="border border-gray-300 px-4 py-2">Designation</th>
-              <th className="border border-gray-300 px-4 py-2">PAN</th>
-              <th className="border border-gray-300 px-4 py-2">Aadhaar</th>
-            </tr>
-          </thead>
-          <tbody>
-            {tableData.map((row, index) => (
-              <tr
-                key={index}
-                className={`${
-                  index % 2 === 0 ? "bg-gray-100" : "bg-white"
-                } hover:bg-gray-50`}
-              >
-                <td className="border border-gray-300 px-4 py-2 text-center">
-                  {row.srNo}
-                </td>
-                <td className="border border-gray-300 px-4 py-2">{row.name}</td>
-                <td className="border border-gray-300 px-4 py-2">
-                  {row.designation}
-                </td>
-                <td className="border border-gray-300 px-4 py-2">{row.pan}</td>
-                <td className="border border-gray-300 px-4 py-2">
-                  {row.aadhaar}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
-          </div>
-          
         </div>
         <div className="w-[25%]">
           <div className="bg-[#f9f9f9] rounded-xl px-6 py-10 shadow-xl">

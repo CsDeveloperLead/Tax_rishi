@@ -214,30 +214,33 @@ const FinancialQuizModal = () => {
             currentStep <= 5 ? (
               <>
                 {currentStep <= 4 ? (
-                  <div className="w-full px-2 h-full flex flex-col mb-6 md:mb-0">
+                  <div className="w-full px-2 h-full flex flex-col mb-6 md:mb-0 bg-gradient-to-b from-blue-900 to-purple-900 text-white rounded-2xl">
                     <div className="w-full flex justify-between items-center">
                       <img src={logo} alt="logo" className="w-20 h-20" />
-                      <div>
+                      {/* <div>
                         <p className="text-base  bg-main text-white font-semibold rounded-full px-10 py-2">
                           {currentStep + 1}/{questions.length}
                         </p>
-                      </div>
+                      </div> */}
                     </div>
-                    <div className="w-full h-[280px] md:h-full flex flex-col items-center justify-center ">
-                      <p className=" text-md md:mx-4 md:text-3xl font-medium  mb-8 ">
-                        Q{currentStep + 1}. {questions[currentStep].question}
+                    <div className="w-full h-[340px] md:h-full flex flex-col items-center justify-center -mt-10 ">
+                      <p className="text-md md:text-xl font-semibold mb-3 md:mb-6">
+                        Question {currentStep + 1} out of {questions.length}
                       </p>
-                      <div className="flex flex-col items-center gap-2 md:gap-4">
-                        <div className="grid grid-cols-1 gap-2  md:gap-6">
+                      <p className="text-md md:mx-4 md:text-3xl font-bold text-center mb-4 md:mb-8">
+                        {questions[currentStep].question}
+                      </p>
+                      <div className="flex flex-col items-center gap-4">
+                        <div className="grid grid-cols-1 gap-4">
                           {questions[currentStep].options.map(
                             (option, index) => (
                               <button
                                 key={index}
                                 onClick={() => handleAnswerClick(index + 1)}
-                                className={`w-[220px] text-sm py-1 md:py-2 border rounded-3xl hover:scale-110 transition duration-200 ${
+                                className={`w-[250px] md:w-[300px] text-sm md:text-lg py-2 md:py-3 border rounded-full text-center hover:scale-105 transition duration-200 ${
                                   selectedAnswers[currentStep] === index + 1
-                                    ? "bg-main text-white"
-                                    : "bg-white border-2 border-gray-500 hover:bg-green-700 hover:text-white"
+                                    ? "bg-green-700 text-white"
+                                    : "bg-white text-gray-700 hover:bg-green-600 hover:text-white"
                                 }`}
                               >
                                 {option}
@@ -249,18 +252,18 @@ const FinancialQuizModal = () => {
                     </div>
                   </div>
                 ) : (
-                  <div className="flex flex-col items-center justify-center w-full h-auto md:h-full font-montserrat px-4 md:mt-0 ">
+                  <div className="flex flex-col items-center justify-center w-full h-[420px] md:h-full font-montserrat px-4  md:mt-0 bg-gradient-to-b from-blue-900 to-purple-900 text-white rounded-2xl">
                     <h1 className="text-md md:text-xl font-bold">
-                      Thank you for completing the quiz!!!
+                      Thank you for completing quiz!!!
                     </h1>
-                    <p className="text-xl font-bold">
+                    <p className="text-xl font-bold md:mb-4">
                       Your score is:{" "}
                       <span className="text-2xl text-green-600 mx-2">
                         {score}%
                       </span>
                     </p>
                     <form
-                      className="w-full max-w-md bg-white shadow-md rounded-lg p-2 md:p-6"
+                      className="w-full max-w-md bg-white shadow-md rounded-lg p-2 md:p-6 text-black"
                       ref={form}
                       onSubmit={sendEmail} // Attach the sendEmail function to onSubmit
                     >
@@ -272,47 +275,47 @@ const FinancialQuizModal = () => {
                       </p>
 
                       <div className="w-full flex flex-col md:flex-row gap-1 md:gap-4 mt-1 md:mt-10">
-                        <div className="flex w-full gap-2 ">
-                        <div className="w-1/2 md:hidden flex flex-col">
-                          <label
-                            htmlFor="name"
-                            className="text-sm font-semibold mb-1"
-                          >
-                            Name
-                          </label>
-                          <input
-                            type="text"
-                            id="name"
-                            name="from_name" // Name attribute required for EmailJS
-                            value={user.name}
-                            onChange={(e) =>
-                              setUser({ ...user, name: e.target.value })
-                            }
-                            className="py-1 md:py-2 px-3 border rounded-full focus:ring-2 focus:ring-main focus:outline-none"
-                            placeholder="Enter your name"
-                            required
-                          />
-                        </div>
-                        <div className="w-1/2 md:hidden flex flex-col">
-                          <label
-                            htmlFor="age"
-                            className="text-sm font-semibold mb-1"
-                          >
-                            Age
-                          </label>
-                          <input
-                            type="number"
-                            id="age"
-                            name="user_age" // Name attribute required for EmailJS
-                            value={user.age}
-                            onChange={(e) =>
-                              setUser({ ...user, age: e.target.value })
-                            }
-                            className="py-1 md:py-2 px-3 border rounded-full focus:ring-2 focus:ring-main focus:outline-none"
-                            placeholder="Enter your age"
-                            required
-                          />
-                        </div>
+                        <div className="flex w-full gap-2 md:hidden ">
+                          <div className="w-1/2 md:hidden flex flex-col">
+                            <label
+                              htmlFor="name"
+                              className="text-sm font-semibold mb-1"
+                            >
+                              Name
+                            </label>
+                            <input
+                              type="text"
+                              id="name"
+                              name="from_name" // Name attribute required for EmailJS
+                              value={user.name}
+                              onChange={(e) =>
+                                setUser({ ...user, name: e.target.value })
+                              }
+                              className="py-1 md:py-2 px-3 border rounded-full focus:ring-2 focus:ring-main focus:outline-none"
+                              placeholder="Enter your name"
+                              required
+                            />
+                          </div>
+                          <div className="w-1/2 md:hidden flex flex-col">
+                            <label
+                              htmlFor="age"
+                              className="text-sm font-semibold mb-1"
+                            >
+                              Age
+                            </label>
+                            <input
+                              type="number"
+                              id="age"
+                              name="user_age" // Name attribute required for EmailJS
+                              value={user.age}
+                              onChange={(e) =>
+                                setUser({ ...user, age: e.target.value })
+                              }
+                              className="py-1 md:py-2 px-3 border rounded-full focus:ring-2 focus:ring-main focus:outline-none"
+                              placeholder="Enter your age"
+                              required
+                            />
+                          </div>
                         </div>
                         <div className="w-full hidden md:flex flex-col md:w-[50%]">
                           <label
