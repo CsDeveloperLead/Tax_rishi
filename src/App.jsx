@@ -45,6 +45,7 @@ import GstReturn from "./components/GstRishiComponent/GstReturn";
 import ReverseGst from "./components/GstRishiComponent/ReverseGst";
 import RefundProcess from "./components/GstRishiComponent/RefundProcess";
 import ProsecutionUnderGst from "./components/GstRishiComponent/ProsecutionUnderGst";
+import TaxRishiFoundation from "./pages/TaxRishiFoundation";
 
 const App = () => {
   useEffect(() => {
@@ -107,6 +108,8 @@ const App = () => {
           <Route path="/gstrishi/reverse-charge-gst" element={<ReverseGst />} />
           <Route path="/gstrishi/refund-process-gst" element={<RefundProcess />} />
           <Route path="/gstrishi/prosecution-under-gst" element={<ProsecutionUnderGst />} />
+          <Route path="/taxrishi-foundation" element={<TaxRishiFoundation />} />
+          
         </Routes>
       </div>
 
