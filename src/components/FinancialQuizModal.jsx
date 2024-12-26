@@ -214,7 +214,7 @@ const FinancialQuizModal = () => {
             currentStep <= 5 ? (
               <>
                 {currentStep <= 4 ? (
-                  <div className="w-full px-2 h-full flex flex-col mb-6 md:mb-0 bg-gradient-to-b from-blue-900 to-purple-900 text-white rounded-2xl">
+                  <div className="w-full px-2 h-full flex flex-col mb-6 md:mb-0  text-black rounded-2xl">
                     <div className="w-full flex justify-between items-center">
                       <img src={logo} alt="logo" className="w-20 h-20" />
                       {/* <div>
@@ -237,10 +237,10 @@ const FinancialQuizModal = () => {
                               <button
                                 key={index}
                                 onClick={() => handleAnswerClick(index + 1)}
-                                className={`w-[250px] md:w-[300px] text-sm md:text-lg py-2 md:py-3 border rounded-full text-center hover:scale-105 transition duration-200 ${
+                                className={`w-[250px] md:w-[300px] text-sm md:text-lg py-2 md:py-3 border-2 rounded-full text-center hover:scale-105 transition duration-200 ${
                                   selectedAnswers[currentStep] === index + 1
-                                    ? "bg-green-700 text-white"
-                                    : "bg-white text-gray-700 hover:bg-green-600 hover:text-white"
+                                    ? "bg-[#4EBA42] text-white"
+                                    : "bg-white text-gray-700 hover:bg-[#4EBA42] hover:text-white"
                                 }`}
                               >
                                 {option}
@@ -252,7 +252,7 @@ const FinancialQuizModal = () => {
                     </div>
                   </div>
                 ) : (
-                  <div className="flex flex-col items-center justify-center w-full h-[420px] md:h-full font-montserrat px-4  md:mt-0 bg-gradient-to-b from-blue-900 to-purple-900 text-white rounded-2xl">
+                  <div className="flex flex-col items-center justify-center w-full h-[420px] md:h-full font-montserrat px-4  md:mt-0  text-black rounded-2xl">
                     <h1 className="text-md md:text-xl font-bold">
                       Thank you for completing quiz!!!
                     </h1>
