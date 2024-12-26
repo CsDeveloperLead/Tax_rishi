@@ -73,15 +73,19 @@ function IrrCalculator() {
     setCashFlows(updatedCashFlows);
   };
 
+  
   const handleCashFlowChange = (index, value) => {
     const updatedCashFlows = [...cashFlows];
-    updatedCashFlows[index] = Number(value);
+    updatedCashFlows[index] = value === "" ? 0 : Number(value);
     setCashFlows(updatedCashFlows);
   };
 
   const calculateIRR = () => {
     const values = [-initialInvestment, ...cashFlows];
     setIrrResult(IRR(values, guess));
+  };
+  const handleInitialInvestmentChange = (value) => {
+    setInitialInvestment(value === "" ? 0 : Number(value));
   };
 
   const data = {
@@ -114,8 +118,9 @@ function IrrCalculator() {
               </label>
               <input
                 type="number"
-                value={initialInvestment}
-                onChange={(e) => setInitialInvestment(Number(e.target.value))}
+                value={initialInvestment === 0 ? "" : initialInvestment}
+                onChange={(e) => handleInitialInvestmentChange(e.target.value)}
+                placeholder="Enter the initial investment"
                 className="w-full bg-gray-100 px-4 py-2 rounded-lg mt-2"
               />
             </div>
@@ -127,11 +132,10 @@ function IrrCalculator() {
                 <div key={index} className="flex items-center gap-4 mt-2">
                   <input
                     type="number"
-                    value={flow}
-                    onChange={(e) =>
-                      handleCashFlowChange(index, e.target.value)
-                    }
+                    value={flow === 0 ? "" : flow}
+                    onChange={(e) => handleCashFlowChange(index, e.target.value)}
                     className="flex-1 bg-gray-100 px-4 py-2 rounded-lg"
+                    placeholder={`0`}
                   />
                   <button
                     className="bg-red-500 text-white px-4 py-2 rounded-lg"
