@@ -41,7 +41,7 @@ function BlogPage() {
                         <div className='w-full h-auto flex'>
                             <img src={singleBlog?.image} alt="blog image" className='w-full object-cover sm:w-[600px] sm:h-[500px] md:w-[800px] lg:w-full xl:w-[900px] sm:mx-auto' />
                         </div>
-                        <div className='w-full h-auto flex flex-col mt-4 gap-6 px-2 font-marcellus sm:px-6 sm:mt-8 md:mt-10 md:px-10'>
+                        <div className='w-full h-auto flex flex-col mt-4 gap-3 px-2 font-marcellus sm:px-6 sm:mt-8 md:mt-10 md:px-10'>
                             <h1 className='w-full h-auto flex font-bold sm:text-xl md:text-2xl xl:text-4xl'>{singleBlog?.title}</h1>
                             <p className='text-sm md:text-base xl:text-lg' style={{ whiteSpace: "pre-wrap" }}>{singleBlog?.description}</p>
                         </div>
