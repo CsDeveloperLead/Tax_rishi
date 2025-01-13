@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
-import Services from "./pages/Services";
+import Services from "./pages/Service";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Startup from "./pages/Startup";
@@ -46,7 +46,6 @@ import ReverseGst from "./components/GstRishiComponent/ReverseGst";
 import RefundProcess from "./components/GstRishiComponent/RefundProcess";
 import ProsecutionUnderGst from "./components/GstRishiComponent/ProsecutionUnderGst";
 import TaxRishiFoundation from "./pages/TaxRishiFoundation";
-
 const App = () => {
   useEffect(() => {
     window.scrollTo(0, 0);

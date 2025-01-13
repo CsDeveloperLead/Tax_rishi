@@ -308,7 +308,7 @@ const Navbar = () => {
           >
             TaxRishi Foundation
           </NavLink>
-
+          
           <div className="w-full flex flex-col items-center">
             {/* Accordion Header */}
             <div
@@ -388,6 +388,19 @@ const Navbar = () => {
                 >
                   Msme Gst Exemption
                 </NavLink>
+                <NavLink
+                      to="/startup/registration"
+                      className={({ isActive }) =>
+                        isActive
+                          ? "text-main group-hover:text-main cursor-pointer"
+                          : "text-[#14598D] group-hover:text-main cursor-pointer"
+                      }
+                      onClick={() => toggleDropdown("startup")}
+                    >
+                      StartupRishi
+                      {({ isActive }) => isActive && <span className="mt-1">.</span>}
+                    </NavLink>
+                    
               </div>
             )}
           </div>

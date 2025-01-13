@@ -1,17 +1,17 @@
-import img1 from "./assets/aboutImage1.png";
-import img2 from "./assets/aboutImage2.png";
-import img3 from "./assets/image.png";
-import img4 from "./assets/hero2.png";
-import img5 from "./assets/image5.png";
-import img6 from "./assets/right.png";
-import img7 from "./assets/left.png";
+import img1 from "./assets/capital gain.png";
+
+import img3 from "./assets/future.png";
+import img4 from "./assets/huf.png";
+import img5 from "./assets/indian trust.png";
+
 
 export const Blogs = [
-    {
-        id: 1,
-        title: "Capital Gains Tax on Property Sale: What You Need to Know",
-        image: img2,
-        description: `
+  {
+    id: 1,
+    title: "Capital Gains Tax on Property Sale: What You Need to Know",
+
+    image: img1,
+    description: `
 Selling property is a significant financial decision, and understanding its tax implications
 under the Income-tax Act, 1961 is crucial for all property owners. Whether you've already
 sold a property or are considering doing so, navigating the complexities of capital gains tax
@@ -112,98 +112,170 @@ About the Author
 Adv Bhavya R Bansal is a legal and tax expert specializing in real estate transactions and tax
 law. He provides advisory services on capital gains tax and financial planning
         `,
-      },
-      
-  {
-    id: 2,
-    title: "Exploring the Great Outdoors",
-    image: img2,
-    description: `
-The great outdoors is a sanctuary of beauty, adventure, and rejuvenation. Spending time in nature provides a respite from the noise and busyness of modern life, allowing us to reconnect with the world in its purest form. 
-
-Hiking through dense forests or climbing mountain trails offers more than physical exercise—it’s an opportunity to clear your mind and find inspiration. The fresh air, the rustle of leaves, and the chirping of birds create a soothing symphony that calms the soul. Every step taken in nature is a step toward self-discovery.
-
-Camping under the stars brings its own magic. The quietude of the night, illuminated by constellations, reminds us of the vastness of the universe and our place within it. It’s a humbling and uplifting experience that fosters gratitude and reflection.
-
-The outdoors also invites adventure seekers to explore activities like kayaking, rock climbing, or wildlife photography. Each experience enriches our lives and offers a sense of accomplishment and wonder.
-
-Whether it’s a weekend getaway or a simple walk in the park, embracing the outdoors has countless benefits for both body and mind. So lace up your boots, pack your gear, and let nature guide you on a journey of exploration and growth.`,
   },
   {
     id: 3,
-    title: "The Future of Technology",
+    title: "F&O Taxation in India: A Complete Guide for Traders",
     image: img3,
     description: `
-Technology is rapidly transforming every facet of our lives, offering unprecedented opportunities and challenges. The innovations we witness today, from artificial intelligence to renewable energy, are shaping the way we interact with the world and with one another. 
+For several years, F&O (Futures and Options) traders were subjected to mandatory tax audits when their turnover crossed ₹10 crore. However, recent updates have simplified the formula for calculating F&O turnover, reducing the need for audits in many cases. Earlier, the inclusion of option premiums in turnover inflated the figures, leading to unnecessary tax audits.
 
-Artificial intelligence (AI) is a game-changer. From personalized recommendations to advanced medical diagnostics, AI is making systems smarter and more efficient. It has the potential to revolutionize industries, creating a future where tasks are automated, and human creativity takes center stage.
+### 2024 Budget Update
+In the 2024 Budget, the government increased the Securities Transaction Tax (STT) for Futures and Options. The new rates are 0.02% for futures and 0.1% for options. Additionally, a tax on share buybacks will now be levied on the income received by the recipient.
 
-Renewable energy technologies, like solar and wind power, are driving the shift toward sustainability. These advancements are reducing our dependence on fossil fuels and paving the way for a cleaner, greener planet. As we embrace these technologies, we also contribute to combating climate change and preserving the Earth for future generations.
+### Reporting F&O Gains and Losses in ITR
+F&O traders must report their profits and losses as business income under the PGBP (Profits and Gains from Business or Profession) head. Many traders fail to declare their F&O trades in their Income Tax Returns (ITR), which can result in notices from the tax department. Reporting losses also allows you to carry them forward and reduce tax liabilities in subsequent years.
 
-Smart cities are another marvel of modern innovation. These interconnected urban spaces use data to improve transportation, energy consumption, and overall quality of life. Imagine a city where traffic flows seamlessly, energy is conserved automatically, and resources are managed efficiently—it’s becoming a reality.
+### Which ITR Form Should F&O Traders Use?
+Since F&O trading is classified as business income, traders must file their returns using ITR-3, which is designated for individuals with business income.
 
-Staying informed and adaptable is key to thriving in this ever-evolving landscape. Embrace the future, and leverage technology to create a world filled with possibilities and progress.`,
+### Intra-day and Long-term Trading: Tax Differences
+- **Intraday Trading:** Income from intraday trades is considered speculative business income and must be reported separately.
+- **Short-term Trading:** If the volume of short-term trades is high, it can be classified as either business income or capital gains.
+- **Long-term Trading:** Profits from long-term equity investments are taxed as capital gains.
+
+### Record Maintenance for F&O Traders
+Individuals or HUFs engaged in F&O trading must maintain records if:
+- Income exceeds ₹2.5 lakh, or
+- Turnover exceeds ₹25 lakh in any of the previous three years.
+
+Maintaining proper records of trading statements, receipts, and bank transactions is essential for compliance.
+
+### Calculating F&O Turnover
+Turnover for F&O trading is determined by absolute profit—the sum of all positive and negative differences. For instance:
+- **Futures:** (210 - 200) × 100 = ₹1,000
+- **Options:** (290 - 300) × 200 = ₹2,000 (ignoring negative values).
+
+### Applicability of Tax Audit for F&O Traders
+1. **Turnover Up to ₹2 Crore:**
+   Tax audit is required if profits are less than 6% of turnover and you have opted out of the presumptive taxation scheme in the last five years. If profits equal or exceed 6%, no audit is needed.
+2. **Turnover Between ₹2 Crore and ₹10 Crore:**
+   If cash receipts and payments don’t exceed 5%, no tax audit is necessary.
+3. **Turnover Above ₹10 Crore:**
+   A tax audit is mandatory.
+
+### Setting Off and Carrying Forward F&O Losses
+F&O losses can be carried forward for up to 8 years and set off against non-speculative income. Intra-day trading losses, classified as speculative losses, can be carried forward for four years and can only be set off against speculative income.
+
+### Claiming Trading Expenses
+Expenses incurred during F&O trading, such as brokerage fees, consultancy charges, and internet bills, can be claimed as deductions. Ensure that receipts and records are maintained properly for expenses, especially those exceeding ₹10,000.
+
+### Advance Tax Requirements
+If your total income exceeds ₹10,000, you are required to pay advance tax in four quarterly installments, as F&O income is taxed at individual slab rates.
+
+### Choosing Between the Old and New Tax Regime
+F&O traders can opt for the new tax regime, under Section 115BAC of the Income Tax Act. However, deductions such as 80C and 80D are not available under this regime. Comparing your tax liability under both regimes is advised before making a decision.
+
+### FAQs for F&O Traders
+- **Is tax audit mandatory for F&O trading?** Yes, if turnover exceeds ₹2 crore and profits are less than 6%.
+- **Are F&O losses allowed to be carried forward?** Yes, losses can be carried forward for up to eight years.
+- **What is the tax rate on F&O income?** F&O income is taxed at individual slab rates.
+- **Do F&O traders have to pay advance tax?** Yes, if the expected tax exceeds ₹10,000.
+`,
   },
   {
     id: 4,
-    title: "Healthy Eating for a Better Life",
-    image: img4,
+    title: "Establishing GCC in India: How to Navigate Tax Challenges",
+    image:img4,
     description: `
-Healthy eating is the cornerstone of a vibrant and fulfilling life. It’s not about restrictive diets or temporary fads—it’s about making sustainable choices that nourish your body, mind, and soul. 
+Are you aware that multinational corporations are increasingly choosing India as a destination for setting up their Global Capability Centers (GCCs)? The primary drivers of this trend include the country’s skilled workforce, cost advantages, and robust infrastructure. However, alongside these advantages comes a critical consideration for foreign companies: the tax implications at central and local levels in India. These considerations are pivotal in deciding the form of legal entity to establish. This article highlights the key taxation aspects that businesses must address when setting up a GCC in India.
 
-A balanced diet includes a variety of fruits, vegetables, lean proteins, whole grains, and healthy fats. These foods provide essential nutrients that fuel your body, boost energy levels, and support overall health. Simple swaps, like choosing whole-grain bread over white or snacking on nuts instead of chips, can make a big difference.
+### 1. How to Decide Business Structure and the Form of Entity
+Establishing a “place of business” is crucial for a GCC’s tax structuring. The most prevalent legal forms for setting up GCCs in India are:
+- **Private Limited Company (PLC)**
+- **Limited Liability Partnership (LLP)**
 
-Hydration is equally important. Drinking enough water helps maintain bodily functions, improves skin health, and keeps you energized throughout the day. Avoid sugary drinks and opt for water or herbal teas to stay refreshed.
+The choice of entity depends on factors such as flexibility in capitalization and compliance requirements. From a taxation perspective, PLC structures offer a lower effective tax rate (25.17%) compared to LLPs (34.94%). Additionally, profit distribution from a PLC is subject to shareholder taxation, depending on the holding entity’s jurisdiction. Conversely, LLPs do not incur tax on profit distribution.
 
-Meal planning and mindful eating are powerful tools for adopting a healthy lifestyle. Preparing meals at home allows you to control ingredients and portion sizes, while eating mindfully helps you savor flavors and prevent overeating.
+Special Economic Zones (SEZs), Software Technology Parks (STPI), and International Financial Services Authority (IFSCs) offer regulatory advantages and tax concessions, including relief on income tax, customs duties, and indirect taxes on goods and services supplied.
 
-Remember, healthy eating is a journey, not a destination. It’s about making consistent, positive choices that lead to lasting change. Start today by adding more color to your plate and taking the first step toward a healthier, happier you.`,
+### 2. Navigate Permanent Establishment Risk
+Foreign entities operating GCCs in India must be cautious about Permanent Establishment (PE) risks. If a foreign entity is deemed to have a PE in India, it could face:
+- Taxation of up to 40% on profits.
+- Increased compliance requirements, including bookkeeping, tax filings, and withholding taxes.
+
+#### 2.1 PE Risk Entailing from Secondment Arrangements
+GCCs often engage employees of foreign entities through secondment or short-term assignments. Such arrangements can trigger PE risks if not structured properly.
+
+### 3. Avoid Transfer Pricing Obligations
+To ensure smooth inter-company transactions within a GCC, detailed Inter-Company Agreements must be maintained. These agreements should include pricing mechanisms, clearly defined roles and responsibilities, and meticulous Functions, Assets, and Risks (FAR) analysis.
+
+### 4. Crafting Employee Stock Option Plans (ESOPs)
+Employees are often offered Employee Stock Option Plans (ESOPs), allowing them to subscribe to shares of the foreign parent company at concessional rates. Key considerations include withholding tax deductions and litigation evaluations.
+
+### 5. Managing Royalty, Fees for Technical Services, and Lease Payments
+GCCs must manage intellectual property (IP) created or shared in India, adhering to local and international laws. Lease payments to resident vendors are taxable in the hands of the vendor, with GCCs required to withhold taxes on such payments.
+
+Setting up a GCC in India involves navigating numerous tax challenges, which can be effectively addressed with meticulous planning and a thorough understanding of India’s tax framework.
+`,
   },
   {
     id: 5,
-    title: "The Joy of Reading",
-    image: img5,
+    title: "Indian Trusts Act - Objectives, Registration & Taxation",
+    image:img5,
     description: `
-Reading is a gateway to infinite worlds, ideas, and emotions. It’s an activity that transcends time and place, offering solace and stimulation to those who embrace it. 
-
-Books have the power to educate, inspire, and entertain. Fiction transports us to fantastical realms, while non-fiction provides insights into the real world. Biographies teach us about the triumphs and trials of others, and poetry evokes emotions through beautifully crafted words.
-
-Beyond its content, reading is a meditative act. The quiet moments spent with a book allow us to escape from the noise of daily life. It sharpens our focus, expands our vocabulary, and enhances critical thinking skills.
-
-Reading is also a social connector. Book clubs, literary festivals, and discussions about favorite authors bring people together, fostering a sense of community and shared passion.
-
-Make reading a part of your daily routine, even if it’s just for a few minutes. Whether it’s a classic novel or a contemporary bestseller, each page turned is a step toward personal growth and discovery. Pick up a book today and let its magic transform your life.`,
-  },
-  {
-    id: 6,
-    title: "Sustainable Living: A Guide",
-    image: img6,
-    description: `
-Sustainable living is more than an eco-friendly trend—it’s a commitment to preserving the planet while enhancing our quality of life. It involves mindful choices that reduce our impact on the environment and promote harmony with nature.
-
-Recycling is a simple yet effective way to start. By properly disposing of paper, plastic, and glass, we reduce waste in landfills and conserve valuable resources. Composting organic waste is another excellent practice that enriches the soil and reduces emissions.
-
-Energy conservation is vital for sustainability. Simple actions like switching to LED bulbs, unplugging devices when not in use, and using energy-efficient appliances can significantly lower your carbon footprint. Supporting renewable energy initiatives, such as solar or wind power, contributes to a greener future.
-
-Sustainable living also extends to our consumption habits. Choosing locally-sourced, seasonal foods reduces transportation emissions and supports local farmers. Opting for reusable products over single-use items minimizes waste.
-
-Adopting a sustainable lifestyle might seem overwhelming, but small changes add up over time. Start with one habit and build on it. Together, we can create a world that thrives in balance with the environment, ensuring a better future for generations to come.`,
-  },
-  {
-    id: 7,
-    title: "The Power of Positive Thinking",
-    image: img7,
-    description: `
-Positive thinking is a transformative mindset that shapes how we perceive and respond to life’s challenges. It’s not about ignoring difficulties but about approaching them with optimism and resilience. 
-
-This mindset starts with gratitude—acknowledging the good in our lives, no matter how small. Practicing daily affirmations and focusing on strengths rather than weaknesses helps cultivate a sense of self-confidence and purpose.
-
-Positive thinking also improves relationships. When we approach interactions with kindness and understanding, we foster deeper connections and build trust. It inspires others, creating a ripple effect of encouragement and motivation.
-
-Overcoming negativity requires effort. Surround yourself with uplifting influences, whether it’s supportive friends, inspiring books, or motivational podcasts. Replace self-doubt with constructive self-talk, and learn to reframe setbacks as opportunities for growth.
-
-The benefits of positive thinking extend beyond emotional health. Studies show that optimistic individuals are more likely to achieve goals, handle stress effectively, and maintain better physical health.
-
-Start small by practicing gratitude and celebrating small victories. Over time, positive thinking becomes a way of life, empowering you to create a brighter, more fulfilling future. Believe in yourself, and let positivity pave the way to success.`,
-  },
+      Anyone can create a trust in India. The Indian Trusts Act, 1882 ('Act') governs private trusts established in India. This Act is applicable to the whole of India. However, it does not apply to:
+      - Waqf
+      - Mutual relations of members of an undivided family determined by customary or personal law
+      - Religious or charitable endowments
+      Public trusts in India are usually governed by state-specific legislation, such as The Maharashtra Public Trust Act, 1950.
+  
+      ### What is a Trust?
+      Let’s understand the concept of trust with an example:
+      Example:
+      Mr. X wants to pass his bungalow (property) to Mr. Y for the benefit of his minor granddaughter. Mr. X transfers his property to Mr. Y because he places confidence in him. This is the essence of a trust. In simple terms, a trust is a transfer of property by the owner (Mr. X) to another person in whom the owner has confidence (Mr. Y) for the benefit of a third person (Granddaughter of Mr. X). 
+  
+      Note: The term "property" is not limited to real estate; it can include cash, shares, or any other valuable asset. The instrument declaring or creating the trust is called the "trust deed" or the "instrument of trust."
+  
+      ### Parties in a Trust
+      1. **Author/Settlor/Trustor/Donor (Mr. X):** The person who transfers their property and places confidence in another for the creation of the trust.
+      2. **Trustee (Mr. Y):** The person who accepts the confidence and manages the trust.
+      3. **Beneficiary (Granddaughter):** The person who benefits from the trust in the future.
+  
+      ### Objectives of a Trust
+      The primary objective of a trust is to serve a lawful purpose.
+      Example: If Mr. X steals money from a bank and gives it to Mr. Y to benefit poor children, the trust is void because its purpose is unlawful.
+  
+      #### Understanding Lawful and Unlawful Purposes (Section 4):
+      A purpose is lawful unless it:
+      - Is forbidden by law
+      - Defeats the provisions of the law
+      - Is fraudulent
+      - Involves injury to another person or property
+      - Is immoral or against public policy
+  
+      ### Who Can Create a Trust?
+      A trust may be created by:
+      - Any person competent to enter into a contract, such as individuals, Associations of Persons (AOP), Hindu Undivided Families (HUF), or companies.
+      - Minors, but only with the permission of the Principal Civil Court of original jurisdiction.
+      
+      The creation of a trust is subject to prevailing laws and the extent to which the author can dispose of their property.
+  
+      ### Types of Trusts
+      1. **Private Trusts:** For a closed group where beneficiaries are identifiable.
+      Example: A trust created for the relatives or friends of the author.
+      2. **Public Trusts:** For the general public.
+      Example: Non-Profit NGOs or charitable institutions.
+  
+      ### Registration Mandates for a Private Trust
+      Section 5 of the Act specifies the following:
+      1. **Immovable Property:**
+          - A private trust must be created through a non-testamentary instrument in writing.
+          - The instrument must be signed by the author or trustee and registered.
+          - Registration is not mandatory if the trust is created through a will.
+      2. **Movable Property:**
+          - A trust for movable property can be declared as with immovable property or by transferring ownership to the trustee.
+          - Registration is not mandatory.
+  
+      ### Taxation of Private Trusts
+      For income tax purposes, private trusts are categorized as follows:
+      **Exceptions:**
+      1. **Individual Tax Rates Apply When:**
+          - The trust is exclusively for the benefit of a dependent relative.
+          - It is the only trust declared by the author.
+      2. **Individual Tax Rates Also Apply When:**
+          - None of the beneficiaries' income exceeds the basic exemption limit.
+          - Beneficiaries are not beneficiaries under any other trust.
+    `
+  }
 ];

@@ -9,42 +9,42 @@ const Section3 = () => {
       img: ser1,
       title: "Tax Consulting",
       description:
-        "Our individualized tax planning and preparation services are designed to maximize your returns and minimize your liabilities.",
+        "Expert guidance in tax optimization and compliance, helping individuals and businesses reduce liabilities and align with current tax laws.",
     },
     {
       id: 2,
       img: ser2, // Add your image source
-      title: "Business Strategy",
+      title: "ITR GST Filling",
       description:
-        "We help businesses create effective strategies that lead to success in today's competitive market.",
+        "Hassle-free filing of Income Tax Returns and GST, ensuring accuracy and timely submission to avoid penalties.",
     },
     {
       id: 3,
       img: ser3, // Add your image source
       title: "Financial Advisory",
       description:
-        "Our expert financial advisors guide you through complex decisions and offer tailored solutions.",
+        "Tailored financial solutions and investment strategies to secure long-term growth and stability.",
     },
     {
       id: 4,
       img: ser1,
-      title: "Tax Consulting",
+      title: "Gain Tax Filling ",
       description:
-        "Our individualized tax planning and preparation services are designed to maximize your returns and minimize your liabilities.",
+        "Assistance with filing capital gains taxes, ensuring proper documentation and accurate reporting for seamless compliance.",
     },
     {
       id: 5,
       img: ser2, // Add your image source
-      title: "Business Strategy",
+      title: "Business Assistance",
       description:
-        "We help businesses create effective strategies that lead to success in today's competitive market.",
+        "Comprehensive support for startups and established businesses, including registration, legal compliance, and strategic growth planning.",
     },
     {
       id: 6,
       img: ser3, // Add your image source
-      title: "Financial Advisory",
+      title: "Audit & Corporate Services",
       description:
-        "Our expert financial advisors guide you through complex decisions and offer tailored solutions.",
+        "Detailed auditing services and corporate compliance support to maintain transparency and regulatory adherence.",
     },
   ];
 
