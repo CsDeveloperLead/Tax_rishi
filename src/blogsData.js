@@ -1,4 +1,4 @@
-import img1 from "./assets/capitalgain.png";
+import img1 from "./assets/Capitalgain.png";
 
 import img3 from "./assets/future.png";
 import img4 from "./assets/huf.png";
