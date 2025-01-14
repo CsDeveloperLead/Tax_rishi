@@ -1,8 +1,8 @@
-import img1 from "./assets/capital gain.png";
+import img1 from "./assets/capitalgain.png";
 
 import img3 from "./assets/future.png";
 import img4 from "./assets/huf.png";
-import img5 from "./assets/indian trust.png";
+import img5 from "./assets/indiantrust.png";
 
 
 export const Blogs = [
