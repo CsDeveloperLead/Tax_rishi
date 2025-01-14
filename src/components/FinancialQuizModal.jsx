@@ -12,27 +12,27 @@ const questions = [
   {
     question: "Which of the following instruments do you think can offer tax-free guaranteed income?  ",
     options: ["Savings accounts with high interest rates", "Government-backed schemes like PPF, Sukanya Samriddhi Yojana, or tax-free bonds", "Insurance-based products like LIC policies or ULIPs (with tax benefits)  ", "Insurance-based products like LIC policies or ULIPs (with tax benefits)  "],
-    answer: 3,
+    answer: 2,
   },
   {
     question: "How familiar are you with government initiatives and subsidies for MSMEs and startups? ",
     options: ["I am not aware of such initiatives or subsidies.  ", "I know of schemes like Mudra Yojana or CGTMSE but haven’t explored them. ", "I have applied for benefits under programs like SIDBI’s MSME loans or Startup India schemes.  ", "I actively leverage government subsidies, tax exemptions, and export incentives to boost my business.  "],
-    answer: 3,
+    answer: 4,
   },
   {
     question: "How do you approach tax planning and optimization? ",
     options: ["I do not actively plan for taxes.  ", "I use traditional tax-saving instruments like PPF, ELSS, and NPS.  ", "I blend traditional options with advanced planning like deductions under Sections 80C, 80D, and 10(10D).  ", "I consult tax professionals to structure my investments and deductions for maximum tax efficiency. "],
-    answer: 3,
+    answer: 4,
   },
   {
     question: "How prepared are you to handle unexpected financial emergencies?  ",
     options: ["I do not have an emergency fund in place.  ", "I have basic savings but not dedicated to emergencies.  ", "I maintain an emergency fund covering 3–6 months of personal or business expenses.  ", "I combine emergency funds, insurance, and credit tools to manage unforeseen situations effectively.  "],
-    answer: 1,
+    answer: 4,
   },
   {
     question: "Are you utilizing financial or tax benefits designed for startups?  ",
     options: ["I am not aware of startup-specific benefits.  ", "I’ve heard of schemes like Startup India but haven’t explored them fully.  ", "I have availed benefits like tax holidays under Startup India or government funding schemes.  ", "I actively utilize multiple benefits, including capital gains exemptions, tax breaks, and startup grants.  "],
-    answer: 1,
+    answer: 4,
   },
 ];
 
@@ -237,7 +237,7 @@ const FinancialQuizModal = () => {
                               <button
                                 key={index}
                                 onClick={() => handleAnswerClick(index + 1)}
-                                className={`w-[280px] md:w-[340px] text-sm md:text-sm py-2 md:py-3 border-2 rounded-full text-center hover:scale-105 transition duration-200 ${
+                                className={`w-[320px] md:w-[380px] px-2 md:px-6 text-[10px] md:text-sm py-2 md:py-3 border-2 rounded-full text-center hover:scale-105 transition duration-200 ${
                                   selectedAnswers[currentStep] === index + 1
                                     ? "bg-[#4EBA42] text-white"
                                     : "bg-white text-gray-700 hover:bg-[#4EBA42] hover:text-white"
