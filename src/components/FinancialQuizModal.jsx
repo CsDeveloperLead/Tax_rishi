@@ -271,7 +271,7 @@ const FinancialQuizModal = () => {
                         User Information
                       </h1>
                       <p className="text-sm text-center text-red-500">
-                        ***Fill Information for Further Assistance***
+                        ***Fill All Information for Further Assistance***
                       </p>
 
                       <div className="w-full flex flex-col md:flex-row gap-1 md:gap-4 mt-1 md:mt-10">
