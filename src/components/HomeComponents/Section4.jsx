@@ -14,7 +14,7 @@ const Section4 = () => {
         <div className='bg-white mt-8 w-[300px] roudned-2xl p-6 border-gray-400 border rounded-3xl shadow-custom-combined group '>
             <div className='flex justify-between items-center '>
                 <h1 className='text-lg'>Total Revenue</h1>
-                <p>x</p>
+                
             </div>
             <p className='border-b-2 border-gray-400 my-4'></p>
             <div className='flex items-center gap-4'>
@@ -32,7 +32,7 @@ const Section4 = () => {
         <div className='bg-white w-[350px]   roudned-2xl p-6 border-gray-400 border rounded-3xl shadow-custom-combined group '>
             <div className='flex justify-between items-center '>
                 <h1 className='text-lg'>Balance in Percent</h1>
-                <p>x</p>
+                
             </div>
             <p className='border-b-2 border-gray-400 my-4'></p>
             <div className='flex flex-col gap-4'>

@@ -21,7 +21,7 @@ const Hero = () => {
       </div>
       <div className="flex flex-col text-center font-montserrat500 mt-4 md:mt-10 text-[#14598D]">
         <p className="text-[12px] md:text-base">
-          we specialize in providing personalized tax consulting services to
+          We specialize in providing personalized tax consulting services to
           help you navigate complex tax{" "}
         </p>
         <p className="text-[12px] md:text-base">

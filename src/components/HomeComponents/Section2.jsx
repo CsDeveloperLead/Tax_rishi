@@ -12,8 +12,8 @@ const Section2 = () => {
   return (
     <div id="section3" className="w-full flex flex-col gap-10 md:flex-row items-center justify-center md:items-start font-montserrat mt-20 mb-10 md:mt-40 md:mb-20 p-2 md:px-20">
       <div className="w-[90%] md:w-[50%] flex flex-col  gap-8">
-        <div className="w-full md:w-1/3 flex justify-center items-center font-bold bg-[#cdd4f1] text-main rounded-[49px] px-4 py-2">
-          Here Our Services
+        <div className="w-full md:w-1/3 flex justify-center items-center font-bold text-xl bg-[#cdd4f1] text-main rounded-[49px] px-4 py-2">
+          Our Services
         </div>
         <h1 className="w-full text-[#14598D] text-center md:text-start text-xl md:text-5xl font-bold md:leading-[60px]">
           Comprehensive Tax Solutions Tailored to Your Needs
