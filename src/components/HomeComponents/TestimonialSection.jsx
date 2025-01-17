@@ -61,6 +61,7 @@ const TestimonialSection = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const [isClosed, setIsClosed] = useState(false);
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? testimonials.length - 4 : prevIndex - 1
@@ -104,7 +105,7 @@ const TestimonialSection = () => {
 
   return (
     <div
-      id="testimonial"
+
       className="w-full flex flex-col items-center md:items-start gap-8 font-montserrat p-4 md:px-20 mt-20 md:mt-0"
     >
       <div className="w-full flex flex-col md:flex-row  items-center justify-between ">
@@ -126,66 +127,54 @@ const TestimonialSection = () => {
           </p>
         </Link>
       </div>
-
-      <div className="w-full flex items-center mb-20">
-        <div className="relative flex flex-col lg:flex-row w-full items-center">
+      <div className="relative flex flex-col lg:flex-row w-full items-center">
+        <div className="relative w-full flex flex-col lg:flex-row gap-4 items-center">
           <video
             ref={videoRef}
             controls
             width="450"
-            className="rounded-2xl w-full lg:w-[35%]"
-            poster="https://via.placeholder.com/300x200.png?text=Video+Thumbnail" // Add your thumbnail image here
+            className="rounded-2xl w-full lg:w-[35%] border-2 border-green"
+            poster="https://via.placeholder.com/300x200.png?text=Video+Thumbnail"
           >
             <source src={Video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="relative w-full flex flex-col items-center">
-            <div className="overflow-hidden w-full lg:w-[850px]">
-              <div
-                className="flex gap-6 py-6 transition-transform duration-500 ease-in-out"
-                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-              >
-                {testimonials.map((testimonial) => (
-                  <div
-                    key={testimonial.id}
-                    className="w-full flex-shrink-0 p-6 rounded-2xl bg-white border shadow-xl lg:w-[400px] h-[250px] flex flex-col gap-4"
-                  >
+          <div className="relative overflow-hidden w-full group">
+            <div
+              className="flex gap-6 py-6 transition-transform duration-500 ease-in-out sm:flex-row lg:justify-start overflow-x-scroll"
+              style={{
+                scrollbarWidth: "none",
+              }}
+            >
+              {testimonials.map((testimonial, index) => (
+                <div
+                  key={testimonial.id}
+                  className="w-full sm:w-[100%] md:w-[80%] lg:w-[400px] justify-between flex-shrink-0 p-6 rounded-2xl bg-white border h-[250px] flex flex-col gap-4 peer"
+                >
+                  <div className="w-full h-auto flex flex-col gap-2">
                     <span>{testimonial.rating}</span>
                     <p className="text-[#14598D]">{testimonial.feedback}</p>
-                    <div className="flex gap-4">
-                      <span className="w-[50px] bg-gray-400 h-[50px] rounded-full">
-                        <img
-                          src={testimonial.img}
-                          alt={testimonial.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </span>
-                      <span className="flex flex-col justify-center gap-2">
-                        <p className="text-[12px]">{testimonial.time}</p>
-                        <p className="text-[10px] text-main font-bold uppercase">
-                          {testimonial.name}
-                        </p>
-                      </span>
-                    </div>
                   </div>
-                ))}
-              </div>
-            </div>
-            <div className="flex gap-4 mt-4">
-              <button
-                onClick={handlePrev}
-                className="bg-main text-white px-4 py-2 rounded-lg"
-              >
-                Prev
-              </button>
-              <button
-                onClick={handleNext}
-                className="bg-main text-white px-4 py-2 rounded-lg"
-              >
-                Next
-              </button>
+                  <div className="flex gap-4">
+                    <span className="w-[50px] bg-gray-400 h-[50px] rounded-full">
+                      <img
+                        src={testimonial.img}
+                        alt={testimonial.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </span>
+                    <span className="flex flex-col justify-center gap-2">
+                      <p className="text-[12px]">{testimonial.time}</p>
+                      <p className="text-[10px] text-main font-bold uppercase">
+                        {testimonial.name}
+                      </p>
+                    </span>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
+
         </div>
       </div>
     </div>

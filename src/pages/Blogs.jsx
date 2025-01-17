@@ -43,7 +43,7 @@ function BlogPage() {
                         </div>
                         <div className='w-full h-auto flex flex-col mt-4 gap-3 px-2 font-marcellus sm:px-6 sm:mt-8 md:mt-10 md:px-10'>
                             <h1 className='w-full h-auto flex font-bold sm:text-xl md:text-2xl xl:text-4xl text-[#3367d1]'>{singleBlog?.title}</h1>
-                            <p className='text-sm md:text-base xl:text-lg text-[#3367d1]' style={{ whiteSpace: "pre-wrap" }} dangerouslySetInnerHTML={{__html : singleBlog?.description}}></p>
+                            <p className='text-sm md:text-base xl:text-lg ' style={{ whiteSpace: "pre-wrap" }} dangerouslySetInnerHTML={{__html : singleBlog?.description}}></p>
                         </div>
                     </div>
                     <div className='w-full h-auto flex flex-col p-5 lg:w-[34%] lg:p-2 xl:w-[30%] 2xl:w-[25%]'>
