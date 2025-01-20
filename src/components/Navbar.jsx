@@ -73,7 +73,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link to="/" className="text-xl font-montserrat700">
-              <img src={Logo} alt="Logo" className="w-20 h-20" />
+              <img src={Logo} alt="Logo" className="w-24 h-12" />
             </Link>
           </div>
           {/* Hamburger Icon (Mobile) */}

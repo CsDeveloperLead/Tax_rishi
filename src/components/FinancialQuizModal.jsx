@@ -444,7 +444,7 @@ const FinancialQuizModal = () => {
           ) : (
             <div className="w-full flex flex-col gap-10 h-auto md:h-full p-4">
               <div className="w-full flex justify-around md:justify-end items-center mt-0 lg:mt-10">
-                <div className="w-[200px] h-[150px] md:w-[250px] md:h-[150px]
+                <div className="w-[150px] h-[100px] md:w-[200px] md:h-[100px]
                  ">
                   <img src={logo} alt="logo" className="w-full h-full" />
                 </div>
@@ -1196,14 +1196,14 @@ const FinancialQuizModal = () => {
                       </g>
                     </svg>
                   </div> */}
-                  <p className="text-lg md:text-4xl text-center font-medium">
-                    <span className="text-[#4f82aa] font-montserrat text-3xl font-bold leading-[70px] md:leading-[60px] ">
+                  <p className="text-lg md:text-4xl text-center font-medium xl:text-5xl">
+                    <span className="text-[#4f82aa] font-montserrat  font-bold leading-[70px] md:leading-[90px]">
                       Do you want to
                     </span>
                     <br />
 
-                   <span className='text-[#4f82aa] font-montserrat font-bold text-3xl'>take the</span> {" "}
-                    <span className="font-montserrat bg-[#4eba42] text-3xl  text-white p-2 rounded-xl font-bold">
+                   <span className='text-[#4f82aa] font-montserrat font-bold '>take the</span> {" "}
+                    <span className="font-montserrat bg-[#4eba42] text-white p-2 rounded-xl font-bold">
                       Quiz
                     </span>
                   </p>
@@ -1211,13 +1211,13 @@ const FinancialQuizModal = () => {
                   <div className="flex justify-center space-x-4 mb-10 md:mb-0">
                     <button
                       onClick={handleToggleClass}
-                      className="px-10 py-1 bg-main text-white rounded-md font-bold"
+                      className="px-10 py-2 bg-main text-white rounded-md font-bold"
                     >
                       Yes
                     </button>
                     <button
                       onClick={closeModal}
-                      className="px-10 py-1 border-main border-2  rounded-md text-[#156aae] font-montserrat font-bold "
+                      className="px-10 py-2 border-main border-2  rounded-md text-[#156aae] font-montserrat font-bold "
                     >
                       No
                     </button>
