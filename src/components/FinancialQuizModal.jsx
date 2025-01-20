@@ -234,7 +234,7 @@ const FinancialQuizModal = () => {
               <>
                 {currentStep <= 4 ? (
                   <div className="w-full px-2 h-full flex flex-col mb-6 md:mb-0  text-black rounded-2xl">
-                    <div className="w-full flex justify-between items-center">
+                    <div className="w-full h-[50px] flex justify-between items-center">
                       <img src={logo} alt="logo" className="w-20 h-20" />
                     </div>
                     <div className="w-full h-[340px] md:h-full flex flex-col items-center justify-center -mt-10 ">
@@ -442,14 +442,15 @@ const FinancialQuizModal = () => {
               </div>
             )
           ) : (
-            <div className="w-full flex flex-col h-auto md:h-full p-4">
+            <div className="w-full flex flex-col gap-10 h-auto md:h-full p-4">
               <div className="w-full flex justify-around md:justify-end items-center mt-0 lg:mt-10">
-                <div className="w-[200px] h-[150px]  ">
+                <div className="w-[200px] h-[150px] md:w-[250px] md:h-[150px]
+                 ">
                   <img src={logo} alt="logo" className="w-full h-full" />
                 </div>
               </div>
               <div className="flex items-center justify-center h-1/2 ">
-                <div className="flex flex-col gap-8 items-center justify-center">
+                <div className="flex flex-col gap-6 items-center justify-center">
                   {/* <div className="w-full hidden md:flex justify-center items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1196,17 +1197,17 @@ const FinancialQuizModal = () => {
                     </svg>
                   </div> */}
                   <p className="text-lg md:text-4xl text-center font-medium">
-                    <span className="text-[#4f82aa] font-montserrat font-bold leading-[70px]">
+                    <span className="text-[#4f82aa] font-montserrat text-3xl font-bold leading-[70px] md:leading-[60px] ">
                       Do you want to
                     </span>
                     <br />
 
-                   <span className='text-[#4f82aa] font-montserrat font-bold'>take the</span> {" "}
-                    <span className="font-montserrat bg-[#4eba42] text-white p-2 rounded-xl font-bold">
+                   <span className='text-[#4f82aa] font-montserrat font-bold text-3xl'>take the</span> {" "}
+                    <span className="font-montserrat bg-[#4eba42] text-3xl  text-white p-2 rounded-xl font-bold">
                       Quiz
                     </span>
                   </p>
-                  <p className='text-[#14598D] text-center font-montserrat '>we specialize in providing personalized<br/>tax consulting services to help you</p>
+                  <p className='text-[#14598D] text-center font-montserrat font-semibold mt-4'>we specialize in providing personalized<br/>tax consulting services to help you</p>
                   <div className="flex justify-center space-x-4 mb-10 md:mb-0">
                     <button
                       onClick={handleToggleClass}
