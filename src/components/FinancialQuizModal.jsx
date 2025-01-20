@@ -1196,27 +1196,27 @@ const FinancialQuizModal = () => {
                     </svg>
                   </div> */}
                   <p className="text-lg md:text-4xl text-center font-medium">
-                    <span className="text-[#4f82aa] font-montserrat">
+                    <span className="text-[#4f82aa] font-montserrat font-bold leading-[70px]">
                       Do you want to
                     </span>
                     <br />
 
-                   <span className='text-[#4f82aa] font-montserrat'>take the</span> {" "}
-                    <span className="font-montserrat text-[#4eba42]">
-                      Quiz?
+                   <span className='text-[#4f82aa] font-montserrat font-bold'>take the</span> {" "}
+                    <span className="font-montserrat bg-[#4eba42] text-white p-2 rounded-xl font-bold">
+                      Quiz
                     </span>
                   </p>
-                  <p className='text-[#0d99ff] text-center font-montserrat text-xl'>we specialize in providing personalized tax consulting services to help you</p>
+                  <p className='text-[#14598D] text-center font-montserrat '>we specialize in providing personalized<br/>tax consulting services to help you</p>
                   <div className="flex justify-center space-x-4 mb-10 md:mb-0">
                     <button
                       onClick={handleToggleClass}
-                      className="px-10 py-1 bg-main text-white rounded-md"
+                      className="px-10 py-1 bg-main text-white rounded-md font-bold"
                     >
                       Yes
                     </button>
                     <button
                       onClick={closeModal}
-                      className="px-10 py-1 border-main border-2 text-black rounded-md"
+                      className="px-10 py-1 border-main border-2  rounded-md text-[#156aae] font-montserrat font-bold "
                     >
                       No
                     </button>
