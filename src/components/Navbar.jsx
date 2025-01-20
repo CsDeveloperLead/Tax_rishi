@@ -189,13 +189,13 @@ const Navbar = () => {
                         <NavLink to="/gstrishi/gst-basics" className="block px-4 text-[#14598d] py-2 hover:bg-gray-100 hover:text-[#4eba42]">Gst Basics</NavLink>
                         <NavLink to="/gstrishi/gst-registration" className="block  text-[#14598d] px-4 py-2 hover:bg-gray-100 hover:text-[#4eba42]">Gst Registration</NavLink>
                         <NavLink to="/gstrishi/gst-input-tax-credit" className="block text-[#14598d] px-4 py-2 hover:bg-gray-100 hover:text-[#4eba42]">Gst Input Tax Credit</NavLink>
-                        <NavLink to="/gstrishi/gst-invoice" className="block px-4 py-2text-[#14598d] hover:bg-gray-100 hover:text-[#4eba42]">GST Invoice</NavLink>
+                        <NavLink to="/gstrishi/gst-invoice" className="block px-4 py-2 text-[#14598d] hover:bg-gray-100 hover:text-[#4eba42]">GST Invoice</NavLink>
                         <NavLink to="/gstrishi/invoicing-gst" className="block px-4 text-[#14598d] py-2 hover:bg-gray-100 hover:text-[#4eba42]">Invoicing Gst</NavLink>
                         <NavLink to="/gstrishi/gst-composition-scheme" className="block text-[#14598d] px-4 py-2 hover:bg-gray-100 hover:text-[#4eba42]" >Gst Composition Scheme</NavLink>
                         <NavLink to="/gstrishi/gst-returns" className="block px-4 py-2 text-[#14598d] hover:bg-gray-100 hover:text-[#4eba42]">GST Returns</NavLink>
                         <NavLink to="/gstrishi/reverse-charge-gst" className="block px-4  text-[#14598d] py-2 hover:bg-gray-100 hover:text-[#4eba42]">Reverse Charge Gst</NavLink>
                         <NavLink to="/gstrishi/refund-process-gst" className="block px-4 text-[#14598d] py-2 hover:bg-gray-100 hover:text-[#4eba42]">Refund Process Under GST</NavLink>
-                        <NavLink to="/gstrishi/prosecution-under-gst" className="block px- text-[#14598d] 4 py-2 hover:bg-gray-100 hover:text-[#4eba42]">Prosecution Under GST</NavLink>
+                        <NavLink to="/gstrishi/prosecution-under-gst" className="block px-4 text-[#14598d] 4 py-2 hover:bg-gray-100 hover:text-[#4eba42]">Prosecution Under GST</NavLink>
                       </div>
                     )}
                   </div>
