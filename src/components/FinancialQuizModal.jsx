@@ -10,28 +10,57 @@ Modal.setAppElement("#root");
 
 const questions = [
   {
-    question: "Which of the following instruments do you think can offer tax-free guaranteed income?  ",
-    options: ["Savings accounts with high interest rates", "Government-backed schemes like PPF, Sukanya Samriddhi Yojana, or tax-free bonds", "Insurance-based products like LIC policies or ULIPs (with tax benefits)  ", "Insurance-based products like LIC policies or ULIPs (with tax benefits)  "],
+    question:
+      "Which of the following instruments do you think can offer tax-free guaranteed income?  ",
+    options: [
+      "Savings accounts with high interest rates",
+      "Government-backed schemes like PPF, Sukanya Samriddhi Yojana, or tax-free bonds",
+      "Insurance-based products like LIC policies or ULIPs (with tax benefits)  ",
+      "Insurance-based products like LIC policies or ULIPs (with tax benefits)  ",
+    ],
     answer: 2,
   },
   {
-    question: "How familiar are you with government initiatives and subsidies for MSMEs and startups? ",
-    options: ["I am not aware of such initiatives or subsidies.  ", "I know of schemes like Mudra Yojana or CGTMSE but haven’t explored them. ", "I have applied for benefits under programs like SIDBI’s MSME loans or Startup India schemes.  ", "I actively leverage government subsidies, tax exemptions, and export incentives to boost my business.  "],
+    question:
+      "How familiar are you with government initiatives and subsidies for MSMEs and startups? ",
+    options: [
+      "I am not aware of such initiatives or subsidies.  ",
+      "I know of schemes like Mudra Yojana or CGTMSE but haven’t explored them. ",
+      "I have applied for benefits under programs like SIDBI’s MSME loans or Startup India schemes.  ",
+      "I actively leverage government subsidies, tax exemptions, and export incentives to boost my business.  ",
+    ],
     answer: 4,
   },
   {
     question: "How do you approach tax planning and optimization? ",
-    options: ["I do not actively plan for taxes.  ", "I use traditional tax-saving instruments like PPF, ELSS, and NPS.  ", "I blend traditional options with advanced planning like deductions under Sections 80C, 80D, and 10(10D).  ", "I consult tax professionals to structure my investments and deductions for maximum tax efficiency. "],
+    options: [
+      "I do not actively plan for taxes.  ",
+      "I use traditional tax-saving instruments like PPF, ELSS, and NPS.  ",
+      "I blend traditional options with advanced planning like deductions under Sections 80C, 80D, and 10(10D).  ",
+      "I consult tax professionals to structure my investments and deductions for maximum tax efficiency. ",
+    ],
     answer: 4,
   },
   {
-    question: "How prepared are you to handle unexpected financial emergencies?  ",
-    options: ["I do not have an emergency fund in place.  ", "I have basic savings but not dedicated to emergencies.  ", "I maintain an emergency fund covering 3–6 months of personal or business expenses.  ", "I combine emergency funds, insurance, and credit tools to manage unforeseen situations effectively.  "],
+    question:
+      "How prepared are you to handle unexpected financial emergencies?  ",
+    options: [
+      "I do not have an emergency fund in place.  ",
+      "I have basic savings but not dedicated to emergencies.  ",
+      "I maintain an emergency fund covering 3–6 months of personal or business expenses.  ",
+      "I combine emergency funds, insurance, and credit tools to manage unforeseen situations effectively.  ",
+    ],
     answer: 4,
   },
   {
-    question: "Are you utilizing financial or tax benefits designed for startups?  ",
-    options: ["I am not aware of startup-specific benefits.  ", "I’ve heard of schemes like Startup India but haven’t explored them fully.  ", "I have availed benefits like tax holidays under Startup India or government funding schemes.  ", "I actively utilize multiple benefits, including capital gains exemptions, tax breaks, and startup grants.  "],
+    question:
+      "Are you utilizing financial or tax benefits designed for startups?  ",
+    options: [
+      "I am not aware of startup-specific benefits.  ",
+      "I’ve heard of schemes like Startup India but haven’t explored them fully.  ",
+      "I have availed benefits like tax holidays under Startup India or government funding schemes.  ",
+      "I actively utilize multiple benefits, including capital gains exemptions, tax breaks, and startup grants.  ",
+    ],
     answer: 4,
   },
 ];
@@ -171,7 +200,7 @@ const FinancialQuizModal = () => {
       <div
         className={`w-full flex flex-col md:flex-row ${
           isReversed ? (window.innerWidth < 768 ? "reverse2" : "reverse") : ""
-        } h-full md:h-full p-1 rounded-2xl mt-0 md:mt-0 relative overflow-y-auto`}
+        } h-full md:h-full  md:p-3 rounded-2xl mt-0 md:mt-0 relative overflow-y-auto`}
       >
         {/* Left Section */}
         <div
@@ -199,16 +228,6 @@ const FinancialQuizModal = () => {
           className="w-full md:w-1/2 h-full transform flex flex-col items-center relative box2 "
           style={{ transition: "transform 1s ease" }}
         >
-          {/* Progress Bar */}
-          {/* {quizStarted && score === null && (
-            <div className="w-full bg-gray-200 h-2 mb-4 absolute -top-0">
-              <div
-                style={{ width: `${progressPercentage}%` }}
-                className="bg-main h-2 transition-all duration-300 absolute -top-0"
-              ></div>
-            </div>
-          )} */}
-
           {/* Quiz Content */}
           {quizStarted ? (
             currentStep <= 5 ? (
@@ -217,11 +236,6 @@ const FinancialQuizModal = () => {
                   <div className="w-full px-2 h-full flex flex-col mb-6 md:mb-0  text-black rounded-2xl">
                     <div className="w-full flex justify-between items-center">
                       <img src={logo} alt="logo" className="w-20 h-20" />
-                      {/* <div>
-                        <p className="text-base  bg-main text-white font-semibold rounded-full px-10 py-2">
-                          {currentStep + 1}/{questions.length}
-                        </p>
-                      </div> */}
                     </div>
                     <div className="w-full h-[340px] md:h-full flex flex-col items-center justify-center -mt-10 ">
                       <p className="text-md md:text-xl font-semibold mb-3 md:mb-6">
@@ -428,19 +442,15 @@ const FinancialQuizModal = () => {
               </div>
             )
           ) : (
-            <div className="w-full flex flex-col gap-10 md:gap-20 h-auto md:h-full p-4">
-              <div className="w-full flex justify-between items-center mt-0 lg:mt-10">
-                <img src={logo} alt="logo" className="w-20 h-20" />
-                <div className="flex flex-col items-center">
-                  <p className="text-xl font-medium text-[#b2b2b2]">
-                    Knowledge
-                  </p>
-                  <p className="text-2xl font-medium text-main">Quiz ?</p>
+            <div className="w-full flex flex-col h-auto md:h-full p-4">
+              <div className="w-full flex justify-around md:justify-end items-center mt-0 lg:mt-10">
+                <div className="w-[200px] h-[150px]  ">
+                  <img src={logo} alt="logo" className="w-full h-full" />
                 </div>
               </div>
-              <div className="flex items-center justify-center h-1/2">
-                <div className="flex flex-col items-center justify-center">
-                  <div className="w-full hidden md:flex justify-center items-center">
+              <div className="flex items-center justify-center h-1/2 ">
+                <div className="flex flex-col gap-8 items-center justify-center">
+                  {/* <div className="w-full hidden md:flex justify-center items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="175"
@@ -1184,10 +1194,19 @@ const FinancialQuizModal = () => {
                         />
                       </g>
                     </svg>
-                  </div>
-                  <p className="text-lg md:text-4xl text-center font-medium mb-10">
-                    Do you want to take the quiz?
+                  </div> */}
+                  <p className="text-lg md:text-4xl text-center font-medium">
+                    <span className="text-[#4f82aa] font-montserrat">
+                      Do you want to
+                    </span>
+                    <br />
+
+                   <span className='text-[#4f82aa] font-montserrat'>take the</span> {" "}
+                    <span className="font-montserrat text-[#4eba42]">
+                      Quiz?
+                    </span>
                   </p>
+                  <p className='text-[#0d99ff] text-center font-montserrat text-xl'>we specialize in providing personalized tax consulting services to help you</p>
                   <div className="flex justify-center space-x-4 mb-10 md:mb-0">
                     <button
                       onClick={handleToggleClass}
